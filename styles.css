@@ -9,11 +9,6 @@
     --accent: #7c3aed;
     --accent-2: #06b6d4;
     --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-
-    /* Gold theme additions */
-    --gold: #d4af37;
-    --gold-soft: #f5d76e;
-    --gold-dark: #a8861f;
 }
 
 * {
@@ -40,47 +35,34 @@ a {
 
 .site-nav {
     backdrop-filter: blur(18px);
-    background: rgba(5, 5, 5, 0.9);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    background: rgba(7, 11, 18, 0.72);
+    border-bottom: 1px solid var(--line);
 }
 
-.site-nav.scrolled {
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.08);
-}
-
-/* Logo highlight */
 .brand-logo {
     letter-spacing: 0.04em;
-    color: var(--gold)
 }
 
-.brand-logo span {
-    color: var(--gold);
-}
-
-/* Navigation links */
 .nav-link {
-    color: rgba(255, 255, 255, 0.85) !important;
-    transition: color 0.25s ease;
+    color: rgba(255, 255, 255, 0.82) !important;
+    transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-    color: var(--gold) !important;
+    color: #ffffff !important;
 }
 
 .btn-glass {
-    border: 1px solid var(--gold-dark);
-    color: var(--gold);
-    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid var(--line);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 999px;
     padding: 0.75rem 1.2rem;
-    transition: all 0.25s ease;
 }
 
 .btn-glass:hover {
-    background: var(--gold);
-    color: #000;
-    border-color: var(--gold);
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
 }
 
 .hero-section {
@@ -320,30 +302,23 @@ a {
 
 .site-footer {
     padding: 2rem 0 3rem;
-    border-top: 1px solid rgba(212, 175, 55, 0.25);
-    background: #050505;
-    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--muted);
 }
 
 .footer-links {
     display: flex;
     gap: 1.2rem;
     flex-wrap: wrap;
-    color: rgba(255, 255, 255, 0.7);
-    transition: color 0.2s ease;
 }
 
 .footer-links a {
-    color: rgba(255, 255, 255, 0.7);
-    transition: color 0.2s ease;
+    color: var(--muted);
 }
 
 .footer-links a:hover {
-    color: var(--gold);
-}
-
-footer .mb-0 {
-    color: var(--gold);
+    color: #fff;
 }
 
 .btn-primary {
