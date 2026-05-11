@@ -87,6 +87,47 @@ function setYear() {
   }
 }
 
+function initParallax() {
+  const section = document.querySelector("[data-parallax-section]");
+  const image = document.querySelector("[data-parallax-image]");
+
+  if (!section || !image) return;
+
+  const isMobile = window.matchMedia("(max-width: 991.98px)").matches;
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (isMobile || prefersReducedMotion) {
+    image.style.transform = "none";
+    return;
+  }
+
+  let ticking = false;
+
+  const updateParallax = () => {
+    const rect = section.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const sectionCenter = rect.top + rect.height / 2;
+    const viewportCenter = windowHeight / 2;
+    const distanceFromCenter = sectionCenter - viewportCenter;
+
+    const translateY = Math.max(-60, Math.min(60, distanceFromCenter * -0.08));
+    image.style.transform = `translate3d(0, ${translateY}px, 0) scale(1.08)`;
+
+    ticking = false;
+  };
+
+  const onScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  };
+
+  updateParallax();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", updateParallax);
+}
+
 function initReveal() {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const elements = document.querySelectorAll("[data-reveal], .reveal, .reveal-stagger");

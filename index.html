@@ -134,8 +134,21 @@
       <section
         id="home"
         class="hero-section hero-split reveal"
-        aria-labelledby="home-title">
-        <div class="container position-relative">
+        aria-labelledby="home-title"
+        data-parallax-section>
+        <div class="hero-bg-layer" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+            class="hero-bg-image"
+            data-parallax-image
+            loading="eager"
+            fetchpriority="high"
+            decoding="async" />
+          <div class="hero-bg-overlay"></div>
+        </div>
+
+        <div class="container position-relative hero-content-wrap">
           <div class="row align-items-center min-vh-100 py-5 g-5">
             <div class="col-lg-6 order-2 order-lg-1" data-reveal="left">
               <p class="eyebrow mb-3">
@@ -159,14 +172,14 @@
               </p>
 
               <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
-                <a href="contact.html" class="btn btn-primary btn-lg px-4"
-                  >Get a Quote</a
-                >
+                <a href="contact.html" class="btn btn-primary btn-lg px-4">
+                  Get a Quote
+                </a>
                 <a
                   href="services.html"
-                  class="btn btn-outline-light btn-lg px-4"
-                  >Explore Services</a
-                >
+                  class="btn btn-outline-light btn-lg px-4">
+                  Explore Services
+                </a>
               </div>
 
               <div class="hero-stats mt-5 reveal-stagger">
@@ -187,30 +200,6 @@
                   <span class="stat-label"
                     >Support, updates, and ongoing optimization</span
                   >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 order-1 order-lg-2" data-reveal="right">
-              <div class="hero-visual" data-parallax-section>
-                <img
-                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80"
-                  alt="Modern digital workspace with premium screens and clean design"
-                  class="hero-image"
-                  data-parallax-image
-                  loading="eager"
-                  fetchpriority="high"
-                  decoding="async" />
-
-                <div class="hero-visual-overlay"></div>
-
-                <div class="hero-floating-card glass-card">
-                  <p class="card-label">Featured Stack</p>
-                  <h2 class="h5 mb-2">Website + Traffic Growth System</h2>
-                  <p class="mb-0 text-soft">
-                    A polished website paired with SEO, Google Ads, and
-                    automation.
-                  </p>
                 </div>
               </div>
             </div>
@@ -279,6 +268,7 @@
                 </p>
               </div>
             </div>
+            
           </div>
         </div>
       </section>
