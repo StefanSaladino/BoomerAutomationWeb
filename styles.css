@@ -103,6 +103,7 @@ a:hover {
   color: inherit;
 }
 
+
 /* Accessible keyboard focus */
 
 :focus-visible {
@@ -155,6 +156,10 @@ a:hover {
   border-bottom: 2px solid transparent;
 
   transition: color 0.16s linear;
+}
+
+.nav-link {
+    border-bottom: 2px solid white;
 }
 
 .nav-link:hover,
@@ -1009,16 +1014,61 @@ a:hover {
   }
 
   /*
-    Disable parallax background image on smaller devices.
+    Mobile/tablet hero image enabled again.
+    Uses separate mobile-optimized source image.
   */
 
   .hero-bg-layer {
-    display: none;
+    display: block;
+
+    opacity: 1;
+  }
+
+  .hero-bg-image {
+    height: 100%;
+
+    object-fit: cover;
+
+    /*
+      Better composition for phones/tablets.
+      Focuses toward laptop/device area.
+    */
+    object-position: center top;
+
+    /*
+      Disable parallax transform on mobile.
+      Greatly improves scroll smoothness.
+    */
+    transform: none !important;
+
+    /*
+      Darken slightly for text readability.
+    */
+    filter: brightness(0.42);
+  }
+
+  /*
+    Stronger overlay for mobile readability.
+  */
+
+  .hero-bg-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 5, 5, 0.52) 0%,
+        rgba(5, 5, 5, 0.78) 48%,
+        rgba(5, 5, 5, 0.96) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(5, 5, 5, 0.58) 0%,
+        rgba(5, 5, 5, 0.22) 100%
+      );
   }
 
   /*
     Disable floating orbs on mobile/tablet.
-    Big improvement.
+    Big performance improvement.
   */
 
   .hero-orb {
@@ -1029,10 +1079,19 @@ a:hover {
     text-align: center;
   }
 
+  /*
+    Reduced mobile hero title sizing.
+    Better visual balance.
+  */
+
   .hero-title {
-    max-width: none;
+    max-width: 11ch;
 
     margin-inline: auto;
+
+    font-size: clamp(2.2rem, 7vw, 3.4rem);
+
+    line-height: 0.98;
   }
 
   .hero-text {
@@ -1051,6 +1110,18 @@ a:hover {
 
   .hero-card {
     max-width: 100%;
+  }
+
+  /*
+    Slightly stronger mobile glass effect.
+    Helps card separation over image.
+  */
+
+  .hero-card {
+    background: rgba(12, 12, 12, 0.62);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
   }
 
   .info-grid {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,14 +26,21 @@
         aria-labelledby="home-title"
         data-parallax-section>
         <div class="hero-bg-layer" aria-hidden="true">
-          <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80"
-            alt=""
-            class="hero-bg-image"
-            data-parallax-image
-            loading="eager"
-            fetchpriority="high"
-            decoding="async" />
+          <picture class="hero-bg-picture">
+            <source
+              media="(max-width: 991.98px)"
+              srcset="
+                https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=1200&q=80
+              " />
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80"
+              alt=""
+              class="hero-bg-image"
+              data-parallax-image
+              loading="eager"
+              fetchpriority="high"
+              decoding="async" />
+          </picture>
           <div class="hero-bg-overlay"></div>
         </div>
 
@@ -44,7 +51,7 @@
                 Web Design • SEO • Google Ads • Automation
               </p>
 
-              <h1 id="home-title" class="display-3 fw-semibold hero-title">
+              <h1 id="home-title" class="display-3 fw-semibold">
                 Smart digital experiences built to grow traffic, engagement, and
                 conversions.
               </h1>
@@ -55,7 +62,8 @@
                 fast, and help you work smarter.
               </p>
 
-              <div class="d-flex flex-column flex-sm-row gap-3 mt-4 hero-actions">
+              <div
+                class="d-flex flex-column flex-sm-row gap-3 mt-4 hero-actions">
                 <a href="#contact" class="btn btn-primary btn-lg px-4">
                   Start a Project
                 </a>
@@ -80,7 +88,9 @@
               </div>
             </div>
 
-            <div class="col-lg-5 mt-5 mt-lg-0 hero-card-col" data-reveal="right">
+            <div
+              class="col-lg-5 mt-5 mt-lg-0 hero-card-col"
+              data-reveal="right">
               <div class="hero-card">
                 <div class="hero-card-top">
                   <span class="dot dot-red"></span>
