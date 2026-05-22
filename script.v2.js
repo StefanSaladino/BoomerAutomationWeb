@@ -24,9 +24,17 @@ function loadComponent(id, file) {
     .then((data) => {
       const target = document.getElementById(id);
 
-      if (target) {
-        target.innerHTML = data;
-      }
+      if (!target) return;
+
+      // 🔒 SECURITY FIX: parse instead of raw innerHTML
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(data, "text/html");
+
+      // 🚨 Remove any script tags (defensive hardening)
+      doc.querySelectorAll("script").forEach((s) => s.remove());
+
+      // Clear existing content safely
+      target.replaceChildren(...doc.body.childNodes);
 
       if (id === "header") {
         initNavbar();
