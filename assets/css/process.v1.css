@@ -1,0 +1,808 @@
+/* =========================================================
+   BOOMER AUTOMATION — PROCESS CSS
+   File: process.v1.css
+   Purpose: process page loader, hero, animated process path,
+   block accordions, advantages, operating loop, and CTA.
+========================================================= */
+
+/* =========================================================
+   PAGE LOADER
+========================================================= */
+
+/* Full-screen loader shown while the process page is loading. */
+.process-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(54, 243, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 60% 60%, rgba(124, 92, 255, 0.16), transparent 34%),
+    #030712;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease;
+}
+
+/* Hide loader after JavaScript marks it as complete. */
+.process-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Animated orb behind the loader mark. */
+.process-loader-orb {
+  position: absolute;
+  width: clamp(9rem, 34vw, 18rem);
+  height: clamp(9rem, 34vw, 18rem);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 35% 35%, rgba(54, 243, 255, 0.95), transparent 28%),
+    radial-gradient(circle at 68% 64%, rgba(124, 92, 255, 0.9), transparent 34%),
+    radial-gradient(circle at 50% 50%, rgba(56, 255, 182, 0.35), transparent 58%);
+  filter: blur(1px);
+  animation: loaderMorph 2.8s ease-in-out infinite;
+}
+
+/* Loader content sits above the orb. */
+.process-loader-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 0.85rem;
+}
+
+/* Loader brand mark. */
+.process-loader-mark {
+  display: grid;
+  place-items: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #020617;
+  font-weight: 950;
+  letter-spacing: -0.08em;
+  box-shadow: 0 0 70px rgba(54, 243, 255, 0.38);
+}
+
+/* Loader text. */
+.process-loader-content p {
+  margin: 0;
+  color: var(--soft);
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Loader morph animation. */
+@keyframes loaderMorph {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    border-radius: 42% 58% 61% 39% / 45% 42% 58% 55%;
+  }
+
+  50% {
+    transform: scale(1.08) rotate(12deg);
+    border-radius: 60% 40% 38% 62% / 52% 62% 38% 48%;
+  }
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+/* Full-screen editorial hero. */
+.process-hero {
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: 100svh;
+  padding: 7.5rem 0 5.5rem;
+  overflow: hidden;
+}
+
+/* Dark gradient over hero image. */
+.process-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 7, 18, 0.96) 0%,
+      rgba(3, 7, 18, 0.78) 48%,
+      rgba(3, 7, 18, 0.34) 100%
+    ),
+    radial-gradient(circle at 24% 46%, rgba(54, 243, 255, 0.18), transparent 38%),
+    radial-gradient(circle at 74% 42%, rgba(124, 92, 255, 0.2), transparent 34%);
+}
+
+/* Full-bleed hero image wrapper. */
+.process-hero-image-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+/* Hero image targeted by process.v1.js for parallax. */
+.process-hero-image {
+  width: 100%;
+  height: 118%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.46;
+  transform: translate3d(0, 0, 0) scale(1.04);
+  will-change: transform;
+}
+
+/* Overlay blend at bottom of hero. */
+.process-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(3, 7, 18, 0.94) 100%),
+    radial-gradient(circle at 65% 48%, rgba(54, 243, 255, 0.13), transparent 32%);
+}
+
+/* Hero content container. */
+.process-hero-content {
+  max-width: 980px;
+}
+
+/* Hero headline. */
+.process-hero h1 {
+  max-width: 1000px;
+  margin-bottom: 1.2rem;
+  font-size: clamp(2.75rem, 7.2vw, 6.35rem);
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+}
+
+/* Hero body copy. */
+.process-hero-copy {
+  max-width: 740px;
+  margin-bottom: 1.7rem;
+  color: var(--soft);
+  font-size: clamp(1.06rem, 2vw, 1.35rem);
+}
+
+/* CTA row used in hero and final CTA. */
+.process-hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   BUZZ STRIP
+========================================================= */
+
+/* Horizontal keyword strip. */
+.buzz-strip {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Animated keyword track. */
+.buzz-track {
+  display: flex;
+  width: max-content;
+  gap: 2rem;
+  padding: 1rem 0;
+  color: var(--soft);
+  font-size: clamp(0.86rem, 2vw, 1rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  animation: buzzScroll 28s linear infinite;
+}
+
+/* Individual buzzword. */
+.buzz-track span {
+  white-space: nowrap;
+}
+
+/* Marquee animation. */
+@keyframes buzzScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================================================
+   PROCESS FLOW
+========================================================= */
+
+/* Main process flow section. */
+.process-flow {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 22%, rgba(54, 243, 255, 0.1), transparent 30%),
+    radial-gradient(circle at 88% 72%, rgba(124, 92, 255, 0.14), transparent 32%),
+    var(--bg);
+}
+
+/* Process intro heading. */
+.process-flow-heading h2 {
+  max-width: 860px;
+  margin-bottom: 1rem;
+  font-size: clamp(2.15rem, 5.8vw, 4.9rem);
+  line-height: 0.94;
+  letter-spacing: -0.075em;
+}
+
+/* Process intro copy. */
+.process-flow-heading p {
+  max-width: 720px;
+}
+
+/* Process path wrapper. */
+.process-path {
+  position: relative;
+  display: grid;
+  gap: 0;
+  margin-top: 2.4rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Vertical animated path line. */
+.process-path-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.85rem;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* JavaScript updates this line as the user scrolls. */
+.process-path-line span {
+  display: block;
+  width: 100%;
+  height: 0%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 28px rgba(54, 243, 255, 0.7);
+}
+
+/* Individual process step row. */
+.process-step {
+  position: relative;
+  display: grid;
+  gap: 0.6rem;
+  padding: 1.5rem 0 1.5rem 2.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Process step dot. */
+.process-step::before {
+  content: "";
+  position: absolute;
+  top: 1.75rem;
+  left: 0.47rem;
+  width: 0.82rem;
+  height: 0.82rem;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 22px rgba(54, 243, 255, 0.78);
+}
+
+/* Process number. */
+.process-step span {
+  color: var(--accent);
+  font-weight: 950;
+}
+
+/* Process title. */
+.process-step h3 {
+  margin-bottom: 0;
+  color: var(--text);
+  font-size: clamp(1.65rem, 5vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+/* Process text. */
+.process-step p {
+  max-width: 44rem;
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   ACCORDIONS
+========================================================= */
+
+/* Accordion section. */
+.process-details {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, #020617 0%, #07111f 52%, #030712 100%);
+}
+
+/* Accordion layout. */
+.process-details-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* Accordion intro headline. */
+.process-details-copy h2 {
+  max-width: 760px;
+  margin-bottom: 1rem;
+  font-size: clamp(2.1rem, 5.8vw, 4.85rem);
+  line-height: 0.94;
+  letter-spacing: -0.075em;
+}
+
+/* Accordion intro paragraph. */
+.process-details-copy p {
+  max-width: 660px;
+}
+
+/* Accordion list uses lines and blocks instead of cards. */
+.process-accordion-list {
+  border-top: 1px solid var(--border);
+}
+
+/* Single accordion row. */
+.process-accordion {
+  border-bottom: 1px solid var(--border);
+}
+
+/* Accordion button. */
+.process-accordion-trigger {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  padding: 1.25rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Accordion number. */
+.process-accordion-trigger span {
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 950;
+}
+
+/* Accordion title. */
+.process-accordion-trigger strong {
+  font-size: clamp(1.25rem, 4vw, 2.25rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+/* Accordion plus/minus icon. */
+.process-accordion-trigger::after {
+  content: "+";
+  color: var(--accent);
+  font-size: 1.6rem;
+  font-weight: 900;
+  transition: transform var(--transition-med);
+}
+
+/* Turn plus into close-like mark when open. */
+.process-accordion.is-open .process-accordion-trigger::after {
+  transform: rotate(45deg);
+}
+
+/* Accordion panel starts closed. */
+.process-accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Accordion inner content. */
+.process-accordion-content {
+  display: grid;
+  gap: 1rem;
+  padding: 0 0 1.5rem 0;
+}
+
+/* Accordion content paragraph. */
+.process-accordion-content p {
+  max-width: 680px;
+  margin-bottom: 0;
+  color: var(--soft);
+}
+
+/* Accordion detail list. */
+.process-accordion-content ul {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Accordion list item. */
+.process-accordion-content li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* Accordion bullet dot. */
+.process-accordion-content li::before {
+  content: "";
+  position: absolute;
+  top: 0.62rem;
+  left: 0;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 18px rgba(54, 243, 255, 0.8);
+}
+
+/* =========================================================
+   ADVANTAGES
+========================================================= */
+
+/* Advantages section. */
+.process-advantages {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(56, 255, 182, 0.1), transparent 30%),
+    radial-gradient(circle at 82% 66%, rgba(124, 92, 255, 0.18), transparent 34%),
+    #020617;
+}
+
+/* Advantages heading. */
+.advantages-heading h2 {
+  max-width: 850px;
+  margin-bottom: 0;
+  font-size: clamp(2.1rem, 5.8vw, 4.9rem);
+  line-height: 0.94;
+  letter-spacing: -0.075em;
+}
+
+/* Advantages row group. */
+.advantages-rows {
+  margin-top: 2.4rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Individual advantage row. */
+.advantage-row {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Advantage label. */
+.advantage-row span {
+  color: var(--accent);
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Advantage text. */
+.advantage-row p {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: var(--soft);
+}
+
+/* =========================================================
+   OPERATING SECTION
+========================================================= */
+
+/* Operating principles section. */
+.operating-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(54, 243, 255, 0.12), transparent 32%),
+    radial-gradient(circle at 82% 70%, rgba(124, 92, 255, 0.14), transparent 34%),
+    var(--bg);
+}
+
+/* Operating section grid. */
+.operating-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Operating headline. */
+.operating-copy h2 {
+  max-width: 760px;
+  margin-bottom: 1rem;
+  font-size: clamp(2.1rem, 5.8vw, 4.9rem);
+  line-height: 0.94;
+  letter-spacing: -0.075em;
+}
+
+/* Operating copy. */
+.operating-copy p {
+  max-width: 680px;
+}
+
+/* =========================================================
+   OPERATING LOOP VISUAL
+   Purpose: animated circular operating loop with each label's
+   center point sitting directly on the circle track.
+========================================================= */
+
+/* Animated loop visual.
+   The --loop-size variable controls the ring size and gives us
+   a reliable radius for positioning each label on the track. */
+.operating-loop {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: clamp(25rem, 72vw, 39rem);
+  --loop-size: min(68vw, 27rem);
+}
+
+/* Rotating ring animation.
+   The ring is centered so label positions can be calculated
+   from the same center point. */
+.loop-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--loop-size);
+  height: var(--loop-size);
+  border: 1px solid rgba(54, 243, 255, 0.28);
+  border-radius: 999px;
+  box-shadow:
+    inset 0 0 60px rgba(54, 243, 255, 0.08),
+    0 0 70px rgba(124, 92, 255, 0.16);
+  transform: translate(-50%, -50%);
+  animation: loopRotate 12s linear infinite;
+}
+
+/* Orbit glow on the ring. */
+.loop-ring::before {
+  content: "";
+  position: absolute;
+  top: -0.45rem;
+  left: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 28px rgba(54, 243, 255, 0.85);
+  transform: translateX(-50%);
+}
+
+/* Operating loop labels.
+   Each label is positioned by its own center point. */
+.operating-loop span {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  min-width: 6rem;
+  min-height: 3rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(54, 243, 255, 0.2);
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  font-weight: 950;
+  backdrop-filter: blur(16px);
+}
+
+/* Top label.
+   The center of the Audit label sits on the top of the ring. */
+.operating-loop span:nth-of-type(1) {
+  top: calc(50% - (var(--loop-size) / 2));
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right label.
+   The center of the Build label sits on the right side of the ring. */
+.operating-loop span:nth-of-type(2) {
+  top: 50%;
+  left: calc(50% + (var(--loop-size) / 2));
+  transform: translate(-50%, -50%);
+}
+
+/* Bottom label.
+   The center of the Track label sits on the bottom of the ring. */
+.operating-loop span:nth-of-type(3) {
+  top: calc(50% + (var(--loop-size) / 2));
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Left label.
+   The center of the Improve label sits on the left side of the ring. */
+.operating-loop span:nth-of-type(4) {
+  top: 50%;
+  left: calc(50% - (var(--loop-size) / 2));
+  transform: translate(-50%, -50%);
+}
+
+/* Loop rotation keyframes.
+   The ring stays centered while rotating. */
+@keyframes loopRotate {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+/* Process CTA section. */
+.process-cta {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 26%, rgba(54, 243, 255, 0.16), transparent 34%),
+    radial-gradient(circle at 80% 70%, rgba(124, 92, 255, 0.18), transparent 36%),
+    #020617;
+}
+
+/* CTA content. */
+.process-cta-inner {
+  max-width: 940px;
+}
+
+/* CTA headline. */
+.process-cta h2 {
+  max-width: 860px;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: clamp(2.1rem, 5.9vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.075em;
+}
+
+/* CTA paragraph. */
+.process-cta p {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+  color: var(--soft);
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (min-width: 760px) {
+  /* Make process steps read like strong editorial rows. */
+  .process-step {
+    grid-template-columns: 0.16fr 0.38fr 1fr;
+    align-items: baseline;
+    padding-left: 3.2rem;
+  }
+
+  /* Keep the vertical line aligned with the row dots. */
+  .process-path-line {
+    left: 1.05rem;
+  }
+
+  /* Move process dots slightly for tablet row layout. */
+  .process-step::before {
+    left: 0.67rem;
+  }
+
+  /* Make advantage rows feel like a structured table. */
+  .advantage-row {
+    grid-template-columns: 0.42fr 1fr;
+    align-items: baseline;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE — DESKTOP
+========================================================= */
+
+@media (min-width: 980px) {
+  /* Two-column layout for accordion intro and accordion rows. */
+  .process-details-grid {
+    grid-template-columns: 0.75fr 1.25fr;
+    align-items: start;
+  }
+
+  /* Two-column layout for operating section. */
+  .operating-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+  /* Keep hero content lower on mobile for stronger image impact. */
+  .process-hero {
+    align-items: end;
+    padding: 7rem 0 6.5rem;
+  }
+
+  /* Stronger mobile hero overlay for readable text. */
+  .process-hero::before {
+    background:
+      linear-gradient(180deg, rgba(3, 7, 18, 0.38) 0%, rgba(3, 7, 18, 0.97) 70%),
+      radial-gradient(circle at 50% 35%, rgba(54, 243, 255, 0.18), transparent 38%);
+  }
+
+  /* Slightly reduce hero image height on mobile. */
+  .process-hero-image {
+    height: 105%;
+    opacity: 0.54;
+  }
+
+  /* Stack CTA buttons on mobile. */
+  .process-hero-actions {
+    flex-direction: column;
+  }
+
+  /* Make CTA buttons easy to tap. */
+  .process-hero-actions .btn {
+    width: 100%;
+  }
+
+  /* Tighten accordion button layout on mobile. */
+  .process-accordion-trigger {
+    grid-template-columns: auto 1fr auto;
+    gap: 0.75rem;
+  }
+
+  /* Keep the operating loop balanced on small screens.
+     The ring is slightly smaller so labels can sit on the track
+     without pushing too far outside the viewport. */
+  .operating-loop {
+    min-height: clamp(23rem, 88vw, 31rem);
+    --loop-size: min(54vw, 16.5rem);
+  }
+
+  /* Keep operating loop labels compact on small screens. */
+  .operating-loop span {
+    min-width: 5rem;
+    min-height: 2.6rem;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.84rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION SUPPORT
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Stop page-specific decorative animations for users
+     who prefer reduced motion. */
+  .process-loader-orb,
+  .buzz-track,
+  .loop-ring {
+    animation: none !important;
+  }
+}

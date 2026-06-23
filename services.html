@@ -1,405 +1,464 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-CA">
   <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- =====================================================
+         CORE META
+    ====================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Boomer Automation Inc. | Automation, Websites & Google Ads</title>
 
-  <title>Services & Packages | Boomer Automation</title>
+    <meta
+      name="description"
+      content="Boomer Automation Inc. helps Ontario businesses automate workflows, build or redesign websites, and run Google Ads campaigns with lead capture, SEO, tracking, and conversion-focused systems."
+    />
 
-  <meta
-    name="description"
-    content="Explore Boomer Automation services including website development, SEO, Google Ads, hosting, maintenance, and business growth systems for Toronto companies." />
+    <meta
+      name="keywords"
+      content="workflow automation Ontario, AI automation services, website redesign Ontario, business website design, Google Ads campaign management Ontario, lead generation systems, CRM automation, small business automation, conversion tracking, website maintenance Ontario, automation agency Ontario"
+    />
 
-  <meta
-    name="keywords"
-    content="website development Toronto, SEO Toronto, Google Ads management, PPC Toronto, web hosting, maintenance plans, lead generation systems" />
+    <meta name="author" content="Boomer Automation Inc." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#030712" />
 
-  <meta
-    name="robots"
-    content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <!-- =====================================================
+         CANONICAL / LOCAL SEO
+    ====================================================== -->
+    <link rel="canonical" href="https://boomerautomation.com/services.html" />
 
-  <meta name="author" content="Boomer Automation" />
-  <meta name="publisher" content="Boomer Automation" />
+    <meta name="geo.region" content="CA-ON" />
+    <meta name="geo.placename" content="Ontario, Canada" />
+    <meta name="ICBM" content="43.6532, -79.3832" />
 
-  <meta name="color-scheme" content="dark" />
-  <meta name="theme-color" content="#0a0a0a" />
-  <meta name="format-detection" content="telephone=no" />
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Boomer Automation Inc." />
+    <meta
+      property="og:title"
+      content="Services | Workflow Automation, Websites & Google Ads"
+    />
+    <meta
+      property="og:description"
+      content="Workflow automation, website builds and redesigns, and Google Ads campaigns for Ontario businesses that want better systems and more leads."
+    />
+    <meta property="og:url" content="https://boomerautomation.com/services.html" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta property="og:image:alt" content="Business automation dashboard and campaign analytics" />
+    <meta property="og:locale" content="en_CA" />
 
-  <meta name="geo.region" content="CA-ON" />
-  <meta name="geo.placename" content="Toronto" />
-  <meta name="geo.position" content="43.6532;-79.3832" />
-  <meta name="ICBM" content="43.6532, -79.3832" />
+    <!-- =====================================================
+         TWITTER CARD
+    ====================================================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Boomer Automation Services | Automation, Websites & Google Ads"
+    />
+    <meta
+      name="twitter:description"
+      content="We automate workflows, build or redesign websites, and run Google Ads campaigns with lead capture and conversion tracking."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+    />
 
-  <link rel="canonical" href="https://boomerautomation.com/services.html" />
+    <!-- =====================================================
+         FAVICONS
+    ====================================================== -->
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
 
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <!-- =====================================================
+         PERFORMANCE
+    ====================================================== -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=80"
+    />
+    <link rel="preload" as="style" href="assets/css/global.v1.css" />
+    <link rel="preload" as="style" href="assets/css/services.v1.css" />
 
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <!-- =====================================================
+         STYLES
+    ====================================================== -->
+    <link rel="stylesheet" href="assets/css/global.v1.css" />
+    <link rel="stylesheet" href="assets/css/services.v1.css" />
 
-  <!-- Open Graph -->
-  <meta property="og:locale" content="en_CA" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Boomer Automation" />
-  <meta property="og:title" content="Services & Packages | Boomer Automation" />
-  <meta
-    property="og:description"
-    content="Website development, SEO, Google Ads, hosting, maintenance, bundles, and retainer support built for Toronto businesses." />
-  <meta
-    property="og:url"
-    content="https://boomerautomation.com/services.html" />
-  <meta
-    property="og:image"
-    content="https://boomerautomation.com/assets/og_card.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Services & Packages | Boomer Automation" />
-  <meta
-    name="twitter:description"
-    content="Website development, SEO, Google Ads, hosting, maintenance, and growth systems built for modern businesses." />
-  <meta
-    name="twitter:image"
-    content="https://boomerautomation.com/assets/twitter_card.png" />
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.v1.css" />
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://boomerautomation.com/#organization",
-          "name": "Boomer Automation",
-          "url": "https://boomerautomation.com/",
-          "logo": "https://boomerautomation.com/assets/favicon.png",
-          "image": "https://boomerautomation.com/assets/og_card.png",
-          "email": "hello@boomerautomation.com"
+    <!-- =====================================================
+         STRUCTURED DATA
+    ====================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Boomer Automation Inc.",
+        "url": "https://boomerautomation.com/services.html",
+        "email": "boomerautomationinc@gmail.com",
+        "telephone": "+1-249-406-5820",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
         },
-        {
-          "@type": "Service",
-          "@id": "https://boomerautomation.com/services.html#website-development",
-          "name": "Website Development",
-          "serviceType": "Website Design and Development",
-          "provider": {
-            "@id": "https://boomerautomation.com/#organization"
-          },
-          "areaServed": "Toronto, Ontario, Canada"
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "ON",
+          "addressCountry": "CA"
         },
-        {
-          "@type": "Service",
-          "@id": "https://boomerautomation.com/services.html#google-ads",
-          "name": "Google Ads Management",
-          "serviceType": "Paid Search Advertising",
-          "provider": {
-            "@id": "https://boomerautomation.com/#organization"
-          },
-          "areaServed": "Toronto, Ontario, Canada"
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://boomerautomation.com/services.html#faq",
-          "mainEntity": [
+        "description": "Boomer Automation Inc. provides workflow automation, website creation and redesign, Google Ads campaign management, lead capture systems, and conversion-focused digital infrastructure.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Boomer Automation Services",
+          "itemListElement": [
             {
-              "@type": "Question",
-              "name": "Can you build and host my website?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. We can build the site, host it, and manage the technical side so you have a cleaner handoff."
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Workflow Automation",
+                "description": "Automation systems for repetitive admin work, lead routing, customer follow-up, CRM updates, and connected business workflows."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Website Creation and Redesign",
+                "description": "Modern, mobile-first, SEO-ready websites built or redesigned for lead generation and business credibility."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Google Ads Campaign Management",
+                "description": "Google Ads campaign setup, tracking, lead generation strategy, conversion measurement, and campaign optimization."
               }
             }
           ]
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://boomerautomation.com/services.html#webpage",
-          "url": "https://boomerautomation.com/services.html",
-          "name": "Services & Packages | Boomer Automation",
-          "description": "Website development, SEO, Google Ads, hosting, maintenance, bundles, and retainer support built for Toronto businesses.",
-          "inLanguage": "en-CA"
         }
-      ]
-    }
-  </script>
-</head>
+      }
+    </script>
+  </head>
+
   <body>
-    <div id="header"></div>
+    <!-- =====================================================
+         GLOBAL HEADER MOUNT
+         Loaded by /assets/js/global.v1.js
+    ====================================================== -->
+    <div id="siteHeaderMount"></div>
 
     <main>
-      <section class="content-section hero-section-tight">
-        <div class="container text-center">
-          <p class="eyebrow" data-reveal="up">Services</p>
-          <h1 class="section-title" data-reveal="up">
-            Everything you need to build and grow online.
-          </h1>
-          <p class="section-subtitle" data-reveal="up">
-            Choose the engagement model that fits your stage: website build,
-            Google Ads, bundled growth, or ongoing retainer support.
+      <!-- =====================================================
+           HERO
+           Large editorial hero with a parallax image.
+      ====================================================== -->
+      <section class="services-hero">
+        <div class="services-hero-image-wrap" aria-hidden="true">
+          <img
+            class="services-hero-image"
+            id="servicesHeroImage"
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+          />
+          <div class="services-hero-overlay"></div>
+        </div>
+
+        <div class="container services-hero-content reveal">
+          <p class="eyebrow">Services</p>
+
+          <h1>Digital systems for businesses that want fewer leaks and cleaner growth.</h1>
+
+          <p class="services-hero-copy">
+            We automate workflows, build and redesign websites, and run Google Ads campaigns
+            with clear tracking, lead capture, and conversion-focused strategy.
           </p>
+
+          <div class="services-hero-actions">
+            <a class="btn btn-primary magnetic" href="#servicesOverview">Explore Services</a>
+            <a class="btn btn-secondary magnetic" href="#servicesContact">Start a Project</a>
+          </div>
         </div>
       </section>
 
-      <section class="content-section pt-0">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-12 col-md-6" data-reveal="up">
-              <div class="service-card h-100">
-                <div class="service-icon">01</div>
-                <h3 class="h4">Website Development</h3>
-                <p>
-                  Clean, modern websites built to match your brand and convert
-                  visitors into customers. We can work from a lightweight build
-                  or a more custom premium system depending on your needs.
-                </p>
-                <p class="text-soft">
-                  Mobile-first, fast-loading, and designed for clarity.
-                </p>
-              </div>
+      <!-- =====================================================
+           SERVICE INDEX / COUNTERS
+           A chic block strip instead of cards.
+      ====================================================== -->
+      <section class="service-index section-padding" id="servicesOverview">
+        <div class="container service-index-grid">
+          <div class="service-index-copy reveal">
+            <p class="eyebrow">What we cover</p>
+            <h2>One partner for the systems around your leads.</h2>
+          </div>
+
+          <div class="service-index-metrics reveal">
+            <div class="metric-line">
+              <span class="metric-number" data-count="3">0</span>
+              <p>Core service lanes</p>
             </div>
 
-            <div class="col-12 col-md-6" data-reveal="right">
-              <div class="service-card h-100">
-                <div class="service-icon">02</div>
-                <h3 class="h4">SEO & Google Ads</h3>
-                <p>
-                  Improve visibility in search and drive targeted traffic with
-                  Google Ads campaigns built around a clear offer and conversion
-                  path.
-                </p>
-                <p class="text-soft">
-                  Better structure, better targeting, better results.
-                </p>
-              </div>
+            <div class="metric-line">
+              <span class="metric-number" data-count="30">0</span>
+              <p>Days of included maintenance</p>
             </div>
 
-            <div class="col-12 col-md-6" data-reveal="left">
-              <div class="service-card h-100">
-                <div class="service-icon">03</div>
-                <h3 class="h4">Hosting & Deployment</h3>
-                <p>
-                  We can host through our preferred setup or deploy to your own
-                  environment. The goal is a reliable launch and a simple
-                  handoff.
-                </p>
-                <p class="text-soft">
-                  You keep control while we handle the technical side.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6" data-reveal="down">
-              <div class="service-card h-100">
-                <div class="service-icon">04</div>
-                <h3 class="h4">Business Automation</h3>
-                <p>
-                  Automate lead capture, follow-ups, scheduling, and repetitive
-                  workflows so your systems run cleaner.
-                </p>
-                <p class="text-soft">Less manual work, more consistency.</p>
-              </div>
+            <div class="metric-line">
+              <span class="metric-number" data-count="1">0</span>
+              <p>Connected growth system</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="content-section alt-section pricing-section">
-        <div class="container">
-          <div class="section-heading text-center" data-reveal="up">
-            <p class="eyebrow">Packages</p>
+      <!-- =====================================================
+           SERVICE BLOCKS
+           Large editorial blocks with only occasional contained panels.
+      ====================================================== -->
+      <section class="service-editorial">
+        <!-- =================================================
+             SERVICE 01 — WORKFLOW AUTOMATION
+        ================================================== -->
+        <article class="service-block service-block-dark reveal">
+          <div class="container service-block-grid">
+            <div class="service-block-media">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80"
+                alt="Workflow automation dashboard on a laptop"
+              />
+            </div>
 
-            <h2 class="section-title">
-              Flexible packages designed to scale with your business.
-            </h2>
+            <div class="service-block-content">
+              <span class="service-number">01</span>
+              <p class="service-label">Workflow Automation</p>
 
-            <p class="section-subtitle">
-              Every project includes one month of post-launch support and
-              maintenance. Ongoing management and growth support are available
-              afterward if needed.
+              <h2>Make the repetitive parts of your business happen without chasing them.</h2>
+
+              <p>
+                We build automation systems that reduce manual admin, speed up customer
+                communication, connect your tools, and move leads or tasks through your business
+                with less friction.
+              </p>
+
+              <div class="service-detail-list">
+                <span>Lead capture and routing</span>
+                <span>CRM updates and task triggers</span>
+                <span>Automated customer follow-up</span>
+                <span>Internal notifications and handoffs</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- =================================================
+             SERVICE 02 — WEBSITES
+        ================================================== -->
+        <article class="service-block service-block-split reveal">
+          <div class="container service-block-grid">
+            <div class="service-block-content">
+              <span class="service-number">02</span>
+              <p class="service-label">Websites</p>
+
+              <h2>Build or redesign a website that looks sharp and supports sales.</h2>
+
+              <p>
+                We create mobile-first, SEO-ready websites with strong CTAs, clean structure,
+                tracking foundations, and the kind of user experience that makes your business
+                easier to trust.
+              </p>
+
+              <div class="service-detail-list">
+                <span>New website creation</span>
+                <span>Full website redesigns</span>
+                <span>SEO metadata and page structure</span>
+                <span>Lead forms and conversion paths</span>
+              </div>
+            </div>
+
+            <div class="service-block-media">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80"
+                alt="Modern website design and development workspace"
+              />
+            </div>
+          </div>
+        </article>
+
+        <!-- =================================================
+             SERVICE 03 — GOOGLE ADS
+        ================================================== -->
+        <article class="service-block service-block-dark reveal">
+          <div class="container service-block-grid">
+            <div class="service-block-media">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
+                alt="Google Ads and analytics campaign dashboard"
+              />
+            </div>
+
+            <div class="service-block-content">
+              <span class="service-number">03</span>
+              <p class="service-label">Google Ads</p>
+
+              <h2>Run campaigns with intent, tracking, and a real conversion path.</h2>
+
+              <p>
+                We set up and manage Google Ads campaigns around search intent, location,
+                conversion tracking, landing page clarity, and measurable lead generation.
+              </p>
+
+              <div class="service-detail-list">
+                <span>Campaign setup and structure</span>
+                <span>Keyword and search intent planning</span>
+                <span>Conversion tracking setup</span>
+                <span>Monitoring and optimization</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- =====================================================
+           CONNECTED SYSTEM ANIMATION
+           New animation: animated signal path.
+      ====================================================== -->
+      <section class="signal-section section-padding">
+        <div class="container signal-grid">
+          <div class="signal-copy reveal">
+            <p class="eyebrow">Connected strategy</p>
+            <h2>Your ads, website, and automation should work as one system.</h2>
+            <p>
+              A campaign needs a page that converts. A website needs lead capture. Lead capture
+              needs follow-up. Follow-up needs automation. That is where the system starts to
+              compound.
             </p>
           </div>
 
-          <div class="pricing-grid">
-            <!-- CARD 1 -->
-
-            <div class="pricing-card" data-reveal="up">
-              <div class="pricing-card-top">
-                <p class="pricing-label">Build</p>
-
-                <h3 class="pricing-title">Website Development</h3>
-
-                <p class="pricing-desc">
-                  Premium custom websites built for performance, trust, and lead
-                  generation.
-                </p>
-              </div>
-
-              <div class="pricing-divider"></div>
-
-              <ul class="pricing-features">
-                <li>Custom responsive design</li>
-                <li>Mobile-first development</li>
-                <li>SEO-ready structure</li>
-                <li>Launch support included</li>
-                <li>1 month maintenance included</li>
-              </ul>
-
-              <div class="pricing-bottom">
-                <p class="pricing-note">Custom pricing based on scope</p>
-
-                <a
-                  href="index.html#contact"
-                  class="btn btn-outline-light w-100">
-                  Get Started
-                </a>
-              </div>
-            </div>
-
-            <!-- CARD 2 -->
-
-            <div class="pricing-card" data-reveal="right">
-              <div class="pricing-card-top">
-                <p class="pricing-label">Grow</p>
-
-                <h3 class="pricing-title">Google Ads Management</h3>
-
-                <p class="pricing-desc">
-                  Targeted Google Ads campaigns built around conversions and
-                  measurable growth.
-                </p>
-              </div>
-
-              <div class="pricing-divider"></div>
-
-              <ul class="pricing-features">
-                <li>Campaign strategy & setup</li>
-                <li>Keyword targeting</li>
-                <li>Conversion-focused ad copy</li>
-                <li>Performance optimization</li>
-                <li>Monthly reporting available</li>
-              </ul>
-
-              <div class="pricing-bottom">
-                <p class="pricing-note">Flexible monthly management</p>
-
-                <a
-                  href="index.html#contact"
-                  class="btn btn-outline-light w-100">
-                  Book a Call
-                </a>
-              </div>
-            </div>
-
-            <!-- CARD 3 -->
-
-            <div class="pricing-card featured" data-reveal="left">
-              <div class="pricing-badge">Most Popular</div>
-
-              <div class="pricing-card-top">
-                <p class="pricing-label">Bundle</p>
-
-                <h3 class="pricing-title">Website + Marketing</h3>
-
-                <p class="pricing-desc">
-                  A complete growth-focused package combining your website and
-                  traffic strategy.
-                </p>
-              </div>
-
-              <div class="pricing-divider"></div>
-
-              <ul class="pricing-features">
-                <li>Custom website build</li>
-                <li>Google Ads setup</li>
-                <li>Conversion-focused messaging</li>
-                <li>SEO foundations included</li>
-                <li>1 month maintenance included</li>
-              </ul>
-
-              <div class="pricing-bottom">
-                <p class="pricing-note">Best value for growing businesses</p>
-
-                <a href="index.html#contact" class="btn btn-primary w-100">
-                  Get Started
-                </a>
-              </div>
-            </div>
+          <div class="signal-map reveal" aria-label="Connected marketing system animation">
+            <div class="signal-node">Ads</div>
+            <div class="signal-track"></div>
+            <div class="signal-node">Website</div>
+            <div class="signal-track"></div>
+            <div class="signal-node">Lead</div>
+            <div class="signal-track"></div>
+            <div class="signal-node">Automation</div>
           </div>
         </div>
       </section>
 
-      <section class="content-section">
-        <div class="container">
-          <div class="section-heading text-center" data-reveal="up">
-            <p class="eyebrow">FAQ</p>
-            <h2 class="section-title">Questions we get a lot.</h2>
+      <!-- =====================================================
+           MAINTENANCE CALLOUT
+           This is the occasional card-style piece.
+      ====================================================== -->
+      <section class="maintenance-section section-padding">
+        <div class="container maintenance-callout reveal">
+          <div class="maintenance-heading">
+            <p class="eyebrow">Maintenance</p>
+            <h2>One month of maintenance is included after launch.</h2>
           </div>
 
-          <div class="faq-grid">
-            <div class="faq-item" data-reveal="left">
-              <h3 class="h5">Can you build and host my website?</h3>
-              <p>
-                Yes. We can build the site, host it, and manage the technical
-                side so the handoff is smooth.
-              </p>
-            </div>
+          <div class="maintenance-copy">
+            <p>
+              Every project includes one month of maintenance at no extra cost so the launch
+              period is supported, monitored, and refined properly.
+            </p>
 
-            <div class="faq-item" data-reveal="right">
-              <h3 class="h5">
-                Can you run Google Ads without rebuilding my site?
-              </h3>
-              <p>
-                Yes. We can manage Google Ads as a standalone service or pair it
-                with a new site later.
-              </p>
-            </div>
-
-            <div class="faq-item" data-reveal="left">
-              <h3 class="h5">Do you offer bundles?</h3>
-              <p>
-                Yes. Website plus Google Ads is available as a bundled setup for
-                clients who want speed and alignment.
-              </p>
-            </div>
-
-            <div class="faq-item" data-reveal="right">
-              <h3 class="h5">Is maintenance included?</h3>
-              <p>
-                Yes. Every purchase includes one month of free maintenance.
-                Retainer support is available after that.
-              </p>
-            </div>
+            <p>
+              After that, maintenance is available as an added service. If something breaks
+              because of work we delivered, we stand behind it and fix it.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="content-section cta-section">
-        <div class="container">
-          <div class="cta-card text-center" data-reveal="scale">
-            <p class="eyebrow">Let’s get started</p>
-            <h2 class="section-title">Have a project in mind?</h2>
-            <a href="index.html#contact" class="btn btn-primary btn-lg mt-3"
-              >Contact Us</a
-            >
+      <!-- =====================================================
+           PROCESS STRIP
+           Block-based, not card-heavy
+      ====================================================== -->
+      <section class="process-strip section-padding">
+        <div class="container process-strip-heading reveal">
+          <p class="eyebrow">How we work</p>
+          <h2>A clean process for building useful systems.</h2>
+        </div>
+
+        <div class="container process-rows reveal">
+          <div class="process-row">
+            <span>01</span>
+            <h3>Audit</h3>
+            <p>We identify where your website, ads, workflows, or follow-ups are leaking results.</p>
+          </div>
+
+          <div class="process-row">
+            <span>02</span>
+            <h3>Plan</h3>
+            <p>We map the automation logic, campaign structure, website flow, and conversion path.</p>
+          </div>
+
+          <div class="process-row">
+            <span>03</span>
+            <h3>Build</h3>
+            <p>We create the pages, workflows, campaigns, integrations, tracking, and launch assets.</p>
+          </div>
+
+          <div class="process-row">
+            <span>04</span>
+            <h3>Support</h3>
+            <p>We include one month of maintenance and offer ongoing support when needed.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           FINAL CTA
+      ====================================================== -->
+      <section class="services-cta section-padding" id="servicesContact">
+        <div class="container services-cta-inner reveal">
+          <p class="eyebrow">Start with the bottleneck</p>
+
+          <h2>Tell us what your business should stop doing manually.</h2>
+
+          <p>
+            Whether the answer is a better website, a cleaner ad campaign, or automation behind
+            the scenes, we can help build the system around it.
+          </p>
+
+          <div class="services-hero-actions">
+            <a class="btn btn-primary magnetic" href="mailto:boomerautomationinc@gmail.com">
+              Email Boomer Automation
+            </a>
+            <a class="btn btn-secondary magnetic" href="tel:+12494065820">
+              Call 249-406-5820
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <div id="footer"></div>
+    <!-- =====================================================
+         MOBILE STICKY CTA
+    ====================================================== -->
+    <div class="mobile-cta-bar" aria-label="Quick contact options">
+      <a href="tel:+12494065820">Call</a>
+      <a href="mailto:boomerautomationinc@gmail.com">Email</a>
+    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      defer></script>
-    <script src="script.v2.js" defer></script>
+    <!-- =====================================================
+         GLOBAL FOOTER MOUNT
+         Loaded by /assets/js/global.v1.js
+    ====================================================== -->
+    <div id="siteFooterMount"></div>
+
+    <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+    <script src="assets/js/global.v1.js" defer></script>
+    <script src="assets/js/services.v1.js" defer></script>
   </body>
 </html>
