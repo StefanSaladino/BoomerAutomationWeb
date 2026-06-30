@@ -1,0 +1,482 @@
+/* =========================================================
+   BOOMER AUTOMATION — PRIVACY CSS
+   File: privacy.v1.css
+   Purpose: Privacy Policy page styling, loader, sidebar,
+   content cards, reveal states, and responsive behavior.
+========================================================= */
+
+/* =========================================================
+   PAGE LOADER
+========================================================= */
+
+.privacy-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(54, 243, 255, 0.16), transparent 30%),
+    radial-gradient(circle at 58% 62%, rgba(124, 92, 255, 0.16), transparent 34%),
+    #030712;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 560ms ease,
+    visibility 560ms ease;
+}
+
+.privacy-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.privacy-loader-grid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 4.5rem);
+  grid-template-rows: repeat(2, 4.5rem);
+  gap: 0.8rem;
+  transform: rotate(45deg);
+}
+
+.privacy-loader-grid span {
+  border: 1px solid rgba(54, 243, 255, 0.22);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+  animation: privacyLoaderTile 1.45s ease-in-out infinite;
+}
+
+.privacy-loader-grid span:nth-child(2) {
+  animation-delay: 160ms;
+}
+
+.privacy-loader-grid span:nth-child(3) {
+  animation-delay: 320ms;
+}
+
+.privacy-loader-grid span:nth-child(4) {
+  animation-delay: 480ms;
+}
+
+.privacy-loader-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  gap: 0.85rem;
+}
+
+.privacy-loader-mark {
+  display: grid;
+  place-items: center;
+  width: 4.35rem;
+  height: 4.35rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #020617;
+  font-weight: 950;
+  letter-spacing: -0.08em;
+  box-shadow:
+    0 0 70px rgba(54, 243, 255, 0.38),
+    0 0 120px rgba(124, 92, 255, 0.22);
+}
+
+.privacy-loader-content p {
+  margin: 0;
+  color: var(--soft);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@keyframes privacyLoaderTile {
+  0%,
+  100% {
+    opacity: 0.38;
+    transform: scale(0.92);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.privacy-hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: 74svh;
+  padding: 8rem 0 4.8rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(54, 243, 255, 0.18), transparent 32%),
+    radial-gradient(circle at 82% 68%, rgba(124, 92, 255, 0.2), transparent 34%),
+    linear-gradient(180deg, #030712 0%, #07111f 54%, #030712 100%);
+}
+
+.privacy-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(180deg, transparent, #000 18%, #000 72%, transparent);
+  pointer-events: none;
+}
+
+.privacy-hero::after {
+  content: "";
+  position: absolute;
+  right: -8rem;
+  bottom: -10rem;
+  width: clamp(18rem, 48vw, 38rem);
+  height: clamp(18rem, 48vw, 38rem);
+  border: 1px solid rgba(54, 243, 255, 0.16);
+  border-radius: var(--radius-full);
+  box-shadow:
+    inset 0 0 90px rgba(54, 243, 255, 0.06),
+    0 0 110px rgba(124, 92, 255, 0.1);
+  pointer-events: none;
+}
+
+.privacy-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1050px;
+}
+
+.privacy-hero h1 {
+  max-width: 1000px;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: clamp(2.55rem, 7vw, 6rem);
+  line-height: 0.92;
+  letter-spacing: -0.08em;
+}
+
+.privacy-hero p {
+  max-width: 780px;
+  color: var(--soft);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.privacy-meta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.55rem;
+}
+
+.privacy-meta span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.45rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid rgba(54, 243, 255, 0.2);
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--soft);
+  font-size: 0.88rem;
+  font-weight: 800;
+  backdrop-filter: blur(16px);
+}
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.privacy-content {
+  position: relative;
+  overflow: visible;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(54, 243, 255, 0.08), transparent 28%),
+    radial-gradient(circle at 86% 42%, rgba(124, 92, 255, 0.08), transparent 30%),
+    #030712;
+}
+
+.privacy-layout {
+  display: grid;
+  gap: clamp(2rem, 6vw, 4rem);
+  align-items: start;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.privacy-sidebar {
+  position: relative;
+  align-self: start;
+}
+
+.privacy-sidebar-card {
+  display: grid;
+  gap: 0.45rem;
+  max-height: calc(100svh - 8rem);
+  overflow-y: auto;
+  padding: 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(circle at 20% 14%, rgba(54, 243, 255, 0.08), transparent 32%),
+    rgba(255, 255, 255, 0.055);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.privacy-sidebar-card span {
+  margin-bottom: 0.3rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.privacy-sidebar-card a {
+  display: block;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--soft);
+  font-size: 0.94rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.privacy-sidebar-card a:hover,
+.privacy-sidebar-card a:focus-visible,
+.privacy-sidebar-card a.is-active {
+  color: var(--accent);
+  transform: translateX(0.25rem);
+}
+
+.privacy-sidebar-card a:last-child {
+  border-bottom: 0;
+}
+
+/* =========================================================
+   POLICY BODY
+========================================================= */
+
+.privacy-policy {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.privacy-policy section {
+  scroll-margin-top: 7rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: 1.35rem;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(54, 243, 255, 0.06), transparent 26%),
+    rgba(255, 255, 255, 0.045);
+  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.18);
+}
+
+.privacy-policy h2 {
+  margin-bottom: 0.85rem;
+  color: var(--text);
+  font-size: clamp(1.55rem, 4vw, 2.35rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.privacy-policy p {
+  color: var(--soft);
+}
+
+.privacy-policy p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-policy ul {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.privacy-policy li {
+  position: relative;
+  padding-left: 1.35rem;
+  color: var(--soft);
+  font-weight: 700;
+}
+
+.privacy-policy li::before {
+  content: "";
+  position: absolute;
+  top: 0.68rem;
+  left: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  box-shadow: 0 0 18px rgba(54, 243, 255, 0.75);
+}
+
+.privacy-policy a {
+  color: var(--accent);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.privacy-policy a:hover,
+.privacy-policy a:focus-visible {
+  text-decoration: underline;
+}
+
+.privacy-contact-card {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(54, 243, 255, 0.18);
+  border-radius: 1rem;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(54, 243, 255, 0.1), transparent 30%),
+    rgba(54, 243, 255, 0.06);
+}
+
+.privacy-contact-card p {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   REVEAL STATES
+========================================================= */
+
+.privacy-reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+.privacy-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================================
+   BACK TO TOP BUTTON
+========================================================= */
+
+.privacy-top-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(54, 243, 255, 0.32);
+  border-radius: var(--radius-full);
+  background: rgba(3, 7, 18, 0.82);
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 950;
+  box-shadow: 0 0 40px rgba(54, 243, 255, 0.16);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.75rem);
+  backdrop-filter: blur(16px);
+  transition:
+    opacity var(--transition-med),
+    visibility var(--transition-med),
+    transform var(--transition-med),
+    border-color var(--transition-med),
+    background var(--transition-med);
+}
+
+.privacy-top-button.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.privacy-top-button:hover,
+.privacy-top-button:focus-visible {
+  border-color: rgba(54, 243, 255, 0.62);
+  background: rgba(54, 243, 255, 0.1);
+}
+
+/* =========================================================
+   RESPONSIVE — DESKTOP
+========================================================= */
+
+@media (min-width: 980px) {
+  .privacy-layout {
+    grid-template-columns: 0.36fr 1fr;
+  }
+
+  .privacy-sidebar {
+    position: sticky;
+    top: 6.5rem;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 680px) {
+  .privacy-hero {
+    min-height: 64svh;
+    padding: 7rem 0 3.5rem;
+  }
+
+  .privacy-meta {
+    flex-direction: column;
+  }
+
+  .privacy-meta span {
+    width: 100%;
+  }
+
+  .privacy-sidebar-card {
+    max-height: 22rem;
+    overflow-y: auto;
+  }
+
+  .privacy-top-button {
+    bottom: 5.25rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION SUPPORT
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .privacy-loader-grid span,
+  .privacy-reveal,
+  .privacy-top-button {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .privacy-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

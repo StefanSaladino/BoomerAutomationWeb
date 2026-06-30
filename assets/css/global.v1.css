@@ -502,6 +502,14 @@ body.menu-open .menu-toggle span:nth-child(3) {
   animation-delay: 370ms, 640ms;
 }
 
+.mobile-menu.is-open .mobile-nav a:nth-child(5) {
+  animation-delay: 440ms, 710ms;
+}
+
+.mobile-menu.is-open .mobile-nav a:nth-child(6) {
+  animation-delay: 510ms, 780ms;
+}
+
 .mobile-nav a::after {
   content: "";
   position: absolute;

@@ -6,17 +6,18 @@
     ====================================================== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=yes" />
 
-    <title>Contact | Boomer Automation Inc. | Websites, Automation & Google Ads</title>
+    <title>Contact Boomer Automation Inc. | Websites, SEO, Ads & Automation</title>
 
     <meta
       name="description"
-      content="Contact Boomer Automation Inc. for workflow automation, website creation or redesign, SEO optimization, Google Ads campaigns, lead generation systems, tracking, and digital marketing support in Ontario."
+      content="Contact Boomer Automation Inc. for workflow automation, custom websites, website redesign, SEO optimization, Google Ads campaigns, lead generation systems, conversion tracking, and digital marketing support in Ontario."
     />
 
     <meta
       name="keywords"
-      content="contact Boomer Automation, workflow automation Ontario, website redesign Ontario, Google Ads management Ontario, SEO optimization, lead generation systems, business automation, CRM automation, conversion tracking, local SEO, landing page optimization"
+      content="contact Boomer Automation, workflow automation Ontario, website redesign Ontario, custom website design Ontario, Google Ads management Ontario, SEO optimization Ontario, lead generation systems, business automation, CRM automation, conversion tracking, local SEO, landing page optimization, digital marketing Ontario"
     />
 
     <meta name="author" content="Boomer Automation Inc." />
@@ -24,9 +25,12 @@
     <meta name="theme-color" content="#030712" />
 
     <!-- =====================================================
-         CANONICAL / LOCAL SEO
+         CANONICAL / LANGUAGE / LOCAL SEO
+         On Netlify this page will resolve at /contact.html.
     ====================================================== -->
     <link rel="canonical" href="https://boomerautomation.com/contact.html" />
+    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/contact.html" />
+    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/contact.html" />
 
     <meta name="geo.region" content="CA-ON" />
     <meta name="geo.placename" content="Ontario, Canada" />
@@ -34,109 +38,267 @@
 
     <!-- =====================================================
          OPEN GRAPH
+         Social crawlers need absolute URLs.
     ====================================================== -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Boomer Automation Inc." />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:url" content="https://boomerautomation.com/contact.html" />
     <meta
       property="og:title"
-      content="Contact Boomer Automation | Websites, Automation & Google Ads"
+      content="Contact Boomer Automation | Websites, SEO, Ads & Automation"
     />
     <meta
       property="og:description"
-      content="Start a project with Boomer Automation Inc. Get help with automation, website redesign, SEO, Google Ads, tracking, and lead generation systems."
+      content="Start a project with Boomer Automation Inc. Get help with websites, workflow automation, SEO, Google Ads, conversion tracking, and lead generation systems."
     />
-    <meta property="og:url" content="https://boomerautomation.com/contact.html" />
     <meta
       property="og:image"
       content="https://boomerautomation.com/assets/images/og_card.png"
     />
-    <meta property="og:image:alt" content="Business team discussing digital marketing strategy" />
-    <meta property="og:locale" content="en_CA" />
+    <meta
+      property="og:image:secure_url"
+      content="https://boomerautomation.com/assets/images/og_card.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Boomer Automation Inc. digital growth systems, websites, SEO, Google Ads, and automation"
+    />
 
     <!-- =====================================================
          TWITTER CARD
+         Social crawlers need absolute URLs.
     ====================================================== -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Contact Boomer Automation Inc."
+      content="Contact Boomer Automation Inc. | Websites, SEO, Ads & Automation"
     />
     <meta
       name="twitter:description"
-      content="Contact Boomer Automation for websites, workflow automation, SEO, Google Ads, and lead generation systems."
+      content="Contact Boomer Automation for custom websites, workflow automation, SEO, Google Ads, conversion tracking, and lead generation systems."
     />
     <meta
       name="twitter:image"
       content="https://boomerautomation.com/assets/images/twitter_card.png"
     />
+    <meta
+      name="twitter:image:alt"
+      content="Boomer Automation Inc. digital growth systems, websites, SEO, Google Ads, and automation"
+    />
 
     <!-- =====================================================
          FAVICONS
+         Local relative paths work locally and on Netlify.
     ====================================================== -->
-    <link rel="icon" href="https://boomerautomation.com/assets/images/favicon.png" sizes="any" />
-    <link rel="apple-touch-icon" href="https://boomerautomation.com/assets/images/favicon.png" />
+    <link
+      rel="icon"
+      href="./assets/images/favicon.png"
+      type="image/png"
+      sizes="any"
+    />
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png" />
 
     <!-- =====================================================
          PERFORMANCE
+         Hero image is eagerly loaded and high priority.
+         Local assets use ./assets for Netlify/local compatibility.
     ====================================================== -->
     <link
       rel="preload"
       as="image"
-      href="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80"
+      href="./assets/images/contact-hero.v1.webp"
+      type="image/webp"
+      fetchpriority="high"
     />
-    <link rel="preload" as="style" href="assets/css/global.v1.css" />
-    <link rel="preload" as="style" href="assets/css/contact.v1.css" />
+
+    <link rel="preload" as="style" href="./assets/css/global.v1.css" />
+    <link rel="preload" as="style" href="./assets/css/contact.v1.css" />
 
     <!-- =====================================================
          STYLES
     ====================================================== -->
-    <link rel="stylesheet" href="assets/css/global.v1.css" />
-    <link rel="stylesheet" href="assets/css/contact.v1.css" />
+    <link rel="stylesheet" href="./assets/css/global.v1.css" />
+    <link rel="stylesheet" href="./assets/css/contact.v1.css" />
 
     <!-- =====================================================
          STRUCTURED DATA
+         Schema uses absolute production URLs.
     ====================================================== -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "name": "Contact Boomer Automation Inc.",
-        "url": "https://boomerautomation.com/contact.html",
-        "description": "Contact Boomer Automation Inc. for workflow automation, website creation and redesign, SEO optimization, Google Ads campaigns, conversion tracking, and lead generation systems.",
-        "mainEntity": {
-          "@type": "ProfessionalService",
-          "name": "Boomer Automation Inc.",
-          "url": "https://boomerautomation.com",
-          "email": "boomerautomationinc@gmail.com",
-          "telephone": "+1-249-406-5820",
-          "areaServed": {
-            "@type": "AdministrativeArea",
-            "name": "Ontario"
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "ON",
-            "addressCountry": "CA"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-249-406-5820",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://boomerautomation.com/#organization",
+            "name": "Boomer Automation Inc.",
+            "url": "https://boomerautomation.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://boomerautomation.com/#logo",
+              "url": "https://boomerautomation.com/assets/images/favicon.png"
+            },
             "email": "boomerautomationinc@gmail.com",
-            "contactType": "sales and project inquiries",
-            "areaServed": "CA-ON",
-            "availableLanguage": "English"
+            "telephone": "+1-249-406-5820",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "ON",
+              "addressCountry": "CA"
+            },
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Ontario"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1-249-406-5820",
+              "email": "boomerautomationinc@gmail.com",
+              "contactType": "sales and project inquiries",
+              "areaServed": "CA-ON",
+              "availableLanguage": "English"
+            }
           },
-          "serviceType": [
-            "Workflow Automation",
-            "Website Design",
-            "Website Redesign",
-            "SEO Optimization",
-            "Google Ads Campaign Management",
-            "Lead Generation Systems",
-            "Conversion Tracking",
-            "CRM Automation"
-          ]
-        }
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://boomerautomation.com/#professional-service",
+            "name": "Boomer Automation Inc.",
+            "url": "https://boomerautomation.com/",
+            "image": "https://boomerautomation.com/assets/images/og_card.png",
+            "email": "boomerautomationinc@gmail.com",
+            "telephone": "+1-249-406-5820",
+            "priceRange": "$$",
+            "parentOrganization": {
+              "@id": "https://boomerautomation.com/#organization"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "ON",
+              "addressCountry": "CA"
+            },
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Ontario"
+            },
+            "description": "Boomer Automation Inc. builds custom websites, SEO foundations, Google Ads systems, lead funnels, workflow automation, CRM automation concepts, conversion tracking, and digital growth systems for Ontario businesses.",
+            "serviceType": [
+              "Website Design",
+              "Website Redesign",
+              "SEO Optimization",
+              "Google Ads Campaign Management",
+              "Lead Generation Systems",
+              "Workflow Automation",
+              "CRM Automation",
+              "Conversion Tracking",
+              "Landing Page Optimization",
+              "Digital Marketing Systems"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Boomer Automation Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom Website Design",
+                    "description": "Custom-coded websites built around trust, conversion, mobile performance, SEO structure, and business growth."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "SEO Optimization",
+                    "description": "Technical SEO, local SEO, metadata, schema, internal linking, search intent mapping, and service-area content structure."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Google Ads Campaign Management",
+                    "description": "Search campaign planning, landing page alignment, conversion tracking, keyword structure, and ongoing optimization."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Workflow Automation",
+                    "description": "Lead capture workflows, follow-up automation, notifications, CRM updates, and operational automation systems."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://boomerautomation.com/#website",
+            "url": "https://boomerautomation.com/",
+            "name": "Boomer Automation Inc.",
+            "publisher": {
+              "@id": "https://boomerautomation.com/#organization"
+            },
+            "inLanguage": "en-CA"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://boomerautomation.com/contact.html#primaryimage",
+            "url": "https://boomerautomation.com/assets/images/contact-hero.v1.webp",
+            "width": 1800,
+            "height": 1200,
+            "caption": "Digital workspace for automation, website strategy, and project inquiries"
+          },
+          {
+            "@type": "ContactPage",
+            "@id": "https://boomerautomation.com/contact.html#webpage",
+            "url": "https://boomerautomation.com/contact.html",
+            "name": "Contact Boomer Automation Inc.",
+            "headline": "Bring us the bottleneck. We will map the system.",
+            "description": "Contact Boomer Automation Inc. for workflow automation, website creation and redesign, SEO optimization, Google Ads campaigns, conversion tracking, and lead generation systems.",
+            "isPartOf": {
+              "@id": "https://boomerautomation.com/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://boomerautomation.com/contact.html#primaryimage"
+            },
+            "publisher": {
+              "@id": "https://boomerautomation.com/#organization"
+            },
+            "about": {
+              "@id": "https://boomerautomation.com/#professional-service"
+            },
+            "mainEntity": {
+              "@id": "https://boomerautomation.com/#professional-service"
+            },
+            "breadcrumb": {
+              "@id": "https://boomerautomation.com/contact.html#breadcrumb"
+            },
+            "inLanguage": "en-CA"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://boomerautomation.com/contact.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://boomerautomation.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://boomerautomation.com/contact.html"
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -144,7 +306,7 @@
   <body class="loading">
     <!-- =====================================================
          PAGE LOADER
-         Controlled by /assets/js/contact.v1.js
+         Controlled by ./assets/js/contact.v1.js
     ====================================================== -->
     <div class="contact-loader" id="contactLoader" aria-label="Loading contact page">
       <div class="contact-loader-orb" aria-hidden="true"></div>
@@ -157,21 +319,27 @@
 
     <!-- =====================================================
          GLOBAL HEADER MOUNT
-         Loaded by /assets/js/global.v1.js
+         Loaded by ./assets/js/global.v1.js
     ====================================================== -->
     <div id="siteHeaderMount"></div>
 
-    <main>
+    <main id="mainContent">
       <!-- =====================================================
            HERO
+           Hero image is eager/high-priority.
       ====================================================== -->
-      <section class="contact-hero">
+      <section class="contact-hero" aria-labelledby="contactHeroTitle">
         <div class="contact-hero-image-wrap" aria-hidden="true">
           <img
             class="contact-hero-image"
             id="contactHeroImage"
-            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80"
+            src="./assets/images/contact-hero.v1.webp"
             alt=""
+            width="1800"
+            height="1200"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
           />
           <div class="contact-hero-overlay"></div>
         </div>
@@ -179,7 +347,7 @@
         <div class="container contact-hero-content reveal">
           <p class="eyebrow">Contact</p>
 
-          <h1>Bring us the bottleneck. We will map the system.</h1>
+          <h1 id="contactHeroTitle">Bring us the bottleneck. We will map the system.</h1>
 
           <p class="contact-hero-copy">
             Reach out about workflow automation, a new website, a website redesign,
@@ -187,7 +355,7 @@
             digital growth system.
           </p>
 
-          <div class="contact-hero-actions">
+          <div class="contact-hero-actions" aria-label="Contact page primary actions">
             <a class="btn btn-primary magnetic" href="#contactForm">Start a Project</a>
             <a class="btn btn-secondary magnetic" href="tel:+12494065820">Call 249-406-5820</a>
           </div>
@@ -215,15 +383,17 @@
       <!-- =====================================================
            CONTACT MAIN
       ====================================================== -->
-      <section class="contact-main section-padding">
+      <section class="contact-main section-padding" aria-labelledby="contactMainTitle">
         <div class="container contact-grid">
           <!-- =================================================
                CONTACT COPY / DETAILS
           ================================================== -->
-          <aside class="contact-info reveal">
+          <aside class="contact-info reveal" aria-label="Boomer Automation contact details">
             <p class="eyebrow">Project inquiries</p>
 
-            <h2>Tell us what you want your business to stop doing manually.</h2>
+            <h2 id="contactMainTitle">
+              Tell us what you want your business to stop doing manually.
+            </h2>
 
             <p>
               The best starting point is simple: what is costing time, leaking leads,
@@ -263,25 +433,23 @@
           <!-- =================================================
                NETLIFY CONTACT FORM
           ================================================== -->
-          <section class="contact-form-section reveal" id="contactForm">
+          <section class="contact-form-section reveal" id="contactForm" aria-labelledby="contactFormTitle">
             <form
               class="contact-form"
               name="contact"
               method="POST"
-              action="/thank-you.html"
+              action="./thank-you.html"
               data-netlify="true"
               netlify-honeypot="bot-field"
               data-contact-form
             >
               <!-- =============================================
                    NETLIFY REQUIRED HIDDEN FORM NAME
-                   This tells Netlify which form submitted.
               ============================================== -->
               <input type="hidden" name="form-name" value="contact" />
 
               <!-- =============================================
                    HONEYPOT FIELD
-                   Real users never see this. Bots often fill it.
               ============================================== -->
               <p class="contact-hidden-field" aria-hidden="true">
                 <label>
@@ -292,7 +460,7 @@
 
               <div class="form-heading">
                 <span>Start here</span>
-                <h2>Project Contact Form</h2>
+                <h2 id="contactFormTitle">Project Contact Form</h2>
                 <p>
                   Fill this out and we will review the best path for your website,
                   automation, Google Ads, SEO, or lead generation system.
@@ -424,10 +592,10 @@
       <!-- =====================================================
            CONTACT ADVANTAGES
       ====================================================== -->
-      <section class="contact-advantages section-padding">
+      <section class="contact-advantages section-padding" aria-labelledby="contactStepsTitle">
         <div class="container contact-advantages-heading reveal">
           <p class="eyebrow">What happens next</p>
-          <h2>We turn your inquiry into a practical project direction.</h2>
+          <h2 id="contactStepsTitle">We turn your inquiry into a practical project direction.</h2>
         </div>
 
         <div class="container contact-steps reveal">
@@ -463,11 +631,11 @@
       <!-- =====================================================
            FINAL CTA
       ====================================================== -->
-      <section class="contact-cta section-padding">
+      <section class="contact-cta section-padding" aria-labelledby="contactFinalTitle">
         <div class="container contact-cta-inner reveal">
           <p class="eyebrow">Prefer direct contact?</p>
 
-          <h2>Email or call and tell us where the system is leaking.</h2>
+          <h2 id="contactFinalTitle">Email or call and tell us where the system is leaking.</h2>
 
           <p>
             Whether your problem is traffic, conversion, follow-up, SEO, tracking,
@@ -475,7 +643,7 @@
             on the table.
           </p>
 
-          <div class="contact-hero-actions">
+          <div class="contact-hero-actions" aria-label="Direct contact actions">
             <a class="btn btn-primary magnetic" href="mailto:boomerautomationinc@gmail.com">
               Email Boomer Automation
             </a>
@@ -497,14 +665,15 @@
 
     <!-- =====================================================
          GLOBAL FOOTER MOUNT
-         Loaded by /assets/js/global.v1.js
+         Loaded by ./assets/js/global.v1.js
     ====================================================== -->
     <div id="siteFooterMount"></div>
 
     <!-- =====================================================
          SCRIPTS
+         Both scripts are deferred because they do not need to block HTML parsing.
     ====================================================== -->
-    <script src="assets/js/global.v1.js" defer></script>
-    <script src="assets/js/contact.v1.js" defer></script>
+    <script src="./assets/js/global.v1.js" defer></script>
+    <script src="./assets/js/contact.v1.js" defer></script>
   </body>
 </html>
