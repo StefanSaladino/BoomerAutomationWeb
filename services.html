@@ -110,18 +110,18 @@
     <link
       rel="preload"
       as="image"
-      href="./assets/images/services-hero.webp"
+      href="./assets/images/services-hero.v1.webp"
       type="image/webp"
       fetchpriority="high"
     />
 
-    <link rel="preload" as="style" href="./assets/css/global.v1.css" />
+    <link rel="preload" as="style" href="./assets/css/global.v2.css" />
     <link rel="preload" as="style" href="./assets/css/services.v1.css" />
 
     <!-- =====================================================
          STYLES
     ====================================================== -->
-    <link rel="stylesheet" href="./assets/css/global.v1.css" />
+    <link rel="stylesheet" href="./assets/css/global.v2.css" />
     <link rel="stylesheet" href="./assets/css/services.v1.css" />
 
     <!-- =====================================================
@@ -257,9 +257,9 @@
           {
             "@type": "ImageObject",
             "@id": "https://boomerautomation.com/services.html#primaryimage",
-            "url": "https://boomerautomation.com/assets/images/services-hero.webp",
-            "width": 1800,
-            "height": 1200,
+            "url": "https://boomerautomation.com/assets/images/services-hero.v1.webp",
+            "width": 1400,
+            "height": 997,
             "caption": "Business automation dashboard and campaign analytics"
           },
           {
@@ -346,11 +346,10 @@
   <body>
     <!-- =====================================================
          GLOBAL HEADER MOUNT
-         Loaded by ./assets/js/global.v1.js
+         Loaded by ./assets/js/global.v2.js
     ====================================================== -->
     <div id="siteHeaderMount"></div>
-
-    <main id="mainContent">
+<main id="mainContent">
       <!-- =====================================================
            HERO
            Hero image is eager/high-priority.
@@ -360,10 +359,10 @@
           <img
             class="services-hero-image"
             id="servicesHeroImage"
-            src="./assets/images/services-hero.webp"
+            src="./assets/images/services-hero.v1.webp"
             alt=""
-            width="1800"
-            height="1200"
+            width="1400"
+            height="997"
             loading="eager"
             fetchpriority="high"
             decoding="async"
@@ -402,17 +401,17 @@
 
           <div class="service-index-metrics reveal" aria-label="Boomer Automation service highlights">
             <div class="metric-line">
-              <span class="metric-number" data-count="3">0</span>
+              <span class="metric-number" data-count="3">3</span>
               <p>Core service lanes</p>
             </div>
 
             <div class="metric-line">
-              <span class="metric-number" data-count="30">0</span>
+              <span class="metric-number" data-count="30">30</span>
               <p>Days of included maintenance</p>
             </div>
 
             <div class="metric-line">
-              <span class="metric-number" data-count="1">0</span>
+              <span class="metric-number" data-count="1">1</span>
               <p>Connected growth system</p>
             </div>
           </div>
@@ -507,7 +506,7 @@
           <div class="container service-block-grid">
             <div class="service-block-media">
               <img
-                src="./assets/images/services-hero.webp"
+                src="./assets/images/services-hero.v1.webp"
                 alt="Google Ads and analytics campaign dashboard"
                 width="1200"
                 height="800"
@@ -661,7 +660,7 @@
 
     <!-- =====================================================
          GLOBAL FOOTER MOUNT
-         Loaded by ./assets/js/global.v1.js
+         Loaded by ./assets/js/global.v2.js
     ====================================================== -->
     <div id="siteFooterMount"></div>
 
@@ -669,7 +668,7 @@
          SCRIPTS
          Both scripts are deferred because they do not need to block HTML parsing.
     ====================================================== -->
-    <script src="./assets/js/global.v1.js" defer></script>
+    <script src="./assets/js/global.v2.js" defer></script>
     <script src="./assets/js/services.v1.js" defer></script>
   </body>
 </html>

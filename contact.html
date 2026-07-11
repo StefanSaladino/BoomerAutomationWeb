@@ -115,13 +115,13 @@
       fetchpriority="high"
     />
 
-    <link rel="preload" as="style" href="./assets/css/global.v1.css" />
+    <link rel="preload" as="style" href="./assets/css/global.v2.css" />
     <link rel="preload" as="style" href="./assets/css/contact.v1.css" />
 
     <!-- =====================================================
          STYLES
     ====================================================== -->
-    <link rel="stylesheet" href="./assets/css/global.v1.css" />
+    <link rel="stylesheet" href="./assets/css/global.v2.css" />
     <link rel="stylesheet" href="./assets/css/contact.v1.css" />
 
     <!-- =====================================================
@@ -319,11 +319,10 @@
 
     <!-- =====================================================
          GLOBAL HEADER MOUNT
-         Loaded by ./assets/js/global.v1.js
+         Loaded by ./assets/js/global.v2.js
     ====================================================== -->
     <div id="siteHeaderMount"></div>
-
-    <main id="mainContent">
+<main id="mainContent">
       <!-- =====================================================
            HERO
            Hero image is eager/high-priority.
@@ -336,7 +335,7 @@
             src="./assets/images/contact-hero.v1.webp"
             alt=""
             width="1800"
-            height="1200"
+            height="1350"
             loading="eager"
             fetchpriority="high"
             decoding="async"
@@ -438,7 +437,6 @@
               class="contact-form"
               name="contact"
               method="POST"
-              action="./thank-you.html"
               data-netlify="true"
               netlify-honeypot="bot-field"
               data-contact-form
@@ -571,9 +569,14 @@
               </div>
 
               <label class="form-consent">
-                <input type="checkbox" name="consent" required />
+                <input type="checkbox" name="consent" value="Yes" required />
                 <span>
                   I agree to be contacted by Boomer Automation Inc. about this inquiry.
+                  I understand that the information I submit may be collected, stored,
+                  and managed in Boomer Automation Inc.'s CRM for lead follow-up,
+                  project communication, service recommendations, reporting, and business
+                  record purposes. I have read the
+                  <a href="./privacy.html">Privacy Policy</a>.
                 </span>
               </label>
 
@@ -583,6 +586,9 @@
 
               <p class="form-note">
                 This form is protected with a honeypot field and submits through Netlify Forms.
+                Information submitted through this form may be collected and managed in our CRM
+                for inquiry response, project communication, follow-up, reporting, and business
+                record purposes. Read our <a href="./privacy.html">Privacy Policy</a>.
               </p>
             </form>
           </section>
@@ -665,7 +671,7 @@
 
     <!-- =====================================================
          GLOBAL FOOTER MOUNT
-         Loaded by ./assets/js/global.v1.js
+         Loaded by ./assets/js/global.v2.js
     ====================================================== -->
     <div id="siteFooterMount"></div>
 
@@ -673,7 +679,7 @@
          SCRIPTS
          Both scripts are deferred because they do not need to block HTML parsing.
     ====================================================== -->
-    <script src="./assets/js/global.v1.js" defer></script>
+    <script src="./assets/js/global.v2.js" defer></script>
     <script src="./assets/js/contact.v1.js" defer></script>
   </body>
 </html>

@@ -49,7 +49,7 @@ The site highlights how websites, SEO, Google Ads, conversion tracking, CRM work
 * Fully custom static website build
 * Mobile-first responsive layouts
 * Page-specific CSS and JavaScript files
-* Global header and footer partials
+* Global header and footer partials with inline page fallbacks for crawlability
 * Reusable navigation and contact pathways
 * Animated loading screens
 * Scroll-based reveal animations
@@ -66,6 +66,7 @@ The site highlights how websites, SEO, Google Ads, conversion tracking, CRM work
 * `robots.txt` for crawler access rules
 * `sitemap.xml` for search engine discovery
 * Netlify `_headers` file for security and cache-control rules
+* Netlify `_redirects` file for canonical `.html` URL consolidation
 * Versioned static assets for cache control
 
 ---
@@ -115,17 +116,17 @@ The site balances visual impact with practical business goals:
 ├── about.html              # Company background and mission page
 ├── contact.html            # Contact form and inquiry page
 ├── privacy.html            # Privacy policy page
-├── thank-you.html          # Optional form submission confirmation page
 ├── header.html             # Global header partial
 ├── footer.html             # Global footer partial
 ├── robots.txt              # Crawler access rules
 ├── sitemap.xml             # Search engine sitemap
 ├── _headers                # Netlify security and cache headers
+├── _redirects              # Netlify canonical URL redirects
 
 ├── assets/
 │   ├── css/
-│   │   ├── global.v1.css
-│   │   ├── home.v1.css
+│   │   ├── global.v2.css
+│   │   ├── home.v2.css
 │   │   ├── services.v1.css
 │   │   ├── systems.v1.css
 │   │   ├── process.v1.css
@@ -135,7 +136,7 @@ The site balances visual impact with practical business goals:
 │   │   └── privacy.v1.css
 │   │
 │   └── js/
-│       ├── global.v1.js
+│       ├── global.v2.js
 │       ├── home.v1.js
 │       ├── services.v1.js
 │       ├── systems.v1.js
@@ -155,14 +156,14 @@ CSS and JavaScript files are separated by page to keep the codebase organized an
 Global styles and shared behavior are handled through:
 
 ```text
-assets/css/global.v1.css
-assets/js/global.v1.js
+assets/css/global.v2.css
+assets/js/global.v2.js
 ```
 
 Page-specific styles and scripts are loaded only where needed:
 
 ```text
-assets/css/home.v1.css
+assets/css/home.v2.css
 assets/js/home.v1.js
 
 assets/css/services.v1.css
@@ -187,7 +188,7 @@ assets/css/privacy.v1.css
 assets/js/privacy.v1.js
 ```
 
-The `.v1` naming convention supports future cache-safe versioning. When a file changes significantly, the filename can be incremented, for example from `home.v1.css` to `home.v2.css`, to help avoid stale browser caching.
+The `.v1` / `.v2` naming convention supports cache-safe versioning. When a file changes significantly, the filename can be incremented, for example from `home.v1.css` to `home.v2.css`, to help avoid stale browser caching.
 
 ---
 
@@ -200,7 +201,7 @@ header.html
 footer.html
 ```
 
-These are loaded through `assets/js/global.v1.js`.
+These are loaded through `assets/js/global.v2.js`.
 
 When previewing locally, use a local server such as VS Code Live Server. Opening the HTML files directly through `file://` may prevent partials from loading correctly because browser security rules can block `fetch()` requests.
 

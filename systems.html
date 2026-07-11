@@ -6,6 +6,7 @@
     ====================================================== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=yes" />
 
     <title>Systems | Boomer Automation Inc. | Website, SEO, Ads & Automation Systems</title>
 
@@ -27,6 +28,8 @@
          CANONICAL / LOCAL SEO
     ====================================================== -->
     <link rel="canonical" href="https://boomerautomation.com/systems.html" />
+    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/systems.html" />
+    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/systems.html" />
 
     <meta name="geo.region" content="CA-ON" />
     <meta name="geo.placename" content="Ontario, Canada" />
@@ -51,6 +54,13 @@
       content="https://boomerautomation.com/assets/images/og_card.png"
     />
     <meta
+      property="og:image:secure_url"
+      content="https://boomerautomation.com/assets/images/og_card.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
       property="og:image:alt"
       content="Digital systems, data infrastructure, and automation architecture"
     />
@@ -72,6 +82,10 @@
       name="twitter:image"
       content="https://boomerautomation.com/assets/images/twitter_card.png"
     />
+    <meta
+      name="twitter:image:alt"
+      content="Boomer Automation Inc. digital growth systems, websites, SEO, Google Ads, and automation"
+    />
 
     <!-- =====================================================
          FAVICONS
@@ -87,13 +101,13 @@
       as="image"
       href="./assets/images/server.webp"
     />
-    <link rel="preload" as="style" href="assets/css/global.v1.css" />
+    <link rel="preload" as="style" href="assets/css/global.v2.css" />
     <link rel="preload" as="style" href="assets/css/systems.v1.css" />
 
     <!-- =====================================================
          STYLES
     ====================================================== -->
-    <link rel="stylesheet" href="assets/css/global.v1.css" />
+    <link rel="stylesheet" href="assets/css/global.v2.css" />
     <link rel="stylesheet" href="assets/css/systems.v1.css" />
 
     <!-- =====================================================
@@ -101,60 +115,202 @@
     ====================================================== -->
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Boomer Automation Inc.",
-        "url": "https://boomerautomation.com/systems.html",
-        "email": "boomerautomationinc@gmail.com",
-        "telephone": "+1-249-406-5820",
-        "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "Ontario"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "ON",
-          "addressCountry": "CA"
-        },
-        "description": "Boomer Automation Inc. builds connected digital growth systems combining websites, SEO optimization, Google Ads, lead capture, CRM automation, workflow automation, backlinks, conversion tracking, and analytics.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Boomer Automation Business Systems",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Website and Lead Capture System",
-                "description": "A mobile-first website system with conversion-focused pages, forms, CTAs, analytics, and lead capture."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Google Ads and Landing Page System",
-                "description": "Google Ads campaigns connected to landing pages, conversion tracking, call clicks, form submissions, and campaign optimization."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "SEO Authority and Backlink System",
-                "description": "Technical SEO, local SEO, reverse target SEO builds, schema markup, internal linking, content planning, and backlink strategy."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Automation and CRM Follow-Up System",
-                "description": "Workflow automation, CRM updates, lead routing, internal notifications, customer follow-up, and sales pipeline automation."
-              }
-            }
-          ]
-        }
+              "@context": "https://schema.org",
+              "@graph": [
+                      {
+                              "@type": "Organization",
+                              "@id": "https://boomerautomation.com/#organization",
+                              "name": "Boomer Automation Inc.",
+                              "url": "https://boomerautomation.com",
+                              "logo": {
+                                      "@type": "ImageObject",
+                                      "@id": "https://boomerautomation.com/#logo",
+                                      "url": "https://boomerautomation.com/assets/images/favicon.png"
+                              },
+                              "email": "boomerautomationinc@gmail.com",
+                              "telephone": "+1-249-406-5820",
+                              "address": {
+                                      "@type": "PostalAddress",
+                                      "addressRegion": "ON",
+                                      "addressCountry": "CA"
+                              },
+                              "areaServed": {
+                                      "@type": "AdministrativeArea",
+                                      "name": "Ontario"
+                              },
+                              "contactPoint": {
+                                      "@type": "ContactPoint",
+                                      "telephone": "+1-249-406-5820",
+                                      "email": "boomerautomationinc@gmail.com",
+                                      "contactType": "sales and project inquiries",
+                                      "areaServed": "CA-ON",
+                                      "availableLanguage": "English"
+                              }
+                      },
+                      {
+                              "@type": "ProfessionalService",
+                              "@id": "https://boomerautomation.com/#professional-service",
+                              "name": "Boomer Automation Inc.",
+                              "url": "https://boomerautomation.com",
+                              "image": "https://boomerautomation.com/assets/images/og_card.png",
+                              "email": "boomerautomationinc@gmail.com",
+                              "telephone": "+1-249-406-5820",
+                              "priceRange": "$$",
+                              "parentOrganization": {
+                                      "@id": "https://boomerautomation.com/#organization"
+                              },
+                              "address": {
+                                      "@type": "PostalAddress",
+                                      "addressRegion": "ON",
+                                      "addressCountry": "CA"
+                              },
+                              "areaServed": {
+                                      "@type": "AdministrativeArea",
+                                      "name": "Ontario"
+                              },
+                              "description": "Boomer Automation Inc. builds connected digital growth systems combining websites, SEO optimization, Google Ads, lead capture, CRM automation, workflow automation, backlinks, conversion tracking, and analytics.",
+                              "serviceType": [
+                                      "Website and Lead Capture Systems",
+                                      "Google Ads and Landing Page Systems",
+                                      "SEO Authority and Backlink Systems",
+                                      "Automation and CRM Follow-Up Systems",
+                                      "Conversion Tracking",
+                                      "Workflow Automation"
+                              ],
+                              "hasOfferCatalog": {
+                                      "@type": "OfferCatalog",
+                                      "name": "Boomer Automation Business Systems",
+                                      "itemListElement": [
+                                              {
+                                                      "@type": "Offer",
+                                                      "itemOffered": {
+                                                              "@type": "Service",
+                                                              "name": "Website and Lead Capture System",
+                                                              "description": "A mobile-first website system with conversion-focused pages, forms, CTAs, analytics, and lead capture."
+                                                      }
+                                              },
+                                              {
+                                                      "@type": "Offer",
+                                                      "itemOffered": {
+                                                              "@type": "Service",
+                                                              "name": "Google Ads and Landing Page System",
+                                                              "description": "Google Ads campaigns connected to landing pages, conversion tracking, call clicks, form submissions, and campaign optimization."
+                                                      }
+                                              },
+                                              {
+                                                      "@type": "Offer",
+                                                      "itemOffered": {
+                                                              "@type": "Service",
+                                                              "name": "SEO Authority and Backlink System",
+                                                              "description": "Technical SEO, local SEO, reverse target SEO builds, schema markup, internal linking, content planning, and backlink strategy."
+                                                      }
+                                              },
+                                              {
+                                                      "@type": "Offer",
+                                                      "itemOffered": {
+                                                              "@type": "Service",
+                                                              "name": "Automation and CRM Follow-Up System",
+                                                              "description": "Workflow automation, CRM updates, lead routing, internal notifications, customer follow-up, and sales pipeline automation."
+                                                      }
+                                              }
+                                      ]
+                              }
+                      },
+                      {
+                              "@type": "WebSite",
+                              "@id": "https://boomerautomation.com/#website",
+                              "url": "https://boomerautomation.com",
+                              "name": "Boomer Automation Inc.",
+                              "publisher": {
+                                      "@id": "https://boomerautomation.com/#organization"
+                              },
+                              "inLanguage": "en-CA"
+                      },
+                      {
+                              "@type": "ImageObject",
+                              "@id": "https://boomerautomation.com/systems.html#primaryimage",
+                              "url": "https://boomerautomation.com/assets/images/server.webp",
+                              "width": 1800,
+                              "height": 1010,
+                              "caption": "Connected digital systems and automation infrastructure"
+                      },
+                      {
+                              "@type": "WebPage",
+                              "@id": "https://boomerautomation.com/systems.html#webpage",
+                              "url": "https://boomerautomation.com/systems.html",
+                              "name": "Systems | Boomer Automation Inc.",
+                              "headline": "Where websites, ads, SEO, and automation become one growth machine.",
+                              "description": "Boomer Automation Inc. builds connected digital growth systems for Ontario businesses, including websites, lead capture, workflow automation, CRM follow-up, SEO optimization, backlinks, Google Ads, analytics, and conversion tracking.",
+                              "isPartOf": {
+                                      "@id": "https://boomerautomation.com/#website"
+                              },
+                              "primaryImageOfPage": {
+                                      "@id": "https://boomerautomation.com/systems.html#primaryimage"
+                              },
+                              "publisher": {
+                                      "@id": "https://boomerautomation.com/#organization"
+                              },
+                              "about": {
+                                      "@id": "https://boomerautomation.com/#professional-service"
+                              },
+                              "mainEntity": {
+                                      "@id": "https://boomerautomation.com/systems.html#systems-catalog"
+                              },
+                              "breadcrumb": {
+                                      "@id": "https://boomerautomation.com/systems.html#breadcrumb"
+                              },
+                              "inLanguage": "en-CA"
+                      },
+                      {
+                              "@type": "ItemList",
+                              "@id": "https://boomerautomation.com/systems.html#systems-catalog",
+                              "name": "Boomer Automation Business System Layers",
+                              "itemListElement": [
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 1,
+                                              "name": "Website and Lead Capture System",
+                                              "url": "https://boomerautomation.com/systems.html#systemsBlueprint"
+                                      },
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 2,
+                                              "name": "Google Ads and Landing Page System",
+                                              "url": "https://boomerautomation.com/systems.html#systemsBlueprint"
+                                      },
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 3,
+                                              "name": "SEO Authority and Backlink System",
+                                              "url": "https://boomerautomation.com/systems.html#systemsBlueprint"
+                                      },
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 4,
+                                              "name": "Automation and CRM Follow-Up System",
+                                              "url": "https://boomerautomation.com/systems.html#systemsBlueprint"
+                                      }
+                              ]
+                      },
+                      {
+                              "@type": "BreadcrumbList",
+                              "@id": "https://boomerautomation.com/systems.html#breadcrumb",
+                              "itemListElement": [
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 1,
+                                              "name": "Home",
+                                              "item": "https://boomerautomation.com/"
+                                      },
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 2,
+                                              "name": "Systems",
+                                              "item": "https://boomerautomation.com/systems.html"
+                                      }
+                              ]
+                      }
+              ]
       }
     </script>
   </head>
@@ -188,11 +344,10 @@
 
     <!-- =====================================================
          GLOBAL HEADER MOUNT
-         Loaded by /assets/js/global.v1.js
+         Loaded by /assets/js/global.v2.js
     ====================================================== -->
     <div id="siteHeaderMount"></div>
-
-    <main>
+<main id="mainContent">
       <!-- =====================================================
            HERO
       ====================================================== -->
@@ -203,6 +358,11 @@
             id="systemsHeroImage"
             src="./assets/images/server.webp"
             alt=""
+            width="1800"
+            height="1010"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
           />
           <div class="systems-hero-overlay"></div>
         </div>
@@ -296,17 +456,17 @@
 
           <div class="systems-metrics reveal">
             <div class="systems-metric">
-              <span class="systems-counter" data-count="4">0</span>
+              <span class="systems-counter" data-count="4">4</span>
               <p>Core system layers</p>
             </div>
 
             <div class="systems-metric">
-              <span class="systems-counter" data-count="30">0</span>
+              <span class="systems-counter" data-count="30">30</span>
               <p>Days of launch maintenance included</p>
             </div>
 
             <div class="systems-metric">
-              <span class="systems-counter" data-count="1">0</span>
+              <span class="systems-counter" data-count="1">1</span>
               <p>Connected command center for growth</p>
             </div>
           </div>
@@ -449,6 +609,10 @@
               <img
                 src="./assets/images/system-laptop.jpg"
                 alt="Analytics dashboard showing marketing performance"
+                width="1400"
+                height="997"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -503,6 +667,10 @@
               <img
                 src="./assets/images/traffic.jpg"
                 alt="Digital advertising analytics dashboard"
+                width="1400"
+                height="933"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -517,6 +685,10 @@
               <img
                 src="./assets/images/office.jpg"
                 alt="Team planning digital strategy on glass board"
+                width="1400"
+                height="933"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -571,6 +743,10 @@
               <img
                 src="./assets/images/pointer.jpg"
                 alt="Workflow automation dashboard on a laptop"
+                width="1400"
+                height="933"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -677,14 +853,14 @@
 
     <!-- =====================================================
          GLOBAL FOOTER MOUNT
-         Loaded by /assets/js/global.v1.js
+         Loaded by /assets/js/global.v2.js
     ====================================================== -->
     <div id="siteFooterMount"></div>
 
     <!-- =====================================================
          SCRIPTS
     ====================================================== -->
-    <script src="assets/js/global.v1.js" defer></script>
+    <script src="assets/js/global.v2.js" defer></script>
     <script src="assets/js/systems.v1.js" defer></script>
   </body>
 </html>

@@ -85,6 +85,5 @@ Allow: /
 User-agent: Pinterestbot
 Allow: /
 
-# Sitemap
+# Canonical XML sitemap
 Sitemap: https://boomerautomation.com/sitemap.xml
-

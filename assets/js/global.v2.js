@@ -1,8 +1,8 @@
 /* =========================================================
    BOOMER AUTOMATION — GLOBAL JS
-   File: global.v1.js
+   File: global.v2.js
    Purpose: global header/footer partial loading,
-   burger menu, scroll state, footer year.
+   burger menu, scroll state, footer year, and privacy consent.
 ========================================================= */
 
 /* 
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initFooterYear();
   initHeaderScrollState();
   initMobileMenu();
+  initPrivacyConsentBanner();
 });
 
 /* =========================================================
@@ -53,7 +54,7 @@ async function loadGlobalPartials() {
      Only load the header if the page actually includes
      the header mount point.
   */
-  if (headerMount) {
+  if (headerMount && !headerMount.innerHTML.trim()) {
     partials.push(loadPartial(headerMount, "header.html"));
   }
 
@@ -61,7 +62,7 @@ async function loadGlobalPartials() {
      Only load the footer if the page actually includes
      the footer mount point.
   */
-  if (footerMount) {
+  if (footerMount && !footerMount.innerHTML.trim()) {
     partials.push(loadPartial(footerMount, "footer.html"));
   }
 
@@ -320,4 +321,172 @@ function initMobileMenu() {
   if (desktopQuery.matches) {
     closeMenu();
   }
+}
+
+/* =========================================================
+   PRIVACY / COOKIE CONSENT BANNER
+========================================================= */
+
+/*
+   Stores the visitor's privacy preference locally.
+
+   This does not install Google Analytics, Google Tag Manager,
+   Google Ads, or Consent Mode by itself. It prepares the site
+   with clear consent language and a stored preference that can
+   be connected to future tracking tools.
+*/
+const BA_PRIVACY_CONSENT_STORAGE_KEY = "boomer_automation_consent_v1";
+
+/*
+   Initializes the privacy/cookie consent banner.
+
+   The banner is only shown when the visitor has not already
+   saved a consent preference in this browser.
+*/
+function initPrivacyConsentBanner() {
+  const savedConsent = getStoredPrivacyConsent();
+
+  if (savedConsent) {
+    return;
+  }
+
+  renderPrivacyConsentBanner();
+}
+
+/*
+   Reads saved consent from localStorage.
+*/
+function getStoredPrivacyConsent() {
+  try {
+    const stored = window.localStorage.getItem(BA_PRIVACY_CONSENT_STORAGE_KEY);
+
+    if (!stored) {
+      return null;
+    }
+
+    return JSON.parse(stored);
+  } catch {
+    return null;
+  }
+}
+
+/*
+   Saves the visitor's consent choice in localStorage.
+*/
+function storePrivacyConsent(consent) {
+  try {
+    window.localStorage.setItem(
+      BA_PRIVACY_CONSENT_STORAGE_KEY,
+      JSON.stringify(consent)
+    );
+  } catch {
+    /*
+       If localStorage is blocked, the banner may appear again
+       on a future visit. The page should still work normally.
+    */
+  }
+}
+
+/*
+   Creates and injects the privacy/cookie consent banner.
+*/
+function renderPrivacyConsentBanner() {
+  if (document.getElementById("privacyConsentBanner")) return;
+
+  const banner = document.createElement("section");
+
+  banner.className = "privacy-consent-banner";
+  banner.id = "privacyConsentBanner";
+  banner.setAttribute("role", "dialog");
+  banner.setAttribute("aria-live", "polite");
+  banner.setAttribute("aria-label", "Privacy and cookie consent");
+
+  banner.innerHTML = `
+    <div class="privacy-consent-panel">
+      <div class="privacy-consent-copy">
+        <p class="privacy-consent-eyebrow">Privacy preferences</p>
+
+        <h2>We use cookies and tracking to improve the site and measure marketing.</h2>
+
+        <p>
+          Boomer Automation Inc. uses cookies and may use analytics tools,
+          Google Analytics, Google tags, Google Ads conversion tracking, and
+          similar technologies to understand website activity, measure marketing
+          performance, improve lead generation, and support advertising campaigns.
+          When you submit a form, your inquiry details may also be collected and
+          stored in our CRM so we can respond, follow up, manage your request,
+          and track project communication.
+        </p>
+
+        <p>
+          You can accept all tracking or reject non-essential analytics and
+          advertising storage. Essential functionality and security features may
+          still be used. Read our
+          <a href="./privacy.html">Privacy Policy</a>.
+        </p>
+      </div>
+
+      <div class="privacy-consent-actions" aria-label="Cookie consent choices">
+        <button
+          class="btn btn-secondary privacy-consent-btn"
+          type="button"
+          data-consent-reject
+        >
+          Reject Non-Essential
+        </button>
+
+        <button
+          class="btn btn-primary privacy-consent-btn"
+          type="button"
+          data-consent-accept
+        >
+          Accept All
+        </button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(banner);
+
+  const acceptButton = banner.querySelector("[data-consent-accept]");
+  const rejectButton = banner.querySelector("[data-consent-reject]");
+
+  acceptButton?.addEventListener("click", () => {
+    const consent = {
+      choice: "accepted_all",
+      analytics: true,
+      advertising: true,
+      crmDisclosureSeen: true,
+      policyUrl: "./privacy.html",
+      updatedAt: new Date().toISOString()
+    };
+
+    storePrivacyConsent(consent);
+    closePrivacyConsentBanner(banner);
+  });
+
+  rejectButton?.addEventListener("click", () => {
+    const consent = {
+      choice: "rejected_non_essential",
+      analytics: false,
+      advertising: false,
+      crmDisclosureSeen: true,
+      policyUrl: "./privacy.html",
+      updatedAt: new Date().toISOString()
+    };
+
+    storePrivacyConsent(consent);
+    closePrivacyConsentBanner(banner);
+  });
+}
+
+/*
+   Animates the banner out and removes it from the DOM.
+*/
+function closePrivacyConsentBanner(banner) {
+  banner.classList.add("is-hiding");
+
+  window.setTimeout(() => {
+    banner.remove();
+  }, 360);
 }

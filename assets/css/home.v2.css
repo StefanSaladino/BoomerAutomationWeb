@@ -1,7 +1,7 @@
 /* =========================================================
    BOOMER AUTOMATION — HOME CSS
-   File: home.v1.css
-   Purpose: landing page specific sections, hero, loader,
+   File: home.v2.css
+   Purpose: landing page specific sections, hero v2, loader,
    liquid effects, slider, process, and CTA.
 ========================================================= */
 
@@ -147,7 +147,10 @@
 }
 
 /* =========================================================
-   HERO
+   HERO V2
+   Uses assets/images/index-hero.v2.webp.
+   The image is right-weighted with clean negative space
+   on the left for homepage copy and calls to action.
 ========================================================= */
 
 .hero {
@@ -155,18 +158,10 @@
   display: grid;
   align-items: center;
   min-height: 100svh;
-  padding: 7.5rem 0 4rem;
+  padding: clamp(7.5rem, 12vw, 9rem) 0 clamp(5.5rem, 8vw, 7rem);
   overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(90deg, rgba(3, 7, 18, 0.94) 0%, rgba(3, 7, 18, 0.62) 48%, rgba(3, 7, 18, 0.2) 100%),
-    radial-gradient(circle at 20% 45%, rgba(54, 243, 255, 0.18), transparent 38%);
+  isolation: isolate;
+  background: #030712;
 }
 
 .hero-image-wrap {
@@ -178,11 +173,11 @@
 
 .hero-image {
   width: 100%;
-  height: 118%;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
-  opacity: 0.46;
-  transform: translate3d(0, 0, 0) scale(1.04);
+  object-position: 68% center;
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1.02);
   will-change: transform;
 }
 
@@ -190,52 +185,84 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, transparent 0%, rgba(3, 7, 18, 0.82) 100%),
-    radial-gradient(circle at 65% 48%, rgba(124, 92, 255, 0.28), transparent 30%);
+    radial-gradient(circle at 18% 42%, rgba(54, 243, 255, 0.12), transparent 30%),
+    linear-gradient(90deg, rgba(3, 7, 18, 0.92) 0%, rgba(3, 7, 18, 0.78) 34%, rgba(3, 7, 18, 0.38) 62%, rgba(3, 7, 18, 0.18) 100%),
+    linear-gradient(180deg, rgba(3, 7, 18, 0.5) 0%, transparent 42%, rgba(3, 7, 18, 0.88) 100%);
+  pointer-events: none;
+}
+
+.hero-v2-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  min-height: calc(100svh - 10rem);
 }
 
 .hero-content {
-  width: var(--container);
-  max-width: 850px;
-  margin-inline: auto;
+  max-width: 720px;
+  margin: 0;
+  padding-top: clamp(1rem, 3vw, 2rem);
+}
+
+.hero-content .eyebrow {
+  width: fit-content;
+  padding: 0.48rem 0.72rem;
+  border: 1px solid rgba(54, 243, 255, 0.22);
+  border-radius: var(--radius-full);
+  background: rgba(3, 7, 18, 0.5);
+  box-shadow: 0 0 34px rgba(54, 243, 255, 0.08);
+  backdrop-filter: blur(14px);
 }
 
 .hero h1 {
-  max-width: 880px;
-  margin-bottom: 1.2rem;
-  font-size: clamp(3.2rem, 9vw, 7.8rem);
+  max-width: 780px;
+  margin-bottom: 1.1rem;
+  color: var(--text);
+  font-size: clamp(3rem, 8vw, 7.25rem);
   line-height: 0.86;
   letter-spacing: -0.09em;
+  text-wrap: balance;
 }
 
 .hero-copy {
-  max-width: 680px;
-  margin-bottom: 1.7rem;
+  max-width: 660px;
+  margin-bottom: 1.65rem;
   color: var(--soft);
-  font-size: clamp(1.06rem, 2vw, 1.35rem);
+  font-size: clamp(1.02rem, 1.8vw, 1.28rem);
+  line-height: 1.72;
 }
 
 .hero-actions {
   display: flex;
-  gap: 0.8rem;
+  gap: 0.85rem;
   flex-wrap: wrap;
+  margin-bottom: 1.25rem;
 }
 
 .hero-contact-strip {
   display: flex;
+  align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
-  margin-top: 1.35rem;
-  color: var(--muted);
-  font-size: 0.96rem;
-  font-weight: 700;
+  width: fit-content;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: var(--radius-full);
+  background: rgba(3, 7, 18, 0.52);
+  color: var(--soft);
+  font-size: 0.88rem;
+  font-weight: 850;
+  backdrop-filter: blur(16px);
 }
 
 .hero-contact-strip a {
+  color: var(--soft);
   transition: color var(--transition-fast);
 }
 
-.hero-contact-strip a:hover {
+.hero-contact-strip a:hover,
+.hero-contact-strip a:focus-visible {
   color: var(--accent);
 }
 
@@ -243,6 +270,7 @@
   position: absolute;
   left: 50%;
   bottom: 1.5rem;
+  z-index: 2;
   display: grid;
   place-items: center;
   width: 1.6rem;
@@ -747,6 +775,27 @@
 }
 
 /* =========================================================
+   HERO V2 RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .hero-image {
+    object-position: 70% center;
+  }
+
+  .hero-image-overlay {
+    background:
+      radial-gradient(circle at 18% 38%, rgba(54, 243, 255, 0.12), transparent 34%),
+      linear-gradient(90deg, rgba(3, 7, 18, 0.94) 0%, rgba(3, 7, 18, 0.82) 48%, rgba(3, 7, 18, 0.42) 100%),
+      linear-gradient(180deg, rgba(3, 7, 18, 0.58) 0%, transparent 38%, rgba(3, 7, 18, 0.92) 100%);
+  }
+
+  .hero-content {
+    max-width: 680px;
+  }
+}
+
+/* =========================================================
    RESPONSIVE HOME
 ========================================================= */
 
@@ -773,22 +822,32 @@
   .hero {
     align-items: end;
     min-height: 100svh;
-    padding: 7rem 0 6.5rem;
-  }
-
-  .hero::before {
-    background:
-      linear-gradient(180deg, rgba(3, 7, 18, 0.38) 0%, rgba(3, 7, 18, 0.96) 70%),
-      radial-gradient(circle at 50% 35%, rgba(54, 243, 255, 0.18), transparent 38%);
+    padding: 7.25rem 0 6.5rem;
   }
 
   .hero-image {
-    height: 105%;
-    opacity: 0.54;
+    object-position: 74% center;
+    transform: translate3d(0, 0, 0) scale(1.08);
+  }
+
+  .hero-image-overlay {
+    background:
+      radial-gradient(circle at 24% 34%, rgba(54, 243, 255, 0.14), transparent 34%),
+      linear-gradient(180deg, rgba(3, 7, 18, 0.74) 0%, rgba(3, 7, 18, 0.78) 38%, rgba(3, 7, 18, 0.95) 100%),
+      linear-gradient(90deg, rgba(3, 7, 18, 0.9), rgba(3, 7, 18, 0.42));
+  }
+
+  .hero-v2-layout {
+    min-height: auto;
+    align-items: end;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.65rem, 14vw, 4.75rem);
   }
 
   .hero-actions {
-    flex-direction: column;
+    display: grid;
   }
 
   .btn {
@@ -796,7 +855,18 @@
   }
 
   .hero-contact-strip {
+    align-items: flex-start;
+    width: 100%;
+    border-radius: 1.25rem;
     font-size: 0.88rem;
+  }
+
+  .hero-contact-strip span {
+    display: none;
+  }
+
+  .hero-contact-strip a {
+    width: 100%;
   }
 
   .scroll-cue {
