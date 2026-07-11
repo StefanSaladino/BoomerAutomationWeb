@@ -26,11 +26,12 @@
 
     <!-- =====================================================
          CANONICAL / LANGUAGE / LOCAL SEO
-         Public clean URL: /services.html
+         Public canonical URL: /services
+         Physical Netlify file can remain /services.html.
     ====================================================== -->
-    <link rel="canonical" href="https://boomerautomation.com/services.html" />
-    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/services.html" />
-    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/services.html" />
+    <link rel="canonical" href="https://boomerautomation.com/services" />
+    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/services" />
+    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/services" />
 
     <meta name="geo.region" content="CA-ON" />
     <meta name="geo.placename" content="Ontario, Canada" />
@@ -38,12 +39,12 @@
 
     <!-- =====================================================
          OPEN GRAPH
-         Social crawlers need absolute URLs.
+         Social crawlers need absolute canonical URLs.
     ====================================================== -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Boomer Automation Inc." />
     <meta property="og:locale" content="en_CA" />
-    <meta property="og:url" content="https://boomerautomation.com/services.html" />
+    <meta property="og:url" content="https://boomerautomation.com/services" />
     <meta
       property="og:title"
       content="Services | Workflow Automation, Websites & Google Ads"
@@ -70,7 +71,7 @@
 
     <!-- =====================================================
          TWITTER CARD
-         Social crawlers need absolute URLs.
+         Social crawlers need absolute canonical URLs.
     ====================================================== -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -126,7 +127,7 @@
 
     <!-- =====================================================
          STRUCTURED DATA
-         Schema uses absolute production URLs and clean page URLs.
+         Schema uses absolute production clean URLs.
     ====================================================== -->
     <script type="application/ld+json">
       {
@@ -136,7 +137,7 @@
             "@type": "Organization",
             "@id": "https://boomerautomation.com/#organization",
             "name": "Boomer Automation Inc.",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "logo": {
               "@type": "ImageObject",
               "@id": "https://boomerautomation.com/#logo",
@@ -166,7 +167,7 @@
             "@type": "ProfessionalService",
             "@id": "https://boomerautomation.com/#professional-service",
             "name": "Boomer Automation Inc.",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "image": "https://boomerautomation.com/assets/images/og_card.png",
             "email": "boomerautomationinc@gmail.com",
             "telephone": "+1-249-406-5820",
@@ -207,7 +208,7 @@
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Workflow Automation",
-                    "url": "https://boomerautomation.com/services.html#workflow-automation",
+                    "url": "https://boomerautomation.com/services#workflow-automation",
                     "description": "Automation systems for repetitive admin work, lead routing, customer follow-up, CRM updates, internal notifications, and connected business workflows."
                   }
                 },
@@ -217,7 +218,7 @@
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Website Creation and Redesign",
-                    "url": "https://boomerautomation.com/services.html#websites",
+                    "url": "https://boomerautomation.com/services#websites",
                     "description": "Modern, mobile-first, SEO-ready websites built or redesigned for lead generation, business credibility, tracking, and conversion-focused user experience."
                   }
                 },
@@ -227,7 +228,7 @@
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Google Ads Campaign Management",
-                    "url": "https://boomerautomation.com/services.html#google-ads",
+                    "url": "https://boomerautomation.com/services#google-ads",
                     "description": "Google Ads campaign setup, keyword planning, tracking, landing page alignment, lead generation strategy, conversion measurement, and campaign optimization."
                   }
                 },
@@ -237,7 +238,7 @@
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Website Maintenance",
-                    "url": "https://boomerautomation.com/services.html#maintenance",
+                    "url": "https://boomerautomation.com/services#maintenance",
                     "description": "One month of included post-launch maintenance, with optional ongoing support, refinements, monitoring, content updates, and technical fixes."
                   }
                 }
@@ -247,7 +248,7 @@
           {
             "@type": "WebSite",
             "@id": "https://boomerautomation.com/#website",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "name": "Boomer Automation Inc.",
             "publisher": {
               "@id": "https://boomerautomation.com/#organization"
@@ -256,7 +257,7 @@
           },
           {
             "@type": "ImageObject",
-            "@id": "https://boomerautomation.com/services.html#primaryimage",
+            "@id": "https://boomerautomation.com/services#primaryimage",
             "url": "https://boomerautomation.com/assets/images/services-hero.v1.webp",
             "width": 1400,
             "height": 997,
@@ -264,8 +265,8 @@
           },
           {
             "@type": "WebPage",
-            "@id": "https://boomerautomation.com/services.html#webpage",
-            "url": "https://boomerautomation.com/services.html",
+            "@id": "https://boomerautomation.com/services#webpage",
+            "url": "https://boomerautomation.com/services",
             "name": "Services | Boomer Automation Inc.",
             "headline": "Digital systems for businesses that want fewer leaks and cleaner growth.",
             "description": "Boomer Automation Inc. helps Ontario businesses automate workflows, build or redesign websites, run Google Ads campaigns, improve SEO, capture leads, track conversions, and create cleaner digital growth systems.",
@@ -273,7 +274,7 @@
               "@id": "https://boomerautomation.com/#website"
             },
             "primaryImageOfPage": {
-              "@id": "https://boomerautomation.com/services.html#primaryimage"
+              "@id": "https://boomerautomation.com/services#primaryimage"
             },
             "publisher": {
               "@id": "https://boomerautomation.com/#organization"
@@ -282,47 +283,47 @@
               "@id": "https://boomerautomation.com/#professional-service"
             },
             "mainEntity": {
-              "@id": "https://boomerautomation.com/services.html#services-catalog"
+              "@id": "https://boomerautomation.com/services#services-catalog"
             },
             "breadcrumb": {
-              "@id": "https://boomerautomation.com/services.html#breadcrumb"
+              "@id": "https://boomerautomation.com/services#breadcrumb"
             },
             "inLanguage": "en-CA"
           },
           {
             "@type": "ItemList",
-            "@id": "https://boomerautomation.com/services.html#services-catalog",
+            "@id": "https://boomerautomation.com/services#services-catalog",
             "name": "Boomer Automation Service Categories",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Workflow Automation",
-                "url": "https://boomerautomation.com/services.html#workflow-automation"
+                "url": "https://boomerautomation.com/services#workflow-automation"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Websites",
-                "url": "https://boomerautomation.com/services.html#websites"
+                "url": "https://boomerautomation.com/services#websites"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Google Ads",
-                "url": "https://boomerautomation.com/services.html#google-ads"
+                "url": "https://boomerautomation.com/services#google-ads"
               },
               {
                 "@type": "ListItem",
                 "position": 4,
                 "name": "Maintenance",
-                "url": "https://boomerautomation.com/services.html#maintenance"
+                "url": "https://boomerautomation.com/services#maintenance"
               }
             ]
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://boomerautomation.com/services.html#breadcrumb",
+            "@id": "https://boomerautomation.com/services#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -334,7 +335,7 @@
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Services",
-                "item": "https://boomerautomation.com/services.html"
+                "item": "https://boomerautomation.com/services"
               }
             ]
           }
@@ -349,7 +350,8 @@
          Loaded by ./assets/js/global.v2.js
     ====================================================== -->
     <div id="siteHeaderMount"></div>
-<main id="mainContent">
+
+    <main id="mainContent">
       <!-- =====================================================
            HERO
            Hero image is eager/high-priority.

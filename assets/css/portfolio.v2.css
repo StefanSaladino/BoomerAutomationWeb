@@ -1332,6 +1332,43 @@
   clip-path: inset(0 0 0 0);
 }
 
+
+
+/* =========================================================
+   PROJECT PREVIEW — DAVID COLAVITA
+========================================================= */
+
+.project-preview-david .browser-screen {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(54, 243, 255, 0.16), transparent 34%),
+    radial-gradient(circle at 82% 76%, rgba(124, 92, 255, 0.16), transparent 36%),
+    linear-gradient(135deg, #07111f 0%, #0f172a 52%, #030712 100%);
+}
+
+.project-preview-david .screen-hero {
+  background:
+    linear-gradient(135deg, rgba(54, 243, 255, 0.16), rgba(255, 255, 255, 0.055)),
+    rgba(255, 255, 255, 0.06);
+}
+
+.project-preview-david .screen-hero span {
+  color: var(--accent);
+}
+
+.project-preview-david .screen-hero strong {
+  color: var(--text);
+}
+
+.project-preview-david .screen-grid span {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(54, 243, 255, 0.08));
+}
+
+.project-preview-david .screen-cta {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 32px rgba(54, 243, 255, 0.28);
+}
+
 /* =========================================================
    RESPONSIVE — TABLET
 ========================================================= */

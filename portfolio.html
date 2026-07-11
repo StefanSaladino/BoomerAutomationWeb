@@ -26,11 +26,12 @@
 
     <!-- =====================================================
          CANONICAL / LANGUAGE / LOCAL SEO
-         Public clean URL: /portfolio.
+         Public canonical URL: /portfolio
+         Physical Netlify file can remain /portfolio.html.
     ====================================================== -->
-    <link rel="canonical" href="https://boomerautomation.com/portfolio.html" />
-    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/portfolio.html" />
-    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/portfolio.html" />
+    <link rel="canonical" href="https://boomerautomation.com/portfolio" />
+    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/portfolio" />
+    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/portfolio" />
 
     <meta name="geo.region" content="CA-ON" />
     <meta name="geo.placename" content="Ontario, Canada" />
@@ -43,7 +44,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Boomer Automation Inc." />
     <meta property="og:locale" content="en_CA" />
-    <meta property="og:url" content="https://boomerautomation.com/portfolio.html" />
+    <meta property="og:url" content="https://boomerautomation.com/portfolio" />
     <meta
       property="og:title"
       content="Recent Website Projects | Boomer Automation Inc."
@@ -107,13 +108,13 @@
          This page uses a CSS/animated hero, so there is no hero image preload.
     ====================================================== -->
     <link rel="preload" as="style" href="./assets/css/global.v2.css" />
-    <link rel="preload" as="style" href="./assets/css/portfolio.v1.css" />
+    <link rel="preload" as="style" href="./assets/css/portfolio.v2.css" />
 
     <!-- =====================================================
          STYLES
     ====================================================== -->
     <link rel="stylesheet" href="./assets/css/global.v2.css" />
-    <link rel="stylesheet" href="./assets/css/portfolio.v1.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio.v2.css" />
 
     <!-- =====================================================
          STRUCTURED DATA
@@ -127,7 +128,7 @@
             "@type": "Organization",
             "@id": "https://boomerautomation.com/#organization",
             "name": "Boomer Automation Inc.",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "logo": {
               "@type": "ImageObject",
               "@id": "https://boomerautomation.com/#logo",
@@ -157,7 +158,7 @@
             "@type": "ProfessionalService",
             "@id": "https://boomerautomation.com/#professional-service",
             "name": "Boomer Automation Inc.",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "image": "https://boomerautomation.com/assets/images/og_card.png",
             "email": "boomerautomationinc@gmail.com",
             "telephone": "+1-249-406-5820",
@@ -191,7 +192,7 @@
           {
             "@type": "WebSite",
             "@id": "https://boomerautomation.com/#website",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "name": "Boomer Automation Inc.",
             "publisher": {
               "@id": "https://boomerautomation.com/#organization"
@@ -200,8 +201,8 @@
           },
           {
             "@type": "CollectionPage",
-            "@id": "https://boomerautomation.com/portfolio.html#webpage",
-            "url": "https://boomerautomation.com/portfolio.html",
+            "@id": "https://boomerautomation.com/portfolio#webpage",
+            "url": "https://boomerautomation.com/portfolio",
             "name": "Recent Website Projects | Boomer Automation Inc.",
             "headline": "Websites built to make businesses look sharper, clearer, and easier to choose.",
             "description": "Explore recent Boomer Automation Inc. website projects for service businesses, contractors, and consulting companies. See custom web design, SEO structure, positioning, and lead-focused website strategy in action.",
@@ -215,16 +216,16 @@
               "@id": "https://boomerautomation.com/#professional-service"
             },
             "mainEntity": {
-              "@id": "https://boomerautomation.com/portfolio.html#project-list"
+              "@id": "https://boomerautomation.com/portfolio#project-list"
             },
             "breadcrumb": {
-              "@id": "https://boomerautomation.com/portfolio.html#breadcrumb"
+              "@id": "https://boomerautomation.com/portfolio#breadcrumb"
             },
             "inLanguage": "en-CA"
           },
           {
             "@type": "ItemList",
-            "@id": "https://boomerautomation.com/portfolio.html#project-list",
+            "@id": "https://boomerautomation.com/portfolio#project-list",
             "name": "Boomer Automation Recent Website Projects",
             "itemListElement": [
               {
@@ -256,12 +257,22 @@
                   "url": "https://fedsnshences.com",
                   "description": "A contractor website built around local trust, service categories, quote intent, and homeowner conversion paths."
                 }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "CreativeWork",
+                  "name": "David Colavita Mortgage Website",
+                  "url": "https://davidcolavita.com",
+                  "description": "A mortgage agent website built around trust, mortgage pathways, lead capture, calculator tools, newsletter signup, privacy compliance, and conversion-focused contact flows."
+                }
               }
             ]
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://boomerautomation.com/portfolio.html#breadcrumb",
+            "@id": "https://boomerautomation.com/portfolio#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -273,7 +284,7 @@
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Portfolio",
-                "item": "https://boomerautomation.com/portfolio.html"
+                "item": "https://boomerautomation.com/portfolio"
               }
             ]
           }
@@ -309,7 +320,8 @@
          Loaded by ./assets/js/global.v2.js
     ====================================================== -->
     <div id="siteHeaderMount"></div>
-<main id="mainContent">
+
+    <main id="mainContent">
       <!-- =====================================================
            HERO
       ====================================================== -->
@@ -340,7 +352,7 @@
             </p>
 
             <div class="portfolio-hero-actions" aria-label="Portfolio page primary actions">
-              <a class="btn btn-primary portfolio-action" href="./contact.html">
+              <a class="btn btn-primary portfolio-action" href="./contact">
                 Start Your Project
               </a>
 
@@ -377,6 +389,11 @@
               <div class="console-line">
                 <span>03</span>
                 <p>A contractor website shaped around quote intent</p>
+              </div>
+
+              <div class="console-line">
+                <span>04</span>
+                <p>A mortgage website built around trust and lead flow</p>
               </div>
             </div>
 
@@ -669,7 +686,85 @@
               </div>
             </div>
           </article>
-        </div>
+
+
+          <!-- PROJECT 04 -->
+          <article
+            class="project-row portfolio-motion"
+            data-motion="side"
+            data-project-row
+          >
+            <div class="project-index" aria-hidden="true">04</div>
+
+            <div
+              class="project-preview project-preview-david"
+              data-project-light
+              aria-hidden="true"
+            >
+              <div class="browser-shell">
+                <div class="browser-top">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <p>davidcolavita.com</p>
+                </div>
+
+                <div class="browser-screen">
+                  <div class="screen-hero">
+                    <span>Mortgage Agent</span>
+                    <strong>David Colavita</strong>
+                  </div>
+
+                  <div class="screen-grid">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <div class="screen-cta"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-copy">
+              <div class="project-meta">
+                <span>Mortgage agent website</span>
+                <a
+                  href="https://davidcolavita.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Website
+                </a>
+              </div>
+
+              <h3>David Colavita</h3>
+
+              <p>
+                David Colavita needed a professional mortgage website that could build
+                trust quickly, guide visitors through different mortgage pathways, and
+                create a clean path from interest to inquiry. The site was built around
+                credibility, mobile usability, clear calls to action, lead capture,
+                newsletter signup, calculator support, and privacy-conscious form flows.
+              </p>
+
+              <div class="project-scope">
+                <span>Mortgage positioning</span>
+                <span>Lead capture</span>
+                <span>Calculator UX</span>
+                <span>Privacy-ready forms</span>
+              </div>
+
+              <div class="project-note">
+                <strong>Project focus</strong>
+                <p>
+                  Make the mortgage process feel more approachable while helping visitors
+                  choose a pathway, understand next steps, and contact David with less
+                  friction.
+                </p>
+              </div>
+            </div>
+          </article>        </div>
       </section>
 
       <!-- =====================================================
@@ -925,11 +1020,11 @@
           </p>
 
           <div class="portfolio-hero-actions" aria-label="Portfolio final actions">
-            <a class="btn btn-primary portfolio-action" href="./contact.html">
+            <a class="btn btn-primary portfolio-action" href="./contact">
               Contact Boomer Automation
             </a>
 
-            <a class="btn btn-secondary portfolio-action" href="./about.html">
+            <a class="btn btn-secondary portfolio-action" href="./about">
               Learn About Us
             </a>
           </div>

@@ -26,11 +26,12 @@
 
     <!-- =====================================================
          CANONICAL / LANGUAGE / LOCAL SEO
-         On Netlify this page will resolve at /process.html
+         Public canonical URL: /process
+         Physical Netlify file can remain /process.html.
     ====================================================== -->
-    <link rel="canonical" href="https://boomerautomation.com/process.html" />
-    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/process.html" />
-    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/process.html" />
+    <link rel="canonical" href="https://boomerautomation.com/process" />
+    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/process" />
+    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/process" />
 
     <meta name="geo.region" content="CA-ON" />
     <meta name="geo.placename" content="Ontario, Canada" />
@@ -38,12 +39,12 @@
 
     <!-- =====================================================
          OPEN GRAPH
-         Social crawlers need absolute URLs.
+         Social crawlers need absolute canonical URLs.
     ====================================================== -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Boomer Automation Inc." />
     <meta property="og:locale" content="en_CA" />
-    <meta property="og:url" content="https://boomerautomation.com/process.html" />
+    <meta property="og:url" content="https://boomerautomation.com/process" />
     <meta
       property="og:title"
       content="Our Process | Automation, SEO, Websites & Google Ads"
@@ -70,7 +71,7 @@
 
     <!-- =====================================================
          TWITTER CARD
-         Social crawlers need absolute URLs.
+         Social crawlers need absolute canonical URLs.
     ====================================================== -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -125,7 +126,7 @@
 
     <!-- =====================================================
          STRUCTURED DATA
-         Schema uses absolute production URLs.
+         Schema uses absolute production clean URLs.
     ====================================================== -->
     <script type="application/ld+json">
       {
@@ -135,7 +136,7 @@
             "@type": "Organization",
             "@id": "https://boomerautomation.com/#organization",
             "name": "Boomer Automation Inc.",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "logo": {
               "@type": "ImageObject",
               "@id": "https://boomerautomation.com/#logo",
@@ -165,7 +166,7 @@
             "@type": "ProfessionalService",
             "@id": "https://boomerautomation.com/#professional-service",
             "name": "Boomer Automation Inc.",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "image": "https://boomerautomation.com/assets/images/og_card.png",
             "email": "boomerautomationinc@gmail.com",
             "telephone": "+1-249-406-5820",
@@ -201,7 +202,7 @@
           {
             "@type": "WebSite",
             "@id": "https://boomerautomation.com/#website",
-            "url": "https://boomerautomation.com",
+            "url": "https://boomerautomation.com/",
             "name": "Boomer Automation Inc.",
             "publisher": {
               "@id": "https://boomerautomation.com/#organization"
@@ -210,7 +211,7 @@
           },
           {
             "@type": "ImageObject",
-            "@id": "https://boomerautomation.com/process.html#primaryimage",
+            "@id": "https://boomerautomation.com/process#primaryimage",
             "url": "https://boomerautomation.com/assets/images/process-hero.v1.webp",
             "width": 1170,
             "height": 780,
@@ -218,8 +219,8 @@
           },
           {
             "@type": "WebPage",
-            "@id": "https://boomerautomation.com/process.html#webpage",
-            "url": "https://boomerautomation.com/process.html",
+            "@id": "https://boomerautomation.com/process#webpage",
+            "url": "https://boomerautomation.com/process",
             "name": "Our Process | Boomer Automation Inc.",
             "headline": "Strategy first. Systems second. Measurable growth after that.",
             "description": "Boomer Automation Inc. explains its process for workflow automation, website design and redesign, SEO optimization, backlinks, Google Ads campaigns, conversion tracking, and lead generation systems.",
@@ -227,7 +228,7 @@
               "@id": "https://boomerautomation.com/#website"
             },
             "primaryImageOfPage": {
-              "@id": "https://boomerautomation.com/process.html#primaryimage"
+              "@id": "https://boomerautomation.com/process#primaryimage"
             },
             "publisher": {
               "@id": "https://boomerautomation.com/#organization"
@@ -236,16 +237,16 @@
               "@id": "https://boomerautomation.com/#professional-service"
             },
             "mainEntity": {
-              "@id": "https://boomerautomation.com/process.html#process-list"
+              "@id": "https://boomerautomation.com/process#process-list"
             },
             "breadcrumb": {
-              "@id": "https://boomerautomation.com/process.html#breadcrumb"
+              "@id": "https://boomerautomation.com/process#breadcrumb"
             },
             "inLanguage": "en-CA"
           },
           {
             "@type": "ItemList",
-            "@id": "https://boomerautomation.com/process.html#process-list",
+            "@id": "https://boomerautomation.com/process#process-list",
             "name": "Boomer Automation Project Process",
             "itemListElement": [
               {
@@ -282,7 +283,7 @@
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://boomerautomation.com/process.html#breadcrumb",
+            "@id": "https://boomerautomation.com/process#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -294,7 +295,7 @@
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Process",
-                "item": "https://boomerautomation.com/process.html"
+                "item": "https://boomerautomation.com/process"
               }
             ]
           }
@@ -322,7 +323,8 @@
          Loaded by ./assets/js/global.v2.js
     ====================================================== -->
     <div id="siteHeaderMount"></div>
-<main id="mainContent">
+
+    <main id="mainContent">
       <!-- =====================================================
            HERO
       ====================================================== -->
