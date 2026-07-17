@@ -1,13 +1,18 @@
 # =========================================================
 # BOOMER AUTOMATION — NETLIFY REDIRECTS
-# Purpose: keep one canonical clean URL version for SEO.
-# Preferred model:
-# - Homepage canonical: /
-# - Interior page canonicals: clean URLs with no .html
+# Purpose: force clean public URLs while serving static HTML files.
+# Public URLs:
+# - /
+# - /about
+# - /services
+# - /systems
+# - /process
+# - /portfolio
+# - /contact
+# - /privacy
 # =========================================================
 
 /index.html      /            301!
-
 /about.html      /about       301!
 /services.html   /services    301!
 /systems.html    /systems     301!
@@ -15,3 +20,11 @@
 /portfolio.html  /portfolio   301!
 /contact.html    /contact     301!
 /privacy.html    /privacy     301!
+
+/about           /about.html       200
+/services        /services.html    200
+/systems         /systems.html     200
+/process         /process.html     200
+/portfolio       /portfolio.html   200
+/contact         /contact.html     200
+/privacy         /privacy.html     200

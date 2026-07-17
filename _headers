@@ -19,6 +19,28 @@
 /footer.html
   Cache-Control: no-cache
 
+
+/about
+  Cache-Control: no-cache
+
+/services
+  Cache-Control: no-cache
+
+/systems
+  Cache-Control: no-cache
+
+/process
+  Cache-Control: no-cache
+
+/portfolio
+  Cache-Control: no-cache
+
+/contact
+  Cache-Control: no-cache
+
+/privacy
+  Cache-Control: no-cache
+
 /robots.txt
   Cache-Control: no-cache
 
