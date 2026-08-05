@@ -1,0 +1,56 @@
+# Boomer Automation Inc.
+
+> Boomer Automation builds connected digital growth systems for Ontario businesses: websites, SEO, Google Ads, lead capture, tracking, and workflow automation.
+
+## Canonical website
+
+- https://boomerautomation.com/
+
+## Core pages
+
+- [Home](https://boomerautomation.com/): Company overview and connected-system approach.
+- [Services](https://boomerautomation.com/services): Website packages, SEO, Google Ads, lead capture, automation, tracking, add-ons, and platform guidance.
+- [Systems](https://boomerautomation.com/systems): Operating model connecting traffic, conversion, routing, follow-up, and measurement.
+- [Process](https://boomerautomation.com/process): Discovery, planning, design, build, launch, handoff, support, and improvement.
+- [Portfolio](https://boomerautomation.com/portfolio): Selected real client website projects.
+- [Resources](https://boomerautomation.com/resources): Website strategy/pricing and paid advertising guides.
+- [About](https://boomerautomation.com/about): Company philosophy and approach.
+- [Contact](https://boomerautomation.com/contact): Project inquiry form and verified contact information.
+- [Privacy](https://boomerautomation.com/privacy): Information collection, analytics, forms, retention, and privacy practices.
+
+## Primary services
+
+- Custom-coded websites
+- WordPress websites
+- E-commerce websites
+- Search engine optimization
+- Google Ads campaign planning and management
+- Lead capture systems
+- CRM-compatible workflow automation
+- Conversion tracking and reporting
+
+## Resources
+
+- [Website Strategy & Pricing Guide](https://boomerautomation.com/assets/docs/boomer-automation-website-strategy-pricing-guide.pdf)
+- [Paid Ads Strategy Comparison Guide](https://boomerautomation.com/assets/docs/boomer-automation-paid-ads-strategy-comparison-guide.pdf)
+
+## Selected projects
+
+- [Curbside Boyz](https://curbsideboyz.com/)
+- [David Colavita](https://davidcolavita.com/)
+- [Longonot Group Inc.](https://longonotgroup.com/)
+- [Feds N’ Shences](https://fedsnshences.com/)
+
+## Verified business details
+
+- Legal name: Boomer Automation Inc.
+- Service area: Ontario, Canada
+- Email: boomerautomationinc@gmail.com
+- Phone: +1-249-406-5820
+
+## Scope notes
+
+- Hosting may be configured on Netlify or WordPress, but clients pay the hosting provider directly.
+- Significant copywriting and image manipulation are add-ons or premium-scope work.
+- The proprietary Boomer CRM is not currently offered as a finished client product.
+- Booking integration and additional-language packages are not advertised as included services.

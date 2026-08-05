@@ -1,34 +1,27 @@
 # Boomer Automation Inc.
-# robots.txt
-# Purpose: Allow broad crawling, indexing, previews, and search discovery.
+# Broad discovery is permitted for search engines, social previews, and AI search systems.
 
 User-agent: *
 Allow: /
 
-# Google Search and Google surfaces
+# Google Search and Google AI-related usage controls
 User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
 Allow: /
 
-User-agent: Googlebot-Video
+User-agent: Google-Extended
 Allow: /
 
-User-agent: Google-InspectionTool
-Allow: /
-
-# Microsoft Bing / Copilot search infrastructure
+# Microsoft Bing and Copilot search infrastructure
 User-agent: Bingbot
-Allow: /
-
-User-agent: MSNBot
 Allow: /
 
 User-agent: AdIdxBot
 Allow: /
 
-# OpenAI search and ChatGPT browsing/search surfaces
+# OpenAI search, user-directed retrieval, training, and ad-page validation
 User-agent: OAI-SearchBot
 Allow: /
 
@@ -38,42 +31,45 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
-# Apple search surfaces such as Safari, Spotlight, and Siri
+User-agent: OAI-AdsBot
+Allow: /
+
+# Anthropic search, user-directed retrieval, and model crawler
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity search and user-directed retrieval
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Apple search and foundation-model usage control
 User-agent: Applebot
 Allow: /
 
-# DuckDuckGo
+User-agent: Applebot-Extended
+Allow: /
+
+# Other discovery and archive crawlers
 User-agent: DuckDuckBot
 Allow: /
 
-# Yahoo
-User-agent: Slurp
-Allow: /
-
-# Common Crawl
 User-agent: CCBot
 Allow: /
 
-# Internet Archive
 User-agent: ia_archiver
 Allow: /
 
-# Yandex
-User-agent: Yandex
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# Baidu
-User-agent: Baiduspider
-Allow: /
-
-# Social/link preview crawlers
+# Social and professional link-preview crawlers
 User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Facebot
 Allow: /
 
 User-agent: Twitterbot
@@ -82,8 +78,4 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-User-agent: Pinterestbot
-Allow: /
-
-# Canonical XML sitemap
 Sitemap: https://boomerautomation.com/sitemap.xml

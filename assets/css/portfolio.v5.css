@@ -1,0 +1,560 @@
+/* ==========================================================
+   PORTFOLIO PAGE — V5
+   Folder-style project files are built entirely with HTML/CSS.
+   The only raster content inside each file is its 1200×630
+   project Open Graph card.
+   ========================================================== */
+
+body {
+  --page-hero: url('../images/banners/portfolio-hero.v1.webp');
+  --page-cta: url('../images/banners/portfolio-final-cta.v1.webp');
+}
+
+.portfolio-hero {
+  --hero: url('../images/banners/portfolio-hero.v1.webp');
+}
+
+/* Selected-work introduction. */
+.workbench-intro {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.workbench-intro img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border: 1px solid rgba(12, 21, 28, 0.16);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.16);
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.filter-row span {
+  padding: 7px 13px;
+  border: 1px solid var(--paper-line);
+  font-size: 0.7rem;
+}
+
+/* ==========================================================
+   PROJECT FILE GRID
+   ========================================================== */
+
+.portfolio-projects {
+  overflow: hidden;
+}
+
+.project-files-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.7fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: end;
+  margin-bottom: clamp(3rem, 7vw, 5.5rem);
+}
+
+.project-files-heading .section-title {
+  max-width: 16ch;
+  margin-bottom: 0;
+}
+
+.project-files-heading > p {
+  max-width: 35rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.project-file-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2.4rem, 5vw, 4.5rem) clamp(1.5rem, 4vw, 3.25rem);
+}
+
+/* Each article is a complete case file with two offset sheets. */
+.project-file {
+  --project-accent: #b47d27;
+  position: relative;
+  min-width: 0;
+  padding-top: 2.7rem;
+  isolation: isolate;
+  transition: transform 220ms ease;
+}
+
+.project-file::before,
+.project-file::after {
+  position: absolute;
+  z-index: -2;
+  border: 1px solid rgba(235, 229, 216, 0.15);
+  content: '';
+  pointer-events: none;
+}
+
+.project-file::before {
+  inset: 2.1rem -0.65rem -0.65rem 0.65rem;
+  background: #292a2c;
+  box-shadow: 0 24px 46px rgba(0, 0, 0, 0.28);
+}
+
+.project-file::after {
+  inset: 1.45rem -0.25rem -0.25rem 0.25rem;
+  z-index: -1;
+  background: #d6cfc2;
+}
+
+.project-file--curbside {
+  --project-accent: #c99436;
+}
+
+.project-file--david {
+  --project-accent: #8754d8;
+}
+
+.project-file--longonot {
+  --project-accent: #739568;
+}
+
+.project-file--feds {
+  --project-accent: #b55745;
+}
+
+/*
+ * The Feds N’ Shences category is intentionally longer than the other
+ * folder labels. Give its tab a wider, gentler taper so the complete
+ * “Outdoor construction” label remains visible at every breakpoint.
+ */
+.project-file--feds .project-file__tab {
+  min-width: min(18rem, calc(100% - 2.2rem));
+  padding-right: 1.5rem;
+  clip-path: polygon(0 0, 91% 0, 100% 100%, 0 100%);
+}
+
+.project-file--feds .project-file__category {
+  font-size: 0.59rem;
+  letter-spacing: 0.075em;
+  text-overflow: clip;
+}
+
+/* Raised folder tab. */
+.project-file__tab {
+  position: absolute;
+  top: 0;
+  left: 1.1rem;
+  z-index: 3;
+  display: flex;
+  min-width: min(15rem, calc(100% - 2.2rem));
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.78rem 1.2rem 0.72rem;
+  clip-path: polygon(0 0, 82% 0, 91% 100%, 0 100%);
+  border-top: 3px solid var(--project-accent);
+  background: #17191c;
+  color: #f7f3ea;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.project-file__number {
+  color: var(--project-accent);
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.project-file__category {
+  overflow: hidden;
+  font-size: 0.64rem;
+  font-weight: 760;
+  letter-spacing: 0.1em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Main cream paper sheet. */
+.project-file__sheet {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid #c8c2b7;
+  background:
+    linear-gradient(90deg, var(--project-accent), var(--project-accent)) top left / 100% 3px no-repeat,
+    #f4efe5;
+  color: var(--paper-text);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.18);
+}
+
+.project-file__sheet::after {
+  position: absolute;
+  inset: 0.55rem;
+  border: 1px solid rgba(36, 39, 42, 0.07);
+  content: '';
+  pointer-events: none;
+}
+
+.project-file__header,
+.project-file__visual,
+.project-file__details,
+.project-file__footer {
+  position: relative;
+  z-index: 1;
+}
+
+.project-file__header {
+  display: flex;
+  min-width: 0;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.15rem;
+}
+
+.project-file__eyebrow {
+  margin-bottom: 0.38rem;
+  color: var(--project-accent);
+}
+
+.project-file__header h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.project-file__domain {
+  flex: 0 1 auto;
+  overflow-wrap: anywhere;
+  color: var(--paper-muted);
+  font-size: 0.7rem;
+  text-align: right;
+  text-underline-offset: 0.22em;
+}
+
+.project-file__domain:hover {
+  color: var(--paper-text);
+}
+
+/* The approved OG card is shown at its native social ratio. */
+.project-file__visual {
+  display: block;
+  aspect-ratio: 1200 / 630;
+  overflow: hidden;
+  border: 1px solid rgba(18, 20, 24, 0.17);
+  background: #101216;
+  box-shadow: 0 14px 28px rgba(18, 20, 24, 0.16);
+}
+
+.project-file__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.project-file__details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 1.35rem;
+  border-top: 1px solid rgba(35, 39, 42, 0.14);
+  border-left: 1px solid rgba(35, 39, 42, 0.14);
+}
+
+.project-file__detail {
+  min-width: 0;
+  padding: 1rem;
+  border-right: 1px solid rgba(35, 39, 42, 0.14);
+  border-bottom: 1px solid rgba(35, 39, 42, 0.14);
+}
+
+.project-file__detail--wide {
+  grid-column: 1 / -1;
+}
+
+.project-file__detail h3 {
+  margin: 0 0 0.45rem;
+  color: var(--paper-text);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-file__detail p {
+  margin: 0;
+  color: var(--paper-muted);
+  font-size: 0.78rem;
+}
+
+.project-file__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-file__tags li {
+  padding: 0.38rem 0.58rem;
+  border: 1px solid rgba(35, 39, 42, 0.17);
+  background: rgba(255, 255, 255, 0.32);
+  color: var(--paper-muted);
+  font-size: 0.66rem;
+}
+
+.project-file__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.project-file__focus {
+  display: grid;
+  max-width: 27rem;
+  gap: 0.25rem;
+  margin: 0;
+}
+
+.project-file__focus strong {
+  color: var(--project-accent);
+  font-size: 0.63rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-file__focus span {
+  color: var(--paper-muted);
+  font-size: 0.75rem;
+}
+
+.project-file__link {
+  flex: 0 0 auto;
+  color: var(--paper-text);
+  white-space: nowrap;
+}
+
+.project-file__domain:focus-visible,
+.project-file__visual:focus-visible,
+.project-file__link:focus-visible {
+  outline: 3px solid var(--project-accent);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 3px #f4efe5, 0 0 0 6px var(--project-accent);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-file:hover {
+    transform: translateY(-6px);
+  }
+
+  .project-file__visual:hover img {
+    transform: scale(1.018);
+  }
+}
+
+@media (max-width: 1050px) {
+  .project-file-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-file__sheet {
+    max-width: 54rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .workbench-intro,
+  .project-files-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .project-files-heading {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .project-file-grid {
+    gap: 3rem;
+  }
+
+  .project-file {
+    padding-top: 2.45rem;
+  }
+
+  .project-file::before {
+    inset: 1.95rem -0.28rem -0.38rem 0.28rem;
+  }
+
+  .project-file::after {
+    inset: 1.55rem -0.12rem -0.18rem 0.12rem;
+  }
+
+  .project-file__tab {
+    left: 0.75rem;
+    min-width: min(13.5rem, calc(100% - 1.5rem));
+    padding-inline: 0.95rem;
+  }
+
+  .project-file--feds .project-file__tab {
+    min-width: min(17.75rem, calc(100% - 1.5rem));
+    padding-right: 1.25rem;
+  }
+
+  .project-file--feds .project-file__category {
+    font-size: 0.56rem;
+    letter-spacing: 0.06em;
+  }
+
+  .project-file__sheet {
+    padding: 1rem;
+  }
+
+  .project-file__header,
+  .project-file__footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .project-file__domain {
+    text-align: left;
+  }
+
+  .project-file__details {
+    grid-template-columns: 1fr;
+  }
+
+  .project-file__detail--wide {
+    grid-column: auto;
+  }
+
+  .project-file__link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-file,
+  .project-file__visual img {
+    transition: none;
+  }
+}
+
+/* Explicit keyboard focus fallback for browsers with differing :focus-visible heuristics. */
+.project-file__domain:focus,
+.project-file__visual:focus,
+.project-file__link:focus {
+  outline-width: 3px !important;
+  outline-style: solid !important;
+  outline-color: var(--project-accent) !important;
+  outline-offset: 4px !important;
+}
+
+/* Inset focus frame stays visible even when an image link clips its outer outline. */
+.project-file__visual::after {
+  position: absolute;
+  inset: 0;
+  border: 0 solid transparent;
+  content: '';
+  pointer-events: none;
+}
+
+.project-file__visual:focus::after,
+.project-file__visual:focus-visible::after {
+  border-width: 4px;
+  border-color: var(--project-accent);
+  box-shadow: inset 0 0 0 2px #f4efe5;
+}
+
+.project-file__domain:focus,
+.project-file__domain:focus-visible,
+.project-file__link:focus,
+.project-file__link:focus-visible {
+  background: color-mix(in srgb, var(--project-accent) 16%, transparent);
+  text-decoration-thickness: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile folder integrity
+   Keep every raised tab and offset sheet inside the narrow viewport while
+   preserving each complete category label.
+   -------------------------------------------------------------------------- */
+@media (max-width: 620px) {
+  .project-file {
+    width: 100%;
+    min-width: 0;
+    padding-top: 2.7rem;
+  }
+
+  .project-file::before {
+    inset: 2.05rem 0 -0.28rem 0.22rem;
+  }
+
+  .project-file::after {
+    inset: 1.68rem 0 -0.12rem 0.1rem;
+  }
+
+  .project-file__tab,
+  .project-file--feds .project-file__tab {
+    right: 0.58rem;
+    left: 0.58rem;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    gap: 0.68rem;
+    padding: 0.76rem 2rem 0.7rem 0.9rem;
+    clip-path: polygon(0 0, 94% 0, 100% 100%, 0 100%);
+  }
+
+  .project-file__number {
+    flex: 0 0 auto;
+    font-size: 1.45rem;
+  }
+
+  .project-file__category,
+  .project-file--feds .project-file__category {
+    min-width: 0;
+    overflow: visible;
+    font-size: clamp(0.52rem, 2.45vw, 0.6rem);
+    letter-spacing: 0.055em;
+    text-overflow: clip;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 350px) {
+  .project-file__tab,
+  .project-file--feds .project-file__tab {
+    right: 0.42rem;
+    left: 0.42rem;
+    gap: 0.5rem;
+    padding-right: 1.55rem;
+    padding-left: 0.72rem;
+  }
+
+  .project-file__number {
+    font-size: 1.3rem;
+  }
+
+  .project-file__category,
+  .project-file--feds .project-file__category {
+    font-size: 0.5rem;
+    letter-spacing: 0.035em;
+  }
+}
+
