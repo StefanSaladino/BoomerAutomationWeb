@@ -54,8 +54,15 @@ function initMenu() {
     );
 
   const setBackgroundInert = (active) => {
+    /*
+     * Keep the mobile toggle interactive while the dialog is open so the
+     * animated X remains a genuine close control. Other page regions are
+     * inert and keyboard focus remains inside the navigation panel.
+     */
     [
-      document.getElementById('siteHeader'),
+      document.querySelector('#siteHeader .brand'),
+      document.querySelector('#siteHeader .desktop-nav'),
+      document.querySelector('#siteHeader .header-cta'),
       document.querySelector('main'),
       document.getElementById('siteFooterMount'),
     ]
@@ -70,6 +77,7 @@ function initMenu() {
     menu.classList.add('is-open');
     menu.setAttribute('aria-hidden', 'false');
     toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-label', 'Close navigation menu');
     document.body.classList.add('menu-open');
     setBackgroundInert(true);
     setTimeout(() => close.focus({ preventScroll: true }), 60);
@@ -79,12 +87,20 @@ function initMenu() {
     menu.classList.remove('is-open');
     menu.setAttribute('aria-hidden', 'true');
     toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation menu');
     document.body.classList.remove('menu-open');
     setBackgroundInert(false);
     lastFocused?.focus();
   };
 
-  toggle.addEventListener('click', open);
+  toggle.addEventListener('click', () => {
+    if (menu.classList.contains('is-open')) {
+      shut();
+      return;
+    }
+
+    open();
+  });
   close.addEventListener('click', shut);
   menu.addEventListener('click', (event) => {
     if (event.target === menu) shut();
