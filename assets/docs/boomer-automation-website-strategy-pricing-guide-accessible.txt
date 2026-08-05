@@ -1,0 +1,1037 @@
+BOOMER AUTOMATION INC.
+Website Strategy & Pricing Guide
+Accessible text alternative
+
+This plain-text file provides the complete written content of the supplied 12-page PDF in a linear reading order.
+
+PAGE 1
+
+BOOMER AUTOMATION
+LEAD THE PACK
+
+Website Strategy
+& Pricing Guide
+CUSTOM CODED / WORDPRESS / E-COMMERCE
+
+Flexible website packages for businesses at different stages - from a focused one-page launch to a
+complete digital presence built for visibility, credibility, and growth.
+FOUR CLEAR STARTING POINTS
+
+01
+
+One-Page Starter
+
+02
+
+$650-$900
+
+Up to 10 hours
+
+Professional Launch
+
+$1,200-$1,800
+
+Up to 22 hours
+
+03
+
+Business Growth
+
+$2,200-$3,500
+
+Up to 45 hours
+
+04
+
+Premium Digital Presence
+
+$4,000-$6,500+
+
+Up to 80 hours
+
+BUILT AROUND SCOPE, TIME, AND BUSINESS NEED
+
+Every package includes a defined production allowance, revision limit, hosting setup, deployment, domain connection, and a
+clear handoff. Hosting fees are paid directly by the client to the selected provider.
+
+PAGE 2
+
+BOOMER AUTOMATION
+
+PLATFORM GUIDANCE
+
+LEAD THE PACK
+
+CHOOSE THE RIGHT FOUNDATION
+
+The website platform should serve
+the business - not complicate it.
+The best choice depends on how often the site changes, who needs to edit it, and whether the website is primarily a marketing
+asset or an online store.
+
+01
+
+02
+
+03
+
+CUSTOM-CODED WEBSITE
+
+WORDPRESS WEBSITE
+
+E-COMMERCE WEBSITE
+
+Recommended for most service-business
+marketing sites.
+
+Useful when the client needs frequent
+self-managed content updates.
+
+A dedicated storefront for businesses
+selling products online.
+
+Lean, fast, and highly tailored
+
+Familiar content-management dashboard
+
+Products, cart, checkout, and payments
+
+No plugin stack or database required
+
+Strong blogging and publishing tools
+
+Inventory and order management
+
+Greater control over design and
+performance
+
+Large theme and plugin ecosystem
+
+Platform and transaction costs apply
+
+Requires ongoing updates and
+maintenance
+
+More operational and policy
+requirements
+
+Hosting and premium licences may recur
+
+Usually built on Shopify or
+WooCommerce
+
+Low routine maintenance
+Ideal when content changes are
+occasional
+
+BEST FIT
+
+BEST FIT
+
+BEST FIT
+
+Best for contractors, consultants, local services,
+and professional firms.
+
+Best for content-heavy organizations or teams
+that will actively manage the site.
+
+Best for product brands, retail businesses, and
+digital-product sellers.
+
+TYPICAL RECOMMENDATION
+
+For most service businesses, a custom-coded website provides the cleanest balance of performance, design control, security, and low
+maintenance. WordPress remains available when frequent client editing is a genuine requirement.
+
+PAGE 3
+
+BOOMER AUTOMATION
+
+PACKAGE COMPARISON
+
+LEAD THE PACK
+
+AT A GLANCE
+
+Four website packages,
+one clear upgrade path.
+Select the smallest package that comfortably supports the business today. Larger packages add page depth, strategy, content
+support, technical SEO, and production time.
+
+COMPARISON
+
+ONE-PAGE
+STARTER
+
+PROFESSIONAL
+LAUNCH
+
+BUSINESS
+GROWTH
+
+PREMIUM
+PRESENCE
+
+Investment
+
+$650-$900
+
+$1,200-$1,800
+
+$2,200-$3,500
+
+$4,000-$6,500+
+
+Production allowance
+
+Up to 10 hrs
+
+Up to 22 hrs
+
+Up to 45 hrs
+
+Up to 80 hrs
+
+Typical pages
+
+1 page
+
+Up to 4
+
+5-8
+
+10-15
+
+Primary goal
+
+Simple presence
+
+Professional launch
+
+Lead generation
+
+Complete presence
+
+None
+
+Foundational
+
+Comprehensive
+
+Advanced
+
+Copywriting
+
+Not included
+
+Add-on
+
+Editing only
+
+Defined allowance
+
+Image manipulation
+
+Not included
+
+Add-on
+
+Basic prep
+
+Defined allowance
+
+Analytics
+
+Not included
+
+Basic
+
+Full setup
+
+Advanced events
+
+Service pages
+
+No
+
+Limited
+
+Included
+
+Expanded
+
+Revision rounds
+
+1
+
+2
+
+4
+
+Post-launch support
+
+14 days
+
+30 days
+
+60 days
+
+90 days
+
+Hosting setup
+
+Included
+
+Included
+
+Included
+
+Included
+
+Hosting fees
+
+Client-paid
+
+Client-paid
+
+Client-paid
+
+Client-paid
+
+SEO
+
+Business Growth is the recommended starting point for established local businesses that need more than a brochure site but do not
+require a large custom program.
+
+PAGE 4
+
+BOOMER AUTOMATION
+
+WEBSITE PACKAGES
+
+LEAD THE PACK
+
+ENTRY PACKAGE
+
+One-Page Starter
+Focused Website
+
+$650-$900
+UP TO 10 PROJECT HOURS
+
+A concise, professionally designed single-page website for businesses that need a credible
+online presence without a broader SEO or content program.
+01
+
+Overview
+
+03
+
+This package is intentionally limited. It creates one polished
+destination for referrals, social traffic, and direct inquiries while
+keeping the project fast and affordable.
+02
+
+New businesses and sole proprietors
+Simple service offers
+Temporary or proof-of-concept launches
+
+Included scope
+One custom scrolling page
+
+Best fit
+
+Businesses that do not currently depend on organic search
+04
+
+Up to five content sections
+
+Package boundaries
+No SEO strategy or keyword research
+
+Up to 750 client-supplied words
+
+No copywriting or image manipulation
+
+Up to eight website-ready images
+
+No individual service pages or blog
+
+One basic contact form
+
+No advanced forms, tracking, or integrations
+
+Mobile-first responsive layout
+
+Additional requests require a change order
+
+Netlify or WordPress deployment
+
+Launch support
+
+Domain connection and SSL setup
+
+05
+
+One consolidated revision round
+
+Includes 14 days of post-launch technical support for launch-related
+defects. Hosting fees are paid directly by the client to the selected
+provider.
+
+Best when the client has final content ready and needs a clean, focused website with one clear call to action.
+
+PAGE 5
+
+BOOMER AUTOMATION
+
+WEBSITE PACKAGES
+
+LEAD THE PACK
+
+CORE PACKAGE
+
+Professional Launch
+Business Website
+
+$1,200-$1,800
+UP TO 22 PROJECT HOURS
+
+A custom multi-page website that gives a small business enough room to explain its services,
+establish trust, and generate inquiries.
+01
+
+Overview
+
+03
+
+Professional Launch is designed for businesses moving beyond a
+one-page presence. The emphasis is polished design, clear
+messaging structure, and a reliable technical foundation.
+02
+
+Small local businesses
+Contractors and consultants
+Independent professionals
+
+Included scope
+Up to four standard pages
+
+Best fit
+
+Businesses replacing a basic or outdated site
+04
+
+Custom mobile-first design
+
+Package boundaries
+Up to approximately 2,500 supplied words
+
+Standard contact or quote form
+
+Up to 15 website-ready images
+
+Client-supplied content placement
+
+Full copywriting is an add-on
+
+Minor spelling and grammar correction
+
+Image manipulation is an add-on
+
+Basic titles and meta descriptions
+
+No advanced SEO research or e-commerce
+
+Basic structured data and Open Graph setup
+
+Launch support
+
+Basic analytics installation
+
+05
+
+Hosting setup, deployment, and domain connection
+
+Includes 30 days of post-launch technical support. The client owns
+and pays the hosting account directly; ongoing provider management
+is not included.
+
+Two consolidated revision rounds
+
+A strong professional baseline for businesses that need more credibility and structure without a larger growth program.
+
+PAGE 6
+
+BOOMER AUTOMATION
+
+WEBSITE PACKAGES
+
+LEAD THE PACK
+
+RECOMMENDED PACKAGE
+
+RECOMMENDED
+
+Business Growth
+Lead-Generation Website
+
+$2,200-$3,500
+UP TO 45 PROJECT HOURS
+
+A deeper service website built to support local visibility, paid traffic, clearer conversion paths,
+and more consistent inquiry generation.
+01
+
+Overview
+
+03
+
+Business Growth is the most practical starting point for
+established service businesses. It provides enough page depth to
+target core services while keeping the project focused and
+maintainable.
+02
+
+Established local service businesses
+Contractors and home services
+Professional service firms
+Businesses running or preparing for paid ads
+
+Included scope
+Approximately five to eight pages
+
+Best fit
+
+Companies seeking stronger local search visibility
+04
+
+Package boundaries
+
+Individual service pages
+Copy editing and restructuring are included; full copywriting is not
+
+Conversion-focused page structure
+
+Basic image prep covers crop, resize, compression, and format
+conversion
+
+Local SEO and page-intent planning
+Google Analytics, Search Console, and event tracking
+
+Advanced manipulation is quoted separately
+
+Expanded structured data
+
+Custom tools and additional pages require a change order
+
+Advanced inquiry or estimate form
+
+Launch support
+
+Sitemap and robots configuration
+
+05
+
+Privacy page and consent implementation where required
+
+Includes 60 days of post-launch technical support. Hosting is
+configured by Boomer Automation but billed directly to the client by
+Netlify or the WordPress host.
+
+Basic preparation of up to 15 images
+Three consolidated revision rounds
+
+For most established service businesses, this package offers the best balance of strategy, page depth, production time, and investment.
+
+PAGE 7
+
+BOOMER AUTOMATION
+
+WEBSITE PACKAGES
+
+LEAD THE PACK
+
+ADVANCED PACKAGE
+
+Premium Digital Presence
+Complete Website Program
+
+$4,000-$6,500+
+UP TO 80 PROJECT HOURS
+
+A comprehensive website program for organizations that need more content depth, design
+refinement, strategic planning, and hands-on production support.
+01
+
+Overview
+
+03
+
+This package supports larger sitemaps, multiple service or
+location pages, more advanced design systems, and a defined
+allowance for copywriting and image work.
+02
+
+High-ticket service companies
+Multi-service or multi-location businesses
+Organizations investing in SEO or paid advertising
+
+Included scope
+
+Businesses with substantial existing content
+Teams requiring a more complete digital presence
+
+Approximately 10 to 15 pages
+Advanced sitemap and customer-journey planning
+
+Best fit
+
+04
+
+Multiple service, location, or campaign pages
+
+Package boundaries
+Approximately 3,500 newly written words within the included
+allowance
+
+Advanced design, motion, and interaction work
+Advanced technical SEO foundations
+Redirect and migration planning
+
+Research-heavy or regulated-industry writing may require a
+separate quote
+
+Expanded analytics and event tracking
+
+Complex photo composites and large image libraries are excluded
+
+Defined copywriting allowance for up to five core pages
+
+Custom applications are separately scoped
+
+Basic preparation of up to 25 images
+
+05
+
+Launch support
+
+Up to five moderately manipulated images
+Four consolidated revision rounds
+
+Includes 90 days of post-launch technical support. Client-paid hosting
+remains in the client’s name and ongoing server or provider
+management is excluded.
+
+Premium support is defined by a larger production allowance and clearer content services - not unlimited revisions or open-ended
+development.
+
+PAGE 8
+
+BOOMER AUTOMATION
+
+PLATFORM COMPARISON
+
+LEAD THE PACK
+
+CUSTOM CODE VS WORDPRESS
+
+Two valid approaches.
+Different operating models.
+The right choice depends less on trends and more on who will maintain the site, how frequently content changes, and which
+platform creates the least long-term friction.
+
+CUSTOM-CODED
+
+WORDPRESS
+
+Best fit for most service-business marketing sites
+
+Best when frequent self-managed publishing is essential
+
+Excellent performance potential
+
+Client-friendly content-management dashboard
+
+Precise control over layout, animation, and technical SEO
+
+Strong blogging and publishing workflows
+
+No plugin stack or database to maintain
+
+Large plugin and theme ecosystem
+
+Lower routine maintenance and a smaller attack surface
+
+Requires updates, backups, and security attention
+
+Often deploys efficiently on Netlify
+
+Premium plugin licences may recur
+
+Content edits usually require developer support
+
+Performance can decline as complexity grows
+
+DECISION GUIDE
+
+Primary purpose
+
+Marketing and lead generation
+
+Frequent client-managed publishing
+
+Performance
+
+Typically easier to optimize
+
+Highly dependent on theme and plugins
+
+Routine maintenance
+
+Low
+
+Ongoing updates required
+
+Client editing
+
+Developer-assisted unless CMS added
+
+Built-in dashboard
+
+Design control
+
+Very high
+
+High, but theme-dependent
+
+Hosting
+
+Often Netlify
+
+Managed WordPress host
+
+Typical recommendation
+
+Most service businesses
+
+Content-heavy organizations
+
+Subtle default: custom code is recommended when the website is primarily a polished marketing and lead-generation asset. WordPress
+is selected when ongoing client-managed publishing outweighs the added maintenance.
+
+PAGE 9
+
+BOOMER AUTOMATION
+
+E-COMMERCE
+
+LEAD THE PACK
+
+SEPARATE PROJECT CATEGORY
+
+E-Commerce Website
+Development
+
+STARTING AT $3,500
+SCOPE AND HOURS CONFIRMED BY QUOTE
+
+An online store has different operational, policy, payment, shipping, and catalogue
+requirements. It is quoted separately from the four standard website packages.
+
+Typical scope
+
+01
+
+02
+
+Best fit
+
+Custom storefront design
+
+Retail and product-based businesses
+
+Home, collection, product, cart, and policy pages
+
+Physical or digital product sellers
+
+Payment-provider configuration
+
+Brands moving beyond social-only sales
+
+Basic shipping and tax setup
+
+Businesses prepared to manage products, orders, inventory,
+fulfillment, and customer service
+
+Analytics and search foundations
+Domain connection and platform configuration
+Store-owner handoff and training
+
+PLATFORM DIRECTION
+
+SHOPIFY
+
+WOOCOMMERCE
+
+Usually the cleanest recommendation when the business wants
+a managed store platform and does not want responsibility for
+server maintenance.
+
+Best when the business is already committed to WordPress and
+accepts the added hosting, update, plugin, and performance
+responsibilities.
+
+CLIENT-SUPPLIED STORE INFORMATION
+
+Product names, descriptions, prices, and inventory
+Website-ready product images
+Weights, dimensions, shipping rules, and tax information
+Refund, return, privacy, and fulfillment policies
+Payment-provider and business verification information
+
+Product copywriting, image cleanup, large catalogue entry, subscriptions, wholesale systems, and unusual shipping logic are separately
+scoped.
+
+PAGE 10
+
+BOOMER AUTOMATION
+
+CONTENT SERVICES
+
+LEAD THE PACK
+
+OPTIONAL PRODUCTION SERVICES
+
+Copywriting, image work,
+and project add-ons.
+Lower packages assume the client supplies final copy and website-ready images. Higher packages add defined production
+allowances; anything beyond them remains clearly priced and approved.
+
+COPYWRITING
+
+IMAGE SERVICES
+
+BUILD ADD-ONS
+
+Homepage
+
+$250-$400
+
+Simple image edit
+
+$20-$40
+
+Standard page
+
+$200-$350
+
+Service page
+
+$150-$250
+
+Background removal
+
+$25-$60
+
+Advanced landing page
+
+$350-$600
+
+About page
+
+$175-$275
+
+Detailed retouching
+
+$50-$125
+
+Custom calculator
+
+From $600
+
+Location page
+
+$175-$300
+
+Complex composite
+
+From $100
+
+Product entry
+
+$15-$35 each
+
+Small website
+
+From $750
+
+Promo graphic
+
+$100-$250
+
+Rush delivery
+
++20%-25%
+
+WHAT BASIC IMAGE PREPARATION MEANS
+
+Cropping, resizing, compression, file-format conversion, and minor brightness or contrast adjustment. Background removal, object removal,
+detailed retouching, reconstruction, and composite work are advanced image manipulation.
+
+WHAT COPY EDITING MEANS
+
+Improving headings, clarity, structure, and calls to action using client-supplied information. Writing the website from a blank page, conducting
+interviews, or producing research-heavy content is full copywriting.
+
+All add-ons are confirmed in writing before work begins. No CRM integration, booking integration, or additional-language
+implementation is included in the current package framework.
+
+PAGE 11
+
+BOOMER AUTOMATION
+
+HOSTING & OWNERSHIP
+
+LEAD THE PACK
+
+CLEAR ACCOUNT OWNERSHIP
+
+Hosting setup is included.
+Hosting management is not.
+Boomer Automation configures, deploys, connects, and launches the website. The hosting account belongs to the client, and the
+client pays the hosting provider directly.
+
+CUSTOM-CODED / NETLIFY
+
+WORDPRESS HOSTING
+
+Recommended for most custom-coded marketing websites.
+
+Used when WordPress is the appropriate content platform.
+
+Client-owned Netlify account
+
+Client-owned managed WordPress hosting account
+
+Production deployment and build configuration
+
+WordPress installation and initial configuration
+
+Domain connection and DNS guidance
+
+Theme, plugin, domain, and SSL setup
+
+SSL, forms, caching, and initial security configuration
+
+Administrator handoff and launch testing
+
+Client pays subscriptions, usage, and renewal fees directly
+
+Client pays hosting and premium licence fees directly
+
+BOOMER AUTOMATION HANDLES
+
+Hosting recommendation and initial account configuration
+Deployment, domain connection, SSL setup, and launch verification
+Initial platform settings and project handoff
+
+CLIENT HANDLES
+
+Provider subscription and renewal payments
+Maintaining billing information and accepting provider terms
+Provider-level billing support, ongoing server administration, and future premium licences
+
+Post-launch support covers launch-related defects during the stated support window. It does not include ongoing content changes,
+WordPress updates, provider billing, or indefinite hosting administration.
+
+PAGE 12
+
+BOOMER AUTOMATION
+
+PROCESS & TERMS
+
+LEAD THE PACK
+
+A CONTROLLED PROJECT PROCESS
+
+Clear stages. Defined feedback.
+No open-ended scope.
+Every project is managed against the approved deliverables, production allowance, revision rounds, and client responsibilities
+stated in the proposal.
+
+01
+
+DISCOVERY
+
+Confirm goals, platform, sitemap, content readiness, and package fit.
+
+03
+
+DESIGN
+
+Establish visual direction, page hierarchy, and conversion structure.
+
+05
+
+REVIEW
+
+Receive one consolidated feedback set for each included revision
+round.
+
+02
+
+CONTENT
+
+Collect final copy, images, business information, access, and legal
+details.
+
+04
+
+BUILD
+
+Develop, configure, test, and optimize the approved website scope.
+
+06
+
+LAUNCH
+
+Deploy, connect the domain, verify forms and analytics, and hand off
+access.
+
+IMPORTANT TERMS
+PRODUCTION ALLOWANCE
+
+ADDITIONAL WORK
+
+The project is complete when the approved scope is delivered or the
+included production allowance is reached.
+
+Out-of-scope work is quoted or billed at $85 per hour after written client
+approval.
+
+REVISION ROUND
+
+UNUSED HOURS
+
+One organized, consolidated set of feedback submitted after review of the
+applicable stage.
+
+Have no cash value, do not roll forward, and do not become future
+maintenance credit.
+
+CLIENT DELAYS
+
+PAYMENT STRUCTURE
+
+Missing content, access, or approvals can affect delivery dates and
+consume production time.
+
+Typical schedule: 50% to begin, 25% after design approval, and 25%
+before launch.
+
+NEXT STEP
+
+A fixed project quote is provided after a discovery conversation confirms the package, platform, content readiness, and any
+required add-ons.

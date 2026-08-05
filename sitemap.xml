@@ -2,26 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://boomerautomation.com/</loc>
-  </url>
-  <url>
-    <loc>https://boomerautomation.com/about</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
   <url>
     <loc>https://boomerautomation.com/services</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
   <url>
     <loc>https://boomerautomation.com/systems</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
   <url>
     <loc>https://boomerautomation.com/process</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
   <url>
     <loc>https://boomerautomation.com/portfolio</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://boomerautomation.com/resources</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://boomerautomation.com/about</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
   <url>
     <loc>https://boomerautomation.com/contact</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
   <url>
     <loc>https://boomerautomation.com/privacy</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://boomerautomation.com/assets/docs/boomer-automation-website-strategy-pricing-guide.pdf</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://boomerautomation.com/assets/docs/boomer-automation-paid-ads-strategy-comparison-guide.pdf</loc>
+    <lastmod>2026-08-05</lastmod>
   </url>
 </urlset>

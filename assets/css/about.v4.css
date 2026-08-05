@@ -1,0 +1,186 @@
+/* About page layout and project-proof styling. */
+body {
+  --page-hero: url('../images/banners/about-hero.v1.webp');
+  --page-cta: url('../images/banners/about-final-cta.v1.webp');
+}
+
+.about-hero {
+  --hero: url('../images/banners/about-hero.v1.webp');
+}
+
+.statement {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+}
+
+.statement h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(2.3rem, 4.5vw, 4.3rem);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.principle {
+  padding: 30px;
+  border-right: 1px solid var(--line);
+}
+
+.principle h3 {
+  margin: 10px 0;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.principle p {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.disciplines {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 55px;
+}
+
+.discipline-table {
+  display: grid;
+}
+
+.discipline-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--paper-line);
+}
+
+.discipline-row strong {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.discipline-row span {
+  color: var(--paper-muted);
+  font-size: 0.8rem;
+}
+
+/*
+ * Recent work is a true gallery: the introduction spans the full row and
+ * each project card hugs its image and title instead of reserving dead space.
+ */
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.proof-strip > div {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 32px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+.proof-strip > div .eyebrow,
+.proof-strip > div .section-title {
+  grid-column: 1;
+}
+
+.proof-strip > div > p:last-child {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: end;
+  margin: 0 0 4px;
+}
+
+.proof-strip article {
+  display: grid;
+  grid-template-rows: auto auto;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.025);
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.75, 0.2, 1),
+    border-color 0.35s ease,
+    box-shadow 0.45s ease;
+}
+
+.proof-strip article:hover {
+  transform: translateY(-5px);
+  border-color: rgba(217, 154, 29, 0.46);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.2);
+}
+
+.proof-strip img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 630;
+  margin: 0;
+  object-fit: cover;
+}
+
+.proof-strip h3 {
+  margin: 0;
+  padding: 14px 16px 16px;
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@media (max-width: 850px) {
+  .statement,
+  .disciplines {
+    grid-template-columns: 1fr;
+  }
+
+  .principles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .proof-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .principles,
+  .proof-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-strip > div {
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .proof-strip > div > p:last-child {
+    grid-column: 1;
+    grid-row: auto;
+    margin: 0;
+  }
+
+  .discipline-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .proof-strip article:hover {
+    transform: none;
+  }
+}

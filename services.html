@@ -1,685 +1,95 @@
 <!DOCTYPE html>
-<html lang="en-CA">
-  <head>
-    <!-- =====================================================
-         CORE META
-    ====================================================== -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=yes" />
 
-    <title>Services | Boomer Automation Inc. | Websites, Ads & Automation</title>
-
-    <meta
-      name="description"
-      content="Explore websites, SEO, Google Ads, lead capture, CRM automation, workflow automation, tracking, and maintenance services for Ontario businesses."
-    />
-
-    <meta
-      name="keywords"
-      content="workflow automation Ontario, AI automation services, website redesign Ontario, business website design, Google Ads campaign management Ontario, lead generation systems, CRM automation, small business automation, conversion tracking, website maintenance Ontario, automation agency Ontario, SEO services Ontario, landing page optimization"
-    />
-
-    <meta name="author" content="Boomer Automation Inc." />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#030712" />
-
-    <!-- =====================================================
-         CANONICAL / LANGUAGE / LOCAL SEO
-         Public canonical URL: /services
-         Physical Netlify file remains the static Services file.
-    ====================================================== -->
-    <link rel="canonical" href="https://boomerautomation.com/services" />
-    <link rel="alternate" hreflang="en-CA" href="https://boomerautomation.com/services" />
-    <link rel="alternate" hreflang="x-default" href="https://boomerautomation.com/services" />
-
-    <meta name="geo.region" content="CA-ON" />
-    <meta name="geo.placename" content="Ontario, Canada" />
-    <meta name="ICBM" content="43.6532, -79.3832" />
-
-    <!-- =====================================================
-         OPEN GRAPH
-         Social crawlers need absolute canonical URLs.
-    ====================================================== -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Boomer Automation Inc." />
-    <meta property="og:locale" content="en_CA" />
-    <meta
-      property="og:url"
-      content="https://boomerautomation.com/services"
-    />
-    <meta
-      property="og:title"
-      content="Services | Boomer Automation Inc. | Websites, Ads & Automation"
-    />
-    <meta
-      property="og:description"
-      content="Explore websites, SEO, Google Ads, lead capture, CRM automation, workflow automation, tracking, and maintenance services for Ontario businesses."
-    />
-    <meta
-      property="og:image"
-      content="https://boomerautomation.com/assets/images/og_card.png"
-    />
-    <meta
-      property="og:image:secure_url"
-      content="https://boomerautomation.com/assets/images/og_card.png"
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="Boomer Automation Inc. digital growth systems, websites, SEO, Google Ads, and automation"
-    />
-
-    <!-- =====================================================
-         TWITTER CARD
-         Social crawlers need absolute canonical URLs.
-    ====================================================== -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Services | Boomer Automation Inc. | Websites, Ads & Automation"
-    />
-    <meta
-      name="twitter:description"
-      content="Explore websites, SEO, Google Ads, lead capture, CRM automation, workflow automation, tracking, and maintenance services for Ontario businesses."
-    />
-    <meta
-      name="twitter:image"
-      content="https://boomerautomation.com/assets/images/twitter_card.png"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="Boomer Automation Inc. digital growth systems, websites, SEO, Google Ads, and automation"
-    />
-
-    <!-- =====================================================
-         FAVICONS
-         Local relative paths work locally and on Netlify.
-    ====================================================== -->
-    <link
-      rel="icon"
-      href="./assets/images/favicon.png"
-      type="image/png"
-      sizes="any"
-    />
-    <link rel="apple-touch-icon" href="./assets/images/favicon.png" />
-
-    <!-- =====================================================
-         PERFORMANCE
-         Hero image is eagerly loaded and high priority.
-         Non-hero images are lazy loaded in the body.
-    ====================================================== -->
-    <link
-      rel="preload"
-      as="image"
-      href="./assets/images/services-hero.v1.webp"
-      type="image/webp"
-      fetchpriority="high"
-    />
-
-    <link rel="preload" as="style" href="./assets/css/global.v2.css" />
-    <link rel="preload" as="style" href="./assets/css/services.v2.css" />
-
-    <!-- =====================================================
-         STYLES
-    ====================================================== -->
-    <link rel="stylesheet" href="./assets/css/global.v2.css" />
-    <link rel="stylesheet" href="./assets/css/services.v2.css" />
-
-    <!-- =====================================================
-         STRUCTURED DATA
-         Schema uses absolute production clean URLs.
-    ====================================================== -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://boomerautomation.com/#organization",
-            "name": "Boomer Automation Inc.",
-            "url": "https://boomerautomation.com/",
-            "logo": {
-              "@type": "ImageObject",
-              "@id": "https://boomerautomation.com/#logo",
-              "url": "https://boomerautomation.com/assets/images/favicon.png"
-            },
-            "email": "boomerautomationinc@gmail.com",
-            "telephone": "+1-249-406-5820",
-            "address": {
-              "@type": "PostalAddress",
-              "addressRegion": "ON",
-              "addressCountry": "CA"
-            },
-            "areaServed": {
-              "@type": "AdministrativeArea",
-              "name": "Ontario"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+1-249-406-5820",
-              "email": "boomerautomationinc@gmail.com",
-              "contactType": "sales and project inquiries",
-              "areaServed": "CA-ON",
-              "availableLanguage": "English"
-            }
-          },
-          {
-            "@type": "ProfessionalService",
-            "@id": "https://boomerautomation.com/#professional-service",
-            "name": "Boomer Automation Inc.",
-            "url": "https://boomerautomation.com/",
-            "image": "https://boomerautomation.com/assets/images/og_card.png",
-            "email": "boomerautomationinc@gmail.com",
-            "telephone": "+1-249-406-5820",
-            "priceRange": "$$",
-            "parentOrganization": {
-              "@id": "https://boomerautomation.com/#organization"
-            },
-            "address": {
-              "@type": "PostalAddress",
-              "addressRegion": "ON",
-              "addressCountry": "CA"
-            },
-            "areaServed": {
-              "@type": "AdministrativeArea",
-              "name": "Ontario"
-            },
-            "description": "Boomer Automation Inc. provides workflow automation, website creation and redesign, Google Ads campaign management, SEO optimization, lead capture systems, conversion tracking, and digital growth infrastructure for Ontario businesses.",
-            "serviceType": [
-              "Workflow Automation",
-              "AI Workflow Automation",
-              "Website Design",
-              "Website Redesign",
-              "SEO Optimization",
-              "Google Ads Campaign Management",
-              "Lead Generation Systems",
-              "CRM Automation",
-              "Conversion Tracking",
-              "Landing Page Optimization",
-              "Website Maintenance"
-            ],
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Boomer Automation Services",
-              "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "name": "Workflow Automation",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Workflow Automation",
-                    "url": "https://boomerautomation.com/services#workflow-automation",
-                    "description": "Automation systems for repetitive admin work, lead routing, customer follow-up, CRM updates, internal notifications, and connected business workflows."
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Website Creation and Redesign",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Website Creation and Redesign",
-                    "url": "https://boomerautomation.com/services#websites",
-                    "description": "Modern, mobile-first, SEO-ready websites built or redesigned for lead generation, business credibility, tracking, and conversion-focused user experience."
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Google Ads Campaign Management",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Google Ads Campaign Management",
-                    "url": "https://boomerautomation.com/services#google-ads",
-                    "description": "Google Ads campaign setup, keyword planning, tracking, landing page alignment, lead generation strategy, conversion measurement, and campaign optimization."
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Website Maintenance",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Website Maintenance",
-                    "url": "https://boomerautomation.com/services#maintenance",
-                    "description": "One month of included post-launch maintenance, with optional ongoing support, refinements, monitoring, content updates, and technical fixes."
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://boomerautomation.com/#website",
-            "url": "https://boomerautomation.com/",
-            "name": "Boomer Automation Inc.",
-            "publisher": {
-              "@id": "https://boomerautomation.com/#organization"
-            },
-            "inLanguage": "en-CA"
-          },
-          {
-            "@type": "ImageObject",
-            "@id": "https://boomerautomation.com/services#primaryimage",
-            "url": "https://boomerautomation.com/assets/images/services-hero.v1.webp",
-            "width": 1400,
-            "height": 997,
-            "caption": "Business automation dashboard and campaign analytics"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://boomerautomation.com/services#webpage",
-            "url": "https://boomerautomation.com/services",
-            "name": "Services | Boomer Automation Inc.",
-            "headline": "Digital systems for businesses that want fewer leaks and cleaner growth.",
-            "description": "Boomer Automation Inc. helps Ontario businesses automate workflows, build or redesign websites, run Google Ads campaigns, improve SEO, capture leads, track conversions, and create cleaner digital growth systems.",
-            "isPartOf": {
-              "@id": "https://boomerautomation.com/#website"
-            },
-            "primaryImageOfPage": {
-              "@id": "https://boomerautomation.com/services#primaryimage"
-            },
-            "publisher": {
-              "@id": "https://boomerautomation.com/#organization"
-            },
-            "about": {
-              "@id": "https://boomerautomation.com/#professional-service"
-            },
-            "mainEntity": {
-              "@id": "https://boomerautomation.com/services#services-catalog"
-            },
-            "breadcrumb": {
-              "@id": "https://boomerautomation.com/services#breadcrumb"
-            },
-            "inLanguage": "en-CA"
-          },
-          {
-            "@type": "ItemList",
-            "@id": "https://boomerautomation.com/services#services-catalog",
-            "name": "Boomer Automation Service Categories",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Workflow Automation",
-                "url": "https://boomerautomation.com/services#workflow-automation"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Websites",
-                "url": "https://boomerautomation.com/services#websites"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Google Ads",
-                "url": "https://boomerautomation.com/services#google-ads"
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
-                "name": "Maintenance",
-                "url": "https://boomerautomation.com/services#maintenance"
-              }
-            ]
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://boomerautomation.com/services#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://boomerautomation.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Services",
-                "item": "https://boomerautomation.com/services"
-              }
-            ]
-          }
-        ]
-      }
-    </script>
-  </head>
-
-  <body>
-    <!-- =====================================================
-         GLOBAL HEADER MOUNT
-         Loaded by ./assets/js/global.v2.js
-    ====================================================== -->
-    <div id="siteHeaderMount"></div>
-
-    <main id="mainContent">
-      <!-- =====================================================
-           HERO
-           Hero image is eager/high-priority.
-      ====================================================== -->
-      <section class="services-hero" aria-labelledby="servicesHeroTitle">
-        <div class="services-hero-image-wrap" >
-          <img
-            class="services-hero-image"
-            id="servicesHeroImage"
-            src="./assets/images/services-hero.v1.webp"
-            alt="Business automation dashboard showing campaign analytics, lead tracking, website performance, and digital growth systems."
-            width="1400"
-            height="997"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-          />
-          <div class="services-hero-overlay"></div>
-        </div>
-
-        <div class="container services-hero-content reveal">
-          <p class="eyebrow">Services</p>
-
-          <h1 id="servicesHeroTitle">
-            Digital systems for businesses that want fewer leaks and cleaner growth.
-          </h1>
-
-          <p class="services-hero-copy">
-            We automate workflows, build and redesign websites, and run Google Ads campaigns
-            with clear tracking, lead capture, and conversion-focused strategy.
-          </p>
-
-          <div class="services-hero-actions" aria-label="Services page primary actions">
-            <a class="btn btn-primary magnetic" href="#servicesOverview">Explore Services</a>
-            <a class="btn btn-secondary magnetic" href="./contact">Start a Project</a>
-          </div>
-
-          <nav class="services-context-links" aria-label="Related service links">
-            <a href="./systems">See Connected Systems</a>
-            <a href="./process">View Our Process</a>
-            <a href="./portfolio">View Recent Work</a>
-          </nav>
-        </div>
-      </section>
-
-      <!-- =====================================================
-           SERVICE INDEX / COUNTERS
-      ====================================================== -->
-      <section class="service-index section-padding" id="servicesOverview" aria-labelledby="servicesOverviewTitle">
-        <div class="container service-index-grid">
-          <div class="service-index-copy reveal">
-            <p class="eyebrow">What we cover</p>
-            <h2 id="servicesOverviewTitle">One partner for the systems around your leads.</h2>
-          </div>
-
-          <div class="service-index-metrics reveal" aria-label="Boomer Automation service highlights">
-            <div class="metric-line">
-              <span class="metric-number" data-count="3">3</span>
-              <p>Core service lanes</p>
-            </div>
-
-            <div class="metric-line">
-              <span class="metric-number" data-count="30">30</span>
-              <p>Days of included maintenance</p>
-            </div>
-
-            <div class="metric-line">
-              <span class="metric-number" data-count="1">1</span>
-              <p>Connected growth system</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================
-           SERVICE BLOCKS
-           Non-hero images are lazy loaded.
-      ====================================================== -->
-      <section class="service-editorial" aria-label="Boomer Automation service details">
-        <!-- =================================================
-             SERVICE 01 — WORKFLOW AUTOMATION
-        ================================================== -->
-        <article class="service-block service-block-dark reveal" id="workflow-automation">
-          <div class="container service-block-grid">
-            <div class="service-block-media">
-              <img
-                src="./assets/images/pointer.jpg"
-                alt="Workflow automation dashboard on a laptop"
-                width="1200"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-
-            <div class="service-block-content">
-              <span class="service-number">01</span>
-              <p class="service-label">Workflow Automation</p>
-
-              <h2>Make the repetitive parts of your business happen without chasing them.</h2>
-
-              <p>
-                We build automation systems that reduce manual admin, speed up customer
-                communication, connect your tools, and move leads or tasks through your business
-                with less friction.
-              </p>
-
-              <div class="service-detail-list">
-                <span>Lead capture and routing</span>
-                <span>CRM updates and task triggers</span>
-                <span>Automated customer follow-up</span>
-                <span>Internal notifications and handoffs</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- =================================================
-             SERVICE 02 — WEBSITES
-        ================================================== -->
-        <article class="service-block service-block-split reveal" id="websites">
-          <div class="container service-block-grid">
-            <div class="service-block-content">
-              <span class="service-number">02</span>
-              <p class="service-label">Websites</p>
-
-              <h2>Build or redesign a website that looks sharp and supports sales.</h2>
-
-              <p>
-                We create mobile-first, SEO-ready websites with strong CTAs, clean structure,
-                tracking foundations, and the kind of user experience that makes your business
-                easier to trust.
-              </p>
-
-              <div class="service-detail-list">
-                <span>New website creation</span>
-                <span>Full website redesigns</span>
-                <span>SEO metadata and page structure</span>
-                <span>Lead forms and conversion paths</span>
-              </div>
-            </div>
-
-            <div class="service-block-media">
-              <img
-                src="./assets/images/laptop-2.jpg"
-                alt="Modern website design and development workspace"
-                width="1200"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-        </article>
-
-        <!-- =================================================
-             SERVICE 03 — GOOGLE ADS
-        ================================================== -->
-        <article class="service-block service-block-dark reveal" id="google-ads">
-          <div class="container service-block-grid">
-            <div class="service-block-media">
-              <img
-                src="./assets/images/services-hero.v1.webp"
-                alt="Google Ads and analytics campaign dashboard"
-                width="1200"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-
-            <div class="service-block-content">
-              <span class="service-number">03</span>
-              <p class="service-label">Google Ads</p>
-
-              <h2>Run campaigns with intent, tracking, and a real conversion path.</h2>
-
-              <p>
-                We set up and manage Google Ads campaigns around search intent, location,
-                conversion tracking, landing page clarity, and measurable lead generation.
-              </p>
-
-              <div class="service-detail-list">
-                <span>Campaign setup and structure</span>
-                <span>Keyword and search intent planning</span>
-                <span>Conversion tracking setup</span>
-                <span>Monitoring and optimization</span>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- =====================================================
-           CONNECTED SYSTEM ANIMATION
-      ====================================================== -->
-      <section class="signal-section section-padding" aria-labelledby="signalTitle">
-        <div class="container signal-grid">
-          <div class="signal-copy reveal">
-            <p class="eyebrow">Connected strategy</p>
-            <h2 id="signalTitle">Your ads, website, and automation should work as one system.</h2>
-            <p>
-              A campaign needs a page that converts. A website needs lead capture. Lead capture
-              needs follow-up. Follow-up needs automation. That is where the system starts to
-              compound.
-            </p>
-          </div>
-
-          <div class="signal-map reveal" aria-label="Connected marketing system animation">
-            <div class="signal-node">Ads</div>
-            <div class="signal-track"></div>
-            <div class="signal-node">Website</div>
-            <div class="signal-track"></div>
-            <div class="signal-node">Lead</div>
-            <div class="signal-track"></div>
-            <div class="signal-node">Automation</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================
-           MAINTENANCE CALLOUT
-      ====================================================== -->
-      <section class="maintenance-section section-padding" id="maintenance" aria-labelledby="maintenanceTitle">
-        <div class="container maintenance-callout reveal">
-          <div class="maintenance-heading">
-            <p class="eyebrow">Maintenance</p>
-            <h2 id="maintenanceTitle">One month of maintenance is included after launch.</h2>
-          </div>
-
-          <div class="maintenance-copy">
-            <p>
-              Every project includes one month of maintenance at no extra cost so the launch
-              period is supported, monitored, and refined properly.
-            </p>
-
-            <p>
-              After that, maintenance is available as an added service. If something breaks
-              because of work we delivered, we stand behind it and fix it.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================
-           PROCESS STRIP
-      ====================================================== -->
-      <section class="process-strip section-padding" aria-labelledby="serviceProcessTitle">
-        <div class="container process-strip-heading reveal">
-          <p class="eyebrow">How we work</p>
-          <h2 id="serviceProcessTitle">A clean process for building useful systems.</h2>
-        </div>
-
-        <div class="container process-rows reveal" aria-label="Boomer Automation service process">
-          <div class="process-row">
-            <span>01</span>
-            <h3>Audit</h3>
-            <p>We identify where your website, ads, workflows, or follow-ups are leaking results.</p>
-          </div>
-
-          <div class="process-row">
-            <span>02</span>
-            <h3>Plan</h3>
-            <p>We map the automation logic, campaign structure, website flow, and conversion path.</p>
-          </div>
-
-          <div class="process-row">
-            <span>03</span>
-            <h3>Build</h3>
-            <p>We create the pages, workflows, campaigns, integrations, tracking, and launch assets.</p>
-          </div>
-
-          <div class="process-row">
-            <span>04</span>
-            <h3>Support</h3>
-            <p>We include one month of maintenance and offer ongoing support when needed.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================
-           FINAL CTA
-      ====================================================== -->
-      <section class="services-cta section-padding" id="servicesContact" aria-labelledby="servicesContactTitle">
-        <div class="container services-cta-inner reveal">
-          <p class="eyebrow">Start with the bottleneck</p>
-
-          <h2 id="servicesContactTitle">Tell us what your business should stop doing manually.</h2>
-
-          <p>
-            Whether the answer is a better website, a cleaner ad campaign, or automation behind
-            the scenes, we can help build the system around it.
-          </p>
-
-          <div class="services-hero-actions" aria-label="Services final contact actions">
-            <a class="btn btn-primary magnetic" href="mailto:boomerautomationinc@gmail.com">
-              Email Boomer Automation
-            </a>
-            <a class="btn btn-secondary magnetic" href="tel:+12494065820">
-              Call 249-406-5820
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- =====================================================
-         MOBILE STICKY CTA
-    ====================================================== -->
-    <div class="mobile-cta-bar" aria-label="Quick contact options">
-      <a href="tel:+12494065820">Call</a>
-      <a href="mailto:boomerautomationinc@gmail.com">Email</a>
-    </div>
-
-    <!-- =====================================================
-         GLOBAL FOOTER MOUNT
-         Loaded by ./assets/js/global.v2.js
-    ====================================================== -->
-    <div id="siteFooterMount"></div>
-
-    <!-- =====================================================
-         SCRIPTS
-         Both scripts are deferred because they do not need to block HTML parsing.
-    ====================================================== -->
-    <script src="./assets/js/global.v2.js" defer></script>
-    <script src="./assets/js/services.v1.js" defer></script>
-  </body>
-</html>
+<html lang="en-CA"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="telephone=yes" name="format-detection"/>
+<meta content="dark light" name="color-scheme"/>
+<title>Website, SEO, Google Ads &amp; Automation | Boomer Automation</title>
+<meta content="Explore custom websites, SEO, Google Ads, lead capture, tracking, and workflow automation services for Ontario businesses." name="description"/>
+<meta content="Boomer Automation Inc." name="author"/>
+<meta content="Boomer Automation" name="application-name"/>
+<meta content="Boomer Automation" name="apple-mobile-web-app-title"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="googlebot"/>
+<meta content="#040a10" name="theme-color"/>
+<link href="https://boomerautomation.com/services" rel="canonical"/>
+<link href="https://boomerautomation.com/services" hreflang="en-CA" rel="alternate"/>
+<link href="https://boomerautomation.com/services" hreflang="x-default" rel="alternate"/>
+<meta content="CA-ON" name="geo.region"/>
+<meta content="Ontario, Canada" name="geo.placename"/>
+<meta content="website" property="og:type"/>
+<meta content="Boomer Automation Inc." property="og:site_name"/>
+<meta content="en_CA" property="og:locale"/>
+<meta content="https://boomerautomation.com/services" property="og:url"/>
+<meta content="Website, SEO, Google Ads &amp; Automation | Boomer Automation" property="og:title"/>
+<meta content="Explore custom websites, SEO, Google Ads, lead capture, tracking, and workflow automation services for Ontario businesses." property="og:description"/>
+<meta content="https://boomerautomation.com/assets/images/social/boomer-automation-og.jpg" property="og:image"/>
+<meta content="https://boomerautomation.com/assets/images/social/boomer-automation-og.jpg" property="og:image:secure_url"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Boomer Automation websites, SEO, paid advertising, and workflow systems" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Website, SEO, Google Ads &amp; Automation | Boomer Automation" name="twitter:title"/>
+<meta content="Explore custom websites, SEO, Google Ads, lead capture, tracking, and workflow automation services for Ontario businesses." name="twitter:description"/>
+<meta content="https://boomerautomation.com/assets/images/social/boomer-automation-x.jpg" name="twitter:image"/>
+<meta content="Boomer Automation websites, SEO, paid advertising, and workflow systems" name="twitter:image:alt"/>
+<link href="assets/icons/favicon.ico" rel="icon" sizes="any"/>
+<link href="assets/icons/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/icons/favicon-48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="assets/icons/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets/icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="site.webmanifest" rel="manifest"/>
+<link as="image" fetchpriority="high" href="assets/images/banners/services-hero.v1.webp" rel="preload" type="image/webp"/>
+<link href="assets/css/global.v4.css" rel="stylesheet"/>
+<link href="assets/css/services.v4.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://boomerautomation.com/#organization","name":"Boomer Automation Inc.","alternateName":"Boomer Automation","url":"https://boomerautomation.com/","logo":{"@id":"https://boomerautomation.com/#logo"},"image":{"@id":"https://boomerautomation.com/#logo"},"email":"boomerautomationinc@gmail.com","telephone":"+1-249-406-5820","contactPoint":{"@type":"ContactPoint","contactType":"sales and project inquiries","telephone":"+1-249-406-5820","email":"boomerautomationinc@gmail.com","areaServed":"CA-ON","availableLanguage":["English"]},"address":{"@type":"PostalAddress","addressRegion":"ON","addressCountry":"CA"},"areaServed":{"@type":"AdministrativeArea","name":"Ontario, Canada"},"knowsAbout":["Custom website development","WordPress websites","E-commerce websites","Search engine optimization","Google Ads","Lead capture systems","Workflow automation","Conversion tracking"]},{"@type":"WebSite","@id":"https://boomerautomation.com/#website","url":"https://boomerautomation.com/","name":"Boomer Automation","alternateName":"Boomer Automation Inc.","publisher":{"@id":"https://boomerautomation.com/#organization"},"inLanguage":"en-CA"},{"@type":"ImageObject","@id":"https://boomerautomation.com/#logo","url":"https://boomerautomation.com/assets/images/brand/boomer-automation-mark.png","contentUrl":"https://boomerautomation.com/assets/images/brand/boomer-automation-mark.png","width":128,"height":128,"caption":"Boomer Automation lion mark"},{"@type":"ImageObject","@id":"https://boomerautomation.com/services#primaryimage","url":"https://boomerautomation.com/assets/images/banners/services-hero.v1.webp","contentUrl":"https://boomerautomation.com/assets/images/banners/services-hero.v1.webp","width":2400,"height":1200,"caption":"Boomer Automation service diagnosis and digital growth planning workspace"},{"@type":"CollectionPage","@id":"https://boomerautomation.com/services#webpage","url":"https://boomerautomation.com/services","name":"Website, SEO, Google Ads & Automation | Boomer Automation","description":"Explore custom websites, SEO, Google Ads, lead capture, tracking, and workflow automation services for Ontario businesses.","inLanguage":"en-CA","isPartOf":{"@id":"https://boomerautomation.com/#website"},"about":{"@id":"https://boomerautomation.com/#organization"},"publisher":{"@id":"https://boomerautomation.com/#organization"},"primaryImageOfPage":{"@id":"https://boomerautomation.com/services#primaryimage"},"image":{"@id":"https://boomerautomation.com/services#primaryimage"},"dateModified":"2026-08-05","isAccessibleForFree":true,"breadcrumb":{"@id":"https://boomerautomation.com/services#breadcrumb"},"mainEntity":{"@id":"https://boomerautomation.com/services#service-list"}},{"@type":"BreadcrumbList","@id":"https://boomerautomation.com/services#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://boomerautomation.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://boomerautomation.com/services"}]},{"@type":"ItemList","@id":"https://boomerautomation.com/services#service-list","name":"Boomer Automation services","numberOfItems":6,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Service","@id":"https://boomerautomation.com/services#service-1","name":"Custom Websites","description":"Custom-coded, WordPress, and e-commerce websites built for speed, usability, conversion, and ownership.","url":"https://boomerautomation.com/services","provider":{"@id":"https://boomerautomation.com/#organization"},"areaServed":{"@type":"AdministrativeArea","name":"Ontario, Canada"},"availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://boomerautomation.com/contact"}}},{"@type":"ListItem","position":2,"item":{"@type":"Service","@id":"https://boomerautomation.com/services#service-2","name":"Search Engine Optimization","description":"Technical SEO foundations, on-page structure, local visibility, and content guidance for qualified organic discovery.","url":"https://boomerautomation.com/services","provider":{"@id":"https://boomerautomation.com/#organization"},"areaServed":{"@type":"AdministrativeArea","name":"Ontario, Canada"},"availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://boomerautomation.com/contact"}}},{"@type":"ListItem","position":3,"item":{"@type":"Service","@id":"https://boomerautomation.com/services#service-3","name":"Google Ads","description":"Search campaigns, landing-page alignment, conversion tracking, and ongoing campaign optimization.","url":"https://boomerautomation.com/services","provider":{"@id":"https://boomerautomation.com/#organization"},"areaServed":{"@type":"AdministrativeArea","name":"Ontario, Canada"},"availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://boomerautomation.com/contact"}}},{"@type":"ListItem","position":4,"item":{"@type":"Service","@id":"https://boomerautomation.com/services#service-4","name":"Lead Capture Systems","description":"Forms, funnels, routing logic, and immediate response systems that help prevent opportunities from being missed.","url":"https://boomerautomation.com/services","provider":{"@id":"https://boomerautomation.com/#organization"},"areaServed":{"@type":"AdministrativeArea","name":"Ontario, Canada"},"availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://boomerautomation.com/contact"}}},{"@type":"ListItem","position":5,"item":{"@type":"Service","@id":"https://boomerautomation.com/services#service-5","name":"Workflow Automation","description":"CRM-compatible workflows, notifications, reminders, handoffs, and repetitive-process automation.","url":"https://boomerautomation.com/services","provider":{"@id":"https://boomerautomation.com/#organization"},"areaServed":{"@type":"AdministrativeArea","name":"Ontario, Canada"},"availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://boomerautomation.com/contact"}}},{"@type":"ListItem","position":6,"item":{"@type":"Service","@id":"https://boomerautomation.com/services#service-6","name":"Tracking and Reporting","description":"Analytics, conversion tracking, reporting, and measurement systems that show what is working.","url":"https://boomerautomation.com/services","provider":{"@id":"https://boomerautomation.com/#organization"},"areaServed":{"@type":"AdministrativeArea","name":"Ontario, Canada"},"availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://boomerautomation.com/contact"}}}]}]}</script>
+<script defer="" src="assets/js/global.v3.js"></script>
+<script defer="" src="assets/js/services.v2.js"></script>
+<script defer="" src="assets/js/environment-compat.v2.js"></script>
+</head>
+<body data-page="services"><div id="siteHeaderMount"><a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" id="siteHeader">
+<div class="shell header-inner">
+<a aria-label="Boomer Automation home" class="brand" href="./">
+<img alt="" height="44" src="assets/images/brand/boomer-automation-mark.png" width="44"/>
+<span><strong>Boomer Automation</strong><small>Lead the pack</small></span>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a data-nav="services" href="services.html">Services</a><a data-nav="systems" href="systems.html">Systems</a>
+<a data-nav="process" href="process.html">Process</a><a data-nav="portfolio" href="portfolio.html">Portfolio</a>
+<a data-nav="resources" href="resources.html">Resources</a><a data-nav="about" href="about.html">About</a>
+</nav>
+<a class="header-cta" href="contact.html">Contact</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" id="menuToggle" type="button"><span></span><span></span></button>
+</div>
+</header>
+<!-- The fixed mobile dialog is a sibling of the blurred sticky header so it remains viewport-bound in Chromium and Safari. -->
+<div aria-hidden="true" class="mobile-menu" id="mobileMenu">
+<div aria-label="Site navigation" aria-modal="true" class="mobile-menu-panel" id="mobileMenuPanel" role="dialog" tabindex="-1">
+<div class="mobile-menu-top"><span>Navigation</span><button aria-label="Close navigation menu" id="menuClose" type="button">Close</button></div>
+<nav aria-label="Mobile navigation" class="mobile-nav">
+<a data-nav="services" href="services.html">Services</a><a data-nav="systems" href="systems.html">Systems</a>
+<a data-nav="process" href="process.html">Process</a><a data-nav="portfolio" href="portfolio.html">Portfolio</a>
+<a data-nav="resources" href="resources.html">Resources</a><a data-nav="about" href="about.html">About</a>
+<a data-nav="contact" href="contact.html">Contact</a>
+</nav>
+<div class="mobile-contact"><a href="tel:+12494065820">249-406-5820</a><a href="mailto:boomerautomationinc@gmail.com">boomerautomationinc@gmail.com</a></div>
+</div>
+</div></div><main id="main-content" tabindex="-1"><section class="page-hero services-hero"><div class="shell"><div class="hero-content reveal"><p class="eyebrow">Services</p><h1 class="display">What needs<br/>fixing?</h1><p class="hero-copy">Some businesses need a better website. Some need stronger traffic. Some need follow-up that stops relying on memory. Most need the pieces connected.</p><div class="hero-actions"><a class="button button-gold" href="#diagnosis">Start with a diagnosis →</a><a class="button button-secondary" href="#packages">View packages</a></div></div></div></section>
+<section class="section paper" id="diagnosis"><div class="shell diagnosis-layout"><div><p class="eyebrow" style="color:#8d5b00">Start with the symptom</p><h2 class="section-title">Pick the challenge that feels most familiar.</h2></div><div aria-label="Business symptoms" aria-orientation="vertical" class="diagnosis-tabs" role="tablist"><button aria-controls="panel-traffic" aria-selected="true" id="tab-traffic" role="tab" tabindex="0">Traffic, but not enough inquiries.</button><button aria-controls="panel-followup" aria-selected="false" id="tab-followup" role="tab" tabindex="-1">Leads come in, but follow-up is inconsistent.</button><button aria-controls="panel-ads" aria-selected="false" id="tab-ads" role="tab" tabindex="-1">Ads are running, but the results are unclear.</button><button aria-controls="panel-site" aria-selected="false" id="tab-site" role="tab" tabindex="-1">The site feels outdated, slow, or hard to trust.</button><button aria-controls="panel-foundation" aria-selected="false" id="tab-foundation" role="tab" tabindex="-1">We need a cleaner digital foundation.</button></div><div><div aria-labelledby="tab-traffic" class="diagnosis-panel" id="panel-traffic" role="tabpanel" tabindex="0"><h3>Likely cause</h3><p>Unclear offer, weak page structure, poor trust signals, or a confusing path to contact.</p><hr/><h3>What we might prescribe</h3><p>Website rebuild, landing page, conversion structure, lead capture, and messaging that connects.</p><p class="hand-note">The goal is not more traffic.<br/>The goal is more qualified inquiries.</p></div><div aria-labelledby="tab-followup" class="diagnosis-panel" hidden="" id="panel-followup" role="tabpanel" tabindex="0"><h3>Likely cause</h3><p>Lead details are scattered, ownership is unclear, and reminders depend on memory.</p><hr/><h3>What we might prescribe</h3><p>Lead routing, internal notifications, follow-up sequences, and CRM-compatible workflow planning.</p></div><div aria-labelledby="tab-ads" class="diagnosis-panel" hidden="" id="panel-ads" role="tabpanel" tabindex="0"><h3>Likely cause</h3><p>Broad targeting, weak conversion tracking, or ad traffic arriving on a generic page.</p><hr/><h3>What we might prescribe</h3><p>Campaign restructuring, landing page alignment, GA4 and Tag Manager events, search-term controls, and call tracking.</p></div><div aria-labelledby="tab-site" class="diagnosis-panel" hidden="" id="panel-site" role="tabpanel" tabindex="0"><h3>Likely cause</h3><p>The website no longer reflects the business, loads poorly on mobile, or leaves visitors unsure what to do next.</p><hr/><h3>What we might prescribe</h3><p>A custom-coded rebuild or WordPress redesign with clearer positioning, stronger trust, and a cleaner inquiry path.</p></div><div aria-labelledby="tab-foundation" class="diagnosis-panel" hidden="" id="panel-foundation" role="tabpanel" tabindex="0"><h3>Likely cause</h3><p>Website, SEO, ads, forms, and reporting were assembled separately without one operating model.</p><hr/><h3>What we might prescribe</h3><p>A phased digital foundation connecting visibility, conversion, follow-up, and measurement.</p></div></div></div></section>
+<section class="dark-2"><div class="shell prescriptions"><article><p class="eyebrow">What we might prescribe</p><h2>Solutions that work together.</h2><p>We design the right mix for your business, not a one-size-fits-all checklist.</p></article><article><h3>Website rebuild</h3><p>Custom websites built for clarity, trust, and conversion.</p></article><article><h3>Search foundation</h3><p>Technical SEO, local relevance, content structure, metadata, schema, and internal linking.</p></article><article><h3>Paid traffic system</h3><p>Google Ads strategy, landing pages, lead quality, call tracking, and reporting.</p></article><article><h3>Lead capture flow</h3><p>Forms, quote flows, intake questions, consent language, and thank-you paths.</p></article><article><h3>Follow-up automation</h3><p>Routing, reminders, notifications, and CRM-compatible workflows.</p></article><article><h3>Measurement setup</h3><p>GA4, Search Console, Tag Manager, conversion events, source tracking, and reports.</p></article></div></section>
+<section class="section paper" id="packages"><div class="shell"><div class="pricing-intro"><div><p class="eyebrow" style="color:#8d5b00">Choose the right scale</p><h2 class="section-title">Start focused.<br/>Build momentum.<br/>Scale with purpose.</h2></div><div><p class="muted">Each package has a defined production allowance, revision limit, hosting setup, deployment, domain connection, and handoff. Hosting fees are paid directly by the client to the selected provider.</p><div class="pricing-scale"><article class="price-package"><span class="number">01</span><h3>One-Page Starter</h3><p class="price">$650–$900</p><p>Up to 10 hours · one page · no SEO program · 14 days support.</p></article><article class="price-package"><span class="number">02</span><h3>Professional Launch</h3><p class="price">$1,200–$1,800</p><p>Up to 22 hours · up to four pages · foundational SEO · 30 days support.</p></article><article class="price-package recommended"><span class="number">03 · Recommended</span><h3>Business Growth</h3><p class="price">$2,200–$3,500</p><p>Up to 45 hours · five to eight pages · comprehensive foundations · 60 days support.</p></article><article class="price-package"><span class="number">04</span><h3>Premium Digital Presence</h3><p class="price">$4,000–$6,500+</p><p>Up to 80 hours · 10–15 pages · advanced SEO and production allowances · 90 days support.</p></article></div></div></div></div></section>
+<section class="section dark"><div class="shell platform-guidance-layout"><figure class="image-frame platform-guidance-media"><img alt="Three physical website-platform paths representing custom-coded, WordPress, and e-commerce approaches" decoding="async" height="1200" loading="lazy" src="assets/images/sections/services-platform-guidance.v1.webp" width="1600"/></figure><div class="platform-grid"><article><p class="eyebrow">Platform guidance</p><h2>The platform should serve the business, not complicate it.</h2></article><article><h3>Custom-coded website</h3><p class="muted">Recommended for most service-business marketing sites.</p><ul><li>Faster, lighter, and more secure</li><li>Built around exact goals</li><li>Fewer updates and plugins</li><li>Low routine maintenance</li></ul></article><article><h3>WordPress</h3><p class="muted">Useful when frequent client-managed publishing is genuinely needed.</p><ul><li>Easy content and page updates</li><li>Large ecosystem</li><li>Good for content-heavy sites</li><li>Requires ongoing maintenance</li></ul></article><article><h3>E-commerce</h3><p class="muted">Quoted separately, starting at $3,500.</p><ul><li>Products, cart, checkout, and payments</li><li>Inventory and order systems</li><li>Shipping, tax, and policies</li><li>Usually Shopify or WooCommerce</li></ul></article></div></div></section>
+<section class="section paper-light"><div class="shell addons-grid"><article><p class="eyebrow" style="color:#8d5b00">Add only what you need</p><h2 class="section-title">Available when the project calls for it.</h2></article><article><h3>Copywriting</h3><p>Homepage $250–$400; service pages $150–$250.</p></article><article><h3>Image preparation</h3><p>Crop, resize, compress, and format conversion where included.</p></article><article><h3>Image manipulation</h3><p>Simple edits $20–$40; detailed retouching $50–$125.</p></article><article><h3>Additional pages</h3><p>Standard page $200–$350.</p></article><article><h3>Advanced landing pages</h3><p>Campaign landing pages $350–$600.</p></article><article><h3>Custom calculators</h3><p>Mortgage, quote, payment, and other tools from $600.</p></article><article><h3>Rush delivery</h3><p>Expedited delivery adds 20%–25% where scheduling allows.</p></article></div></section>
+<section class="final-cta"><div class="shell final-cta-inner"><h2>Not sure what you need yet?</h2><p class="muted" style="max-width:360px">Bring us the website, the goal, or the bottleneck. We’ll help identify the right starting point.</p><div class="section-actions"><a class="button button-gold" href="contact.html">Start with a diagnosis →</a><a class="button button-secondary" href="resources.html">View resources →</a></div></div></section></main><div id="siteFooterMount"><footer class="site-footer">
+<div class="shell footer-grid">
+<div class="footer-brand"><a class="brand" href="./"><img alt="" height="46" src="assets/images/brand/boomer-automation-mark.png" width="46"/><span><strong>Boomer Automation</strong><small>Lead the pack</small></span></a><p>Websites, SEO, paid traffic, and workflow systems that help Ontario service businesses grow with more clarity and less manual work.</p></div>
+<div><h2>Explore</h2><a href="services.html">Services</a><a href="systems.html">Systems</a><a href="process.html">Process</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a></div>
+<div><h2>Resources</h2><a href="resources.html">Resource library</a><a href="assets/docs/boomer-automation-website-strategy-pricing-guide.pdf">Website pricing guide</a><a href="assets/docs/boomer-automation-paid-ads-strategy-comparison-guide.pdf">Paid ads guide</a></div>
+<div><h2>Contact</h2><a href="mailto:boomerautomationinc@gmail.com">boomerautomationinc@gmail.com</a><a href="tel:+12494065820">249-406-5820</a><p>Ontario, Canada</p></div>
+</div>
+<div class="shell footer-bottom"><p>© <span id="year"></span> Boomer Automation Inc. All rights reserved.</p><div><button class="text-button" data-privacy-open="" type="button">Privacy choices</button><a href="privacy.html">Privacy Policy</a></div></div>
+</footer>
+<div class="privacy-panel" hidden="" id="privacyPanel"><div aria-describedby="privacyPanelDescription" aria-labelledby="privacyPanelTitle" aria-modal="true" class="privacy-panel-card" role="dialog"><button aria-label="Close privacy choices" class="privacy-close" data-privacy-close="" type="button">×</button><p class="eyebrow">Privacy choices</p><h2 id="privacyPanelTitle">Your browser, your choice.</h2><p id="privacyPanelDescription">Essential storage supports navigation preferences. Optional analytics and advertising measurement remain off unless you allow them.</p><div class="privacy-actions"><button class="button button-primary" data-privacy-accept="" type="button">Allow optional measurement</button><button class="button button-secondary" data-privacy-decline="" type="button">Essential only</button></div><a href="privacy.html">Read the Privacy Policy</a></div></div></div></body></html>
