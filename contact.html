@@ -51,7 +51,191 @@
 <script defer="" src="assets/js/environment-compat.v2.js"></script>
 </head>
 <body data-page="contact"><div id="siteHeaderMount"></div><main id="main-content" tabindex="-1"><section class="page-hero contact-hero"><div class="shell"><div class="hero-content reveal"><p class="eyebrow">Start the conversation</p><h1 class="display">Bring us<br/>the bottleneck.</h1><p class="hero-copy">Tell us what is slowing growth down. We will help identify the right website, traffic, tracking, lead-capture, or workflow path.</p></div></div></section>
-<section class="section paper"><div class="shell contact-main"><aside><p class="eyebrow" style="color:#8d5b00">What is slowing the business down right now?</p><h2 class="section-title">Start with the symptom.</h2><div aria-label="Choose the business bottleneck" class="symptom-list" role="group"><button aria-pressed="false" class="symptom-button" type="button">The website needs work</button><button aria-pressed="false" class="symptom-button" type="button">We need better leads</button><button aria-pressed="false" class="symptom-button" type="button">Follow-up is manual</button><button aria-pressed="false" class="symptom-button" type="button">We do not know what is working</button><button aria-pressed="false" class="symptom-button" type="button">We need a complete system</button></div><p class="form-note">Selecting a symptom pre-fills the relevant service direction. You can change it at any time.</p></aside><div class="contact-form-card"><p class="eyebrow" style="color:#8d5b00">Tell us a little more</p><h2>Project Contact Form</h2><form data-netlify="true" method="POST" name="contact" netlify-honeypot="bot-field"><input name="form-name" type="hidden" value="contact"/><p class="honeypot"><label>Do not fill this out if you are human: <input autocomplete="off" name="bot-field"/></label></p><div class="form-grid"><div class="field"><label for="name">Name *</label><input autocomplete="name" id="name" name="name" required="" type="text"/></div><div class="field"><label for="email">Email *</label><input autocomplete="email" id="email" name="email" required="" type="email"/></div><div class="field"><label for="phone">Phone</label><input autocomplete="tel" id="phone" name="phone" type="tel"/></div><div class="field"><label for="business">Business name</label><input autocomplete="organization" id="business" name="business" type="text"/></div><div class="field full"><label for="website">Website</label><input autocomplete="url" id="website" name="website" placeholder="https://yourbusiness.ca" type="url"/></div><div class="field"><label for="service">Service needed *</label><select id="service" name="service" required=""><option value="">Select a service</option><option>Workflow Automation</option><option>Website Creation</option><option>Website Redesign</option><option>Google Ads Campaigns</option><option>SEO Optimization</option><option>Lead Generation System</option><option>Maintenance / Support</option><option>Not Sure Yet</option></select></div><div class="field"><label for="timeline">Timeline</label><select id="timeline" name="timeline"><option value="">Select a timeline</option><option>As soon as possible</option><option>Within 30 days</option><option>1-3 months</option><option>Planning ahead</option></select></div><div class="field full"><label for="budget">Approximate budget</label><select id="budget" name="budget"><option value="">Select a range</option><option>Under $1,000</option><option>$1,000 - $2,500</option><option>$2,500 - $5,000</option><option>$5,000+</option><option>Not sure yet</option></select></div><div class="field full"><label for="message">What are you trying to improve? *</label><textarea aria-describedby="message-count" id="message" maxlength="1200" name="message" placeholder="Tell us about the website, workflow, campaign, tracking issue, or business bottleneck you want to fix." required=""></textarea><span class="char-count" data-char-count="" id="message-count">0 / 1200</span></div><div class="field full"><label class="check-row"><input id="consent" name="consent" required="" type="checkbox" value="Yes"/><span>I agree to be contacted by Boomer Automation Inc. about this inquiry. I understand that the information I submit may be collected, stored, and managed in lead-management tools for follow-up, project communication, service recommendations, reporting, and business records. I have read the <a class="arrow-link" href="privacy.html">Privacy Policy</a>.</span></label></div><div class="field full"><button class="button button-primary" type="submit">Send Project Inquiry</button><p aria-atomic="true" aria-live="polite" class="status-message" role="status"></p><p class="form-note">This form uses Netlify Forms and honeypot protection. Do not submit passwords, payment information, or other sensitive data.</p></div></div></form></div></div></section>
+<section class="section paper contact-intake-section">
+  <div class="shell contact-intake">
+    <header class="contact-intake-heading reveal">
+      <div class="contact-intake-copy">
+        <p class="eyebrow" style="color:#8d5b00">Start with the business problem</p>
+        <h2 class="section-title">A shorter path to the right project.</h2>
+        <p>Answer three quick sections. We will use the details to recommend the most practical website, traffic, tracking, or workflow direction.</p>
+      </div>
+      <div class="contact-intake-quick" aria-label="Direct contact details">
+        <a href="mailto:boomerautomationinc@gmail.com">
+          <span>Email</span>
+          <strong>boomerautomationinc@gmail.com</strong>
+        </a>
+        <a href="tel:+12494065820">
+          <span>Phone</span>
+          <strong>249-406-5820</strong>
+        </a>
+        <div>
+          <span>Service area</span>
+          <strong>Ontario, Canada</strong>
+        </div>
+      </div>
+    </header>
+
+    <div class="contact-wizard-card reveal" data-contact-wizard>
+      <div class="wizard-topbar">
+        <div>
+          <p class="eyebrow" style="color:#8d5b00">Guided project brief</p>
+          <h2>Tell us what needs to change.</h2>
+        </div>
+        <ol class="wizard-progress" aria-label="Project inquiry progress">
+          <li class="is-current" data-progress-step="1" aria-current="step"><span>1</span><small>Issue</small></li>
+          <li data-progress-step="2"><span>2</span><small>Contact</small></li>
+          <li data-progress-step="3"><span>3</span><small>Project</small></li>
+        </ol>
+      </div>
+
+      <form data-netlify="true" method="POST" name="contact" netlify-honeypot="bot-field">
+        <input name="form-name" type="hidden" value="contact"/>
+        <p class="honeypot"><label>Do not fill this out if you are human: <input autocomplete="off" name="bot-field"/></label></p>
+
+        <fieldset class="wizard-step" data-wizard-step="1">
+          <legend class="sr-only">Step 1: Choose the current business bottleneck</legend>
+          <div class="wizard-step-heading" tabindex="-1">
+            <span class="wizard-step-count">Step 1 of 3</span>
+            <h3>What is slowing the business down?</h3>
+            <p>Choose the closest match. This sets an initial service direction, which you can change later.</p>
+          </div>
+
+          <div class="symptom-grid">
+            <label class="symptom-choice">
+              <input required type="radio" name="symptom" value="The website needs work"/>
+              <span><b>01</b><strong>The website needs work</strong><small>Outdated, unclear, slow, or not converting.</small></span>
+            </label>
+            <label class="symptom-choice">
+              <input type="radio" name="symptom" value="We need better leads"/>
+              <span><b>02</b><strong>We need better leads</strong><small>Traffic exists, but qualified inquiries do not.</small></span>
+            </label>
+            <label class="symptom-choice">
+              <input type="radio" name="symptom" value="Follow-up is manual"/>
+              <span><b>03</b><strong>Follow-up is manual</strong><small>Too much time is lost copying, chasing, or updating.</small></span>
+            </label>
+            <label class="symptom-choice">
+              <input type="radio" name="symptom" value="We do not know what is working"/>
+              <span><b>04</b><strong>Tracking is unclear</strong><small>Marketing activity is difficult to measure.</small></span>
+            </label>
+            <label class="symptom-choice symptom-choice-wide">
+              <input type="radio" name="symptom" value="We need a complete system"/>
+              <span><b>05</b><strong>We need a complete system</strong><small>Website, lead capture, tracking, and follow-up need to work together.</small></span>
+            </label>
+          </div>
+
+          <div class="wizard-actions wizard-actions-end">
+            <button class="button button-primary wizard-nav-button" data-wizard-next type="button">Continue to contact details</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="wizard-step" data-wizard-step="2">
+          <legend class="sr-only">Step 2: Add contact details</legend>
+          <div class="wizard-step-heading" tabindex="-1">
+            <span class="wizard-step-count">Step 2 of 3</span>
+            <h3>Who should we follow up with?</h3>
+            <p>Only the essentials are required. Phone, business name, and website are optional.</p>
+          </div>
+
+          <div class="form-grid compact-form-grid">
+            <div class="field">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input autocomplete="name" id="name" name="name" required type="text"/>
+            </div>
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input autocomplete="email" id="email" name="email" required type="email"/>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <small>Optional</small></label>
+              <input autocomplete="tel" id="phone" name="phone" inputmode="tel" type="tel"/>
+            </div>
+            <div class="field">
+              <label for="business">Business name <small>Optional</small></label>
+              <input autocomplete="organization" id="business" name="business" type="text"/>
+            </div>
+            <div class="field full">
+              <label for="website">Current website <small>Optional</small></label>
+              <input autocomplete="url" id="website" name="website" placeholder="https://yourbusiness.ca" type="url"/>
+            </div>
+          </div>
+
+          <div class="wizard-actions">
+            <button class="button button-secondary wizard-nav-button" data-wizard-back type="button">Back</button>
+            <button class="button button-primary wizard-nav-button" data-wizard-next type="button">Continue to project details</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="wizard-step" data-wizard-step="3">
+          <legend class="sr-only">Step 3: Add project details and send the inquiry</legend>
+          <div class="wizard-step-heading" tabindex="-1">
+            <span class="wizard-step-count">Step 3 of 3</span>
+            <h3>What outcome are you aiming for?</h3>
+            <p class="selected-symptom" data-symptom-summary>We will show your selected bottleneck here.</p>
+          </div>
+
+          <div class="form-grid compact-form-grid">
+            <div class="field">
+              <label for="service">Recommended direction <span aria-hidden="true">*</span></label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Workflow Automation</option>
+                <option>Website Creation</option>
+                <option>Website Redesign</option>
+                <option>Google Ads Campaigns</option>
+                <option>SEO Optimization</option>
+                <option>Lead Generation System</option>
+                <option>Maintenance / Support</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="timeline">Timeline <small>Optional</small></label>
+              <select id="timeline" name="timeline">
+                <option value="">Select a timeline</option>
+                <option>As soon as possible</option>
+                <option>Within 30 days</option>
+                <option>1-3 months</option>
+                <option>Planning ahead</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="budget">Approximate budget <small>Optional</small></label>
+              <select id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option>Under $1,000</option>
+                <option>$1,000 - $2,500</option>
+                <option>$2,500 - $5,000</option>
+                <option>$5,000+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field full message-field">
+              <label for="message">What should improve? <span aria-hidden="true">*</span></label>
+              <textarea aria-describedby="message-help message-count" id="message" maxlength="1200" name="message" placeholder="Briefly describe the problem, the current setup, and what a better result would look like." required></textarea>
+              <div class="message-meta"><small id="message-help">A few focused sentences are enough.</small><span class="char-count" data-char-count id="message-count">0 / 1200</span></div>
+            </div>
+            <div class="field full consent-field">
+              <label class="check-row">
+                <input id="consent" name="consent" required type="checkbox" value="Yes"/>
+                <span>I agree to be contacted by Boomer Automation Inc. about this inquiry and have read the <a class="arrow-link" href="privacy.html">Privacy Policy</a>.</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="wizard-actions">
+            <button class="button button-secondary wizard-nav-button" data-wizard-back type="button">Back</button>
+            <button class="button button-primary" type="submit">Send project inquiry</button>
+          </div>
+        </fieldset>
+
+        <div class="wizard-footer">
+          <p aria-atomic="true" aria-live="polite" class="status-message" role="status"></p>
+          <p class="form-note">Netlify Forms and honeypot protection are enabled. Do not submit passwords, payment details, or other sensitive information.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 <section class="dark-2"><div class="shell next-steps"><article><p class="eyebrow">What happens next?</p><h2>We turn the inquiry into a practical project direction.</h2></article><article><span class="number">01</span><h3>We review the inquiry</h3><p>We review the business, current site, bottleneck, and outcome you want.</p></article><article><span class="number">02</span><h3>We identify the right path</h3><p>We determine whether the starting point is website, traffic, tracking, or workflow.</p></article><article><span class="number">03</span><h3>We follow up</h3><p>We outline the recommended next step, likely scope, and information needed.</p></article></div></section>
 <section class="paper-light"><div class="shell direct-row"><div><p class="eyebrow" style="color:#8d5b00">Prefer to talk directly?</p><h2 class="section-title">Direct contact</h2></div><div><h3>Email</h3><a href="mailto:boomerautomationinc@gmail.com">boomerautomationinc@gmail.com</a></div><div><h3>Phone</h3><a href="tel:+12494065820">249-406-5820</a></div><div><h3>Service area</h3><p>Ontario, Canada</p></div><div><h3>Response time</h3><p>Project inquiries are reviewed as business scheduling allows.</p></div></div></section>
 <section class="final-cta"><div class="shell final-cta-inner"><h2>No pressure. No hard sell. Just a clear conversation about what the business needs next.</h2></div></section></main><div id="siteFooterMount"></div></body></html>
