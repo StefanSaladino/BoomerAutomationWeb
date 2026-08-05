@@ -123,6 +123,23 @@ body {
   --project-accent: #b55745;
 }
 
+/*
+ * The Feds N’ Shences category is intentionally longer than the other
+ * folder labels. Give its tab a wider, gentler taper so the complete
+ * “Outdoor construction” label remains visible at every breakpoint.
+ */
+.project-file--feds .project-file__tab {
+  min-width: min(18rem, calc(100% - 2.2rem));
+  padding-right: 1.5rem;
+  clip-path: polygon(0 0, 91% 0, 100% 100%, 0 100%);
+}
+
+.project-file--feds .project-file__category {
+  font-size: 0.59rem;
+  letter-spacing: 0.075em;
+  text-overflow: clip;
+}
+
 /* Raised folder tab. */
 .project-file__tab {
   position: absolute;
@@ -389,6 +406,16 @@ body {
     left: 0.75rem;
     min-width: min(13.5rem, calc(100% - 1.5rem));
     padding-inline: 0.95rem;
+  }
+
+  .project-file--feds .project-file__tab {
+    min-width: min(17.75rem, calc(100% - 1.5rem));
+    padding-right: 1.25rem;
+  }
+
+  .project-file--feds .project-file__category {
+    font-size: 0.56rem;
+    letter-spacing: 0.06em;
   }
 
   .project-file__sheet {
