@@ -8,25 +8,13 @@
   <style>
     :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#040a10;color:#f4f0e8;font-family:Arial,sans-serif;padding:24px}main{width:min(640px,100%);border:1px solid #29333c;padding:40px;background:#09121a}p{color:#b9c0c6;line-height:1.65}a{color:#62bdd0;font-weight:700}.eyebrow{color:#e2ad43;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:800}h1{font-family:Georgia,serif;font-size:clamp(2.2rem,7vw,4.4rem);font-weight:400;line-height:1;margin:.3em 0}
   </style>
-  <script>
-    (() => {
-      if (!/(^|\.)github\.io$/i.test(location.hostname)) return;
-      const routes = new Set(['services','systems','process','portfolio','resources','about','contact','privacy']);
-      const parts = location.pathname.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
-      const route = parts.at(-1);
-      if (!routes.has(route)) return;
-      const base = parts.slice(0, -1);
-      const target = `/${[...base, `${route}.html`].join('/')}${location.search}${location.hash}`;
-      location.replace(target);
-    })();
-  </script>
 </head>
 <body>
   <main>
     <p class="eyebrow">404</p>
     <h1>That page could not be found.</h1>
-    <p>The address may be incomplete, or the preview route may not exist.</p>
-    <p><a href="./">Return to the Boomer Automation home page</a></p>
+    <p>The address may be incomplete, outdated, or no longer available.</p>
+    <p><a href="/">Return to the Boomer Automation home page</a></p>
   </main>
 </body>
 </html>

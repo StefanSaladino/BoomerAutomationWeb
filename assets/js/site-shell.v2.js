@@ -1,4 +1,4 @@
-/* Boomer Automation - shared runtime header and footer shell v1 */
+/* Boomer Automation - shared runtime header and footer shell v2 */
 
 /*
  * The site shell is stored once and injected into every page at runtime.
@@ -12,7 +12,7 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header" id="siteHeader">
       <div class="shell header-inner">
-        <a aria-label="Boomer Automation home" class="brand" href="./">
+        <a aria-label="Boomer Automation home" class="brand" href="/">
           <img
             alt=""
             height="44"
@@ -23,15 +23,15 @@
         </a>
 
         <nav aria-label="Primary navigation" class="desktop-nav">
-          <a data-nav="services" href="services.html">Services</a>
-          <a data-nav="systems" href="systems.html">Systems</a>
-          <a data-nav="process" href="process.html">Process</a>
-          <a data-nav="portfolio" href="portfolio.html">Portfolio</a>
-          <a data-nav="resources" href="resources.html">Resources</a>
-          <a data-nav="about" href="about.html">About</a>
+          <a data-nav="services" href="/services">Services</a>
+          <a data-nav="systems" href="/systems">Systems</a>
+          <a data-nav="process" href="/process">Process</a>
+          <a data-nav="portfolio" href="/portfolio">Portfolio</a>
+          <a data-nav="resources" href="/resources">Resources</a>
+          <a data-nav="about" href="/about">About</a>
         </nav>
 
-        <a class="header-cta" href="contact.html">Contact</a>
+        <a class="header-cta" href="/contact">Contact</a>
         <button
           aria-controls="mobileMenu"
           aria-expanded="false"
@@ -61,13 +61,13 @@
         </div>
 
         <nav aria-label="Mobile navigation" class="mobile-nav">
-          <a data-nav="services" href="services.html">Services</a>
-          <a data-nav="systems" href="systems.html">Systems</a>
-          <a data-nav="process" href="process.html">Process</a>
-          <a data-nav="portfolio" href="portfolio.html">Portfolio</a>
-          <a data-nav="resources" href="resources.html">Resources</a>
-          <a data-nav="about" href="about.html">About</a>
-          <a data-nav="contact" href="contact.html">Contact</a>
+          <a data-nav="services" href="/services">Services</a>
+          <a data-nav="systems" href="/systems">Systems</a>
+          <a data-nav="process" href="/process">Process</a>
+          <a data-nav="portfolio" href="/portfolio">Portfolio</a>
+          <a data-nav="resources" href="/resources">Resources</a>
+          <a data-nav="about" href="/about">About</a>
+          <a data-nav="contact" href="/contact">Contact</a>
         </nav>
 
         <div class="mobile-contact">
@@ -82,7 +82,7 @@
     <footer class="site-footer">
       <div class="shell footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="./">
+          <a class="brand" href="/">
             <img
               alt=""
               height="46"
@@ -99,16 +99,16 @@
 
         <div>
           <h2>Explore</h2>
-          <a href="services.html">Services</a>
-          <a href="systems.html">Systems</a>
-          <a href="process.html">Process</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="about.html">About</a>
+          <a href="/services">Services</a>
+          <a href="/systems">Systems</a>
+          <a href="/process">Process</a>
+          <a href="/portfolio">Portfolio</a>
+          <a href="/about">About</a>
         </div>
 
         <div>
           <h2>Resources</h2>
-          <a href="resources.html">Resource library</a>
+          <a href="/resources">Resource library</a>
           <a href="assets/docs/boomer-automation-website-strategy-pricing-guide.pdf">
             Website pricing guide
           </a>
@@ -129,7 +129,7 @@
         <p>© <span id="year"></span> Boomer Automation Inc. All rights reserved.</p>
         <div>
           <button class="text-button" data-privacy-open type="button">Privacy choices</button>
-          <a href="privacy.html">Privacy Policy</a>
+          <a href="/privacy">Privacy Policy</a>
         </div>
       </div>
     </footer>
@@ -162,7 +162,7 @@
             Essential only
           </button>
         </div>
-        <a href="privacy.html">Read the Privacy Policy</a>
+        <a href="/privacy">Read the Privacy Policy</a>
       </div>
     </div>
   `;
